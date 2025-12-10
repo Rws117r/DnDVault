@@ -11,6 +11,7 @@ import { renderListView } from './components/list-view.js';
 import { renderDetailView } from './components/detail-view.js';
 import { renderSearchView } from './components/search.js';
 import { renderEncounterView } from './components/encounter.js';
+import { renderQuestGraph } from './components/quest-graph.js';
 
 // Initialize app
 async function init() {
@@ -104,6 +105,12 @@ function setupRoutes() {
         .on('/encounter', () => {
             renderSidebar();
             renderEncounterView();
+        })
+
+        // Quest Graph
+        .on('/quests/graph', () => {
+            renderSidebar();
+            renderQuestGraph();
         })
 
         // 404

@@ -55,6 +55,10 @@ export function renderSidebar() {
                     <span>Quests</span>
                     <span class="nav-count">${counts.quests}</span>
                 </a>
+                <a class="nav-link ${currentRoute === '/quests/graph' ? 'active' : ''}" data-route="/quests/graph" style="padding-left: var(--space-8);">
+                    <span class="nav-icon">🌳</span>
+                    <span>Quest Graph</span>
+                </a>
             </div>
             
             <div class="nav-section">
