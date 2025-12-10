@@ -1,0 +1,1432 @@
+[
+    {
+        "id": "item-0001",
+        "name": "Rod of Testing",
+        "category": "Weapon",
+        "rarity": "Common",
+        "description": "The Rod of Testing is given to every new program starting out its journey to becoming the best it can be.",
+        "rules": "Can test as many times as the program desires.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [],
+        "paste_block": "**Rod of Testing**\n\n*Description*:\nThe Rod of Testing is given to every new program starting out its journey to becoming the best it can be.\n\n*Effect*:\nCan test as many times as the program desires."
+    },
+    {
+        "id": "item-0002",
+        "name": "Cain's Pulpit",
+        "category": "Magical Firearm",
+        "rarity": "Unique Artifact",
+        "description": "Brass–iron flintlock pistol engraved with curling script & a black ledger sigil. Created by a scribe-warlock who believed love was the strongest bullet a soul could fire.",
+        "rules": "**Damage:** 1d8 (physical) or special effect (spectral chain)\n**Range:** 50 ft\n**Reload:** 1 round\n**Ammunition:** Names written in the Ledger of people the wielder truly loves.\n\n**Special Ability: Soul Chain Discharge**\nInstead of firing a bullet, Cain's Pulpit can fire a green spectral chain:\n- Automatically hits supernatural entities linked to corruption, possession, or emotion-based curses.\n- Does no physical damage.\n- Attempts to pull a curse, entity, or spiritual parasite out of the target.\n\n**Extraction Check:**\n- Roll: d20 + WIS modifier + character level\n- Difficulty: set by strength of corruption (typically 15–20)\n\n*If successful:* The corruption is partially or fully removed. A Core may manifest.\n*If failed:* The chain snaps, wielder takes 1d6 psychic damage. Target becomes enraged or empowered.\n\n**Drawback — The Ledger's Price**\nEach time the weapon is used:\n- A memory of the loved one used as \"ammo\" is consumed.\n- The wielder permanently loses one cherished detail unless they succeed a Save vs Spells.\n- The Ledger Demon (Azelach) becomes more aware of the wielder.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "firearm",
+            "artifact",
+            "signature",
+            "corruption",
+            "extraction",
+            "ledger",
+            "azelach"
+        ],
+        "paste_block": "**Cain's Pulpit** — Unique Artifact\n\nBrass–iron flintlock pistol engraved with curling script & a black ledger sigil.\n\n**Damage:** 1d8 (physical) or special effect (spectral chain)\n**Range:** 50 ft | **Reload:** 1 round\n**Ammunition:** Names written in the Ledger of people the wielder truly loves.\n\n**Soul Chain Discharge:** Fire a green spectral chain that automatically hits supernatural entities linked to corruption. Does no physical damage but attempts to pull a curse/entity out.\n\n**Extraction Check:** d20 + WIS + level vs DC 15–20\n- *Success:* Corruption removed, Core may manifest\n- *Fail:* Chain snaps, 1d6 psychic damage, target enraged\n\n**The Ledger's Price:** Each use consumes a memory of the loved one. Save vs Spells or permanently lose a cherished detail. Azelach grows aware."
+    },
+    {
+        "id": "item-0003",
+        "name": "The Weeping Feather Core",
+        "category": "Eldritch Artifact",
+        "rarity": "Unique Artifact",
+        "description": "An orb of condensed emotion & curse, swirling inside a crystalline sphere. Warm to the touch. Emits faint sobbing or whispering when held alone. Flickers between color and grayscale. One of 5 Cores.",
+        "rules": "**Emotional Resonance:** Any creature holding the core must Save vs Spells or feel overwhelming sorrow for 1 turn.\n\n**Curse Sense:** Once per day, the holder can detect the presence of corruption, curses, or parasitic spiritual entities within 120 ft.\n\n**Core Harmony:** When combined with the other 4 cores, it unlocks something extremely powerful (god-blessing, portal, massive story event).",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "artifact",
+            "signature",
+            "core",
+            "curse",
+            "emotion",
+            "eldritch"
+        ],
+        "paste_block": "**The Weeping Feather Core** — Eldritch Artifact (1 of 5 Cores)\n\nAn orb of condensed emotion & curse, swirling inside a crystalline sphere. Warm to the touch. Emits faint sobbing when held alone. Flickers between color and grayscale.\n\n**Emotional Resonance:** Holder must Save vs Spells or feel overwhelming sorrow for 1 turn.\n\n**Curse Sense (1/day):** Detect corruption, curses, or parasitic spiritual entities within 120 ft.\n\n**Core Harmony:** When combined with the other 4 cores, unlocks something extremely powerful."
+    },
+    {
+        "id": "item-0004",
+        "name": "Lantern-Soul Pipe",
+        "category": "Pipe",
+        "rarity": "Uncommon",
+        "description": "A long-stemmed pipe carved from pale driftwood, etched with lantern motifs. Belongs to Ninuel.",
+        "rules": "**When Smoked:**\n- Produces tiny floating lantern spirits for 20 minutes\n- Grants the effect of Light for 20 minutes\n- Spirits illuminate dark corridors and gently orbit the caster\n\n**Fae Interaction Bonus:**\n- Spirits attract peaceful fae\n- Advantage (or +1) to reaction rolls with spirits, ghosts, and benign fey for the duration\n\n**Drawback:**\n- Malevolent spirits notice you more easily\n- -1 to surprise rolls in haunted areas",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipe",
+            "ninuel",
+            "fae",
+            "light",
+            "spirits",
+            "lantern"
+        ],
+        "paste_block": "**Lantern-Soul Pipe** (Ninuel)\n\nA long-stemmed pipe carved from pale driftwood, etched with lantern motifs.\n\n**When Smoked (20 min):**\n- Tiny floating lantern spirits orbit the caster\n- Grants Light effect\n- +1 to reaction rolls with spirits, ghosts, and benign fey\n\n**Drawback:** Malevolent spirits notice you more easily. -1 to surprise in haunted areas."
+    },
+    {
+        "id": "item-0005",
+        "name": "The River Serpent Bowl",
+        "category": "Pipe (Enchanted)",
+        "rarity": "Rare (Unique Gift)",
+        "description": "A mossling-crafted personal pipe with soft curves and a carved serpent flowing along the stem. Given to Beiric by Megwynne Marrowbold in exchange for a Deepwater Tear gemstone. She was so impressed by his smoke-boat performance that the pipe resonated with his talent, unlocking hidden properties.",
+        "rules": "**Base Properties (Always Active):**\n- Never clogs\n- Smoke never irritates the lungs\n- Flavor automatically adjusts to the smoker's ideal taste\n- Emits faint ripples of cool air when smoked, like river water moving\n\n**1. Smoke-Shape Mastery (Passive):**\n- Smoke-shaping attempts always succeed on easy rolls\n- On success, smoke-shapes last twice as long\n- On critical success, shapes become semi-sentient for 10 seconds\n- NPCs who see this are impressed. Megwynne would faint.\n\n**2. River-Memory Breeze (3/day):**\nExhale slowly — thin smoke strands point toward:\n- Fresh water, underground water, swamp paths\n- Hidden flooded spaces\n- Places of water-associated magic\n→ Use as dowsing rod for water-related secrets\n\n**3. Serpent's Whisper (1/day):**\nSmoke quietly for 1 minute and ask a simple question:\n- Smoke rises straight = Yes\n- Smoke curls down = No\n- Smoke twists into loop = Unclear/hidden\nWorks best with: locations, people, intentions, nature\nFails with: fate, treasure, gods, the Drune\n\n**4. Amphibian Affinity (Passive):**\n- +2 reaction rolls with harmless swamp creatures\n- Frogs sometimes follow Beiric (comedic)\n- 1/session: a small amphibian may warn him by hopping nervously\n\n**5. HIDDEN — The Pipe Remembers:**\nIf smoked where: a drowning occurred, a water spirit dwells, or a Hag's influence is strong...\n→ The bowl becomes cold\n→ Next smoke-shape reveals a vision of the past: a lantern sinking, a ghostly hand, footsteps in mud, a face beneath water...",
+        "origin": "Megwynne gave Beiric this pipe as thanks for the Deepwater Tear gemstone. She pushed the sampler toward him and added: 'And take this as well. A gift, my dear. A token of respect from one smoke-lover to another.'",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipe",
+            "beiric",
+            "megwynne",
+            "mossling",
+            "enchanted",
+            "divination",
+            "water",
+            "serpent",
+            "rare"
+        ],
+        "paste_block": "**The River Serpent Bowl** (Beiric) — Rare Enchanted Pipe\n\nMossling-crafted with a carved serpent flowing along the stem. Gift from Megwynne.\n\n**Always Active:**\n- Never clogs, flavor adjusts, emits cool river-air\n\n**1. Smoke-Shape Mastery:** Auto-succeed shaping, shapes last 2x, crits become sentient\n**2. River-Memory Breeze (3/day):** Smoke points to water/magic\n**3. Serpent's Whisper (1/day):** Ask question, smoke answers yes/no\n**4. Amphibian Affinity:** +2 swamp creature reactions\n**5. HIDDEN:** In Hag/drowning areas, reveals water-memory visions"
+    },
+    {
+        "id": "item-0006",
+        "name": "Pipeleaf (Common)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Relaxing, flavorful pipeleaf with no mechanical effect. A party RP item.",
+        "rules": "No mechanical effect. Relaxing and flavorful.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "rp"
+        ],
+        "paste_block": "**Pipeleaf (Common)**\n\nRelaxing, flavorful. No mechanical effect. Party RP item."
+    },
+    {
+        "id": "item-0007",
+        "name": "Pipeleaf (Uncommon)",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "Higher quality pipeleaf with calming properties.",
+        "rules": "- Advantage (or +1) on morale checks\n- Calming effect useful on NPCs",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "morale"
+        ],
+        "paste_block": "**Pipeleaf (Uncommon)**\n\n- +1 on morale checks\n- Calming effect useful on NPCs"
+    },
+    {
+        "id": "item-0008",
+        "name": "Mallow-Puff (Rare Pipeleaf)",
+        "category": "Consumable",
+        "rarity": "Rare",
+        "description": "A rare pipeleaf that makes the smoker buoyant.",
+        "rules": "**Duration:** 10 minutes\n- Smoker becomes buoyant\n- Can float downward safely\n- Falls as if affected by Feather Fall",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "rare",
+            "feather fall",
+            "buoyant"
+        ],
+        "paste_block": "**Mallow-Puff** (Rare Pipeleaf)\n\n*Duration: 10 minutes*\n- Smoker becomes buoyant\n- Float downward safely (Feather Fall effect)"
+    },
+    {
+        "id": "item-0009",
+        "name": "Purple Shag (Rare Pipeleaf)",
+        "category": "Consumable",
+        "rarity": "Rare",
+        "description": "A rare pipeleaf that grants mild telepathic empathy.",
+        "rules": "**Duration:** 20 minutes\n- Grants mild telepathic empathy\n- Sense nearby creatures' surface emotions (30 ft)",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "rare",
+            "telepathy",
+            "empathy"
+        ],
+        "paste_block": "**Purple Shag** (Rare Pipeleaf)\n\n*Duration: 20 minutes*\n- Mild telepathic empathy\n- Sense surface emotions within 30 ft"
+    },
+    {
+        "id": "item-0010",
+        "name": "Sticky Gilly (Rare Pipeleaf)",
+        "category": "Consumable",
+        "rarity": "Rare",
+        "description": "A rare pipeleaf that causes the smoker to exude sticky resin.",
+        "rules": "**Duration:** 10 minutes\n- Caster exudes sticky resin\n- +2 bonus to grappling\n- Enemies touching smoker must Save vs Paralyze or be stuck for 1 round",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "rare",
+            "grapple",
+            "sticky"
+        ],
+        "paste_block": "**Sticky Gilly** (Rare Pipeleaf)\n\n*Duration: 10 minutes*\n- Exude sticky resin\n- +2 to grappling\n- Enemies touching you: Save vs Paralyze or stuck 1 round"
+    },
+    {
+        "id": "item-0011",
+        "name": "Wanton Wisp (Rare Pipeleaf)",
+        "category": "Consumable",
+        "rarity": "Rare",
+        "description": "A rare pipeleaf that allows the smoker to exhale a scouting wisp.",
+        "rules": "**Duration:** 5 minutes\n- Exhales a wisp that scouts 60 ft ahead\n- Wisp emits dim light\n- Cannot interact physically",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "consumable",
+            "rare",
+            "scout",
+            "wisp"
+        ],
+        "paste_block": "**Wanton Wisp** (Rare Pipeleaf)\n\n*Duration: 5 minutes*\n- Exhale a wisp that scouts 60 ft ahead\n- Emits dim light\n- Cannot interact physically"
+    },
+    {
+        "id": "item-0012",
+        "name": "Moonbloom Infusion",
+        "category": "Potion",
+        "rarity": "Uncommon",
+        "description": "A silvery liquid with floating petal shapes. Used by Ninuel & Beiric.",
+        "rules": "**Duration:** 1 hour\n- Removes level 1 exhaustion\n- Grants soft luminescence (\"moon-sheen\")\n- +1 on saving throws vs charm or fear",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "potion",
+            "ninuel",
+            "beiric",
+            "exhaustion",
+            "charm",
+            "fear"
+        ],
+        "paste_block": "**Moonbloom Infusion** (Ninuel & Beiric)\n\nA silvery liquid with floating petal shapes.\n\n*Duration: 1 hour*\n- Removes level 1 exhaustion\n- Grants soft luminescence (\"moon-sheen\")\n- +1 to saves vs charm or fear"
+    },
+    {
+        "id": "item-0013",
+        "name": "Glowcap Fritter Ale",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Glowing bioluminescent beer. Belongs to Growler. Tastes like mushrooms & honey.",
+        "rules": "- Grants low-light vision for 30 minutes\n- Causes hiccups of faint magical sparks",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "vision",
+            "mushroom"
+        ],
+        "paste_block": "**Glowcap Fritter Ale** (Growler)\n\nGlowing bioluminescent beer. Tastes like mushrooms & honey.\n\n- Low-light vision for 30 minutes\n- Causes hiccups of faint magical sparks"
+    },
+    {
+        "id": "item-0014",
+        "name": "Sawdust Lager",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Cheap cider with sawdust undertones. Belongs to Enmog.",
+        "rules": "**Duration:** 1 hour\n- +1 to Constitution checks\n- But -1 to Wisdom checks (\"bad ideas in a bottle\")",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "enmog",
+            "constitution",
+            "wisdom"
+        ],
+        "paste_block": "**Sawdust Lager** (Enmog)\n\nCheap cider with sawdust undertones.\n\n*Duration: 1 hour*\n- +1 to Constitution checks\n- -1 to Wisdom checks (\"bad ideas in a bottle\")"
+    },
+    {
+        "id": "item-0015",
+        "name": "Honey Shine",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Potent clear liquor. Belongs to Enmog. It's \"gnome medicine.\"",
+        "rules": "- Heals 1 HP\n- Gives bravery: +1 to Morale for 1 hour\n- But Save vs Poison or become tipsy (-1 Dex)",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "enmog",
+            "healing",
+            "morale",
+            "gnome"
+        ],
+        "paste_block": "**Honey Shine** (Enmog)\n\nPotent clear liquor (\"gnome medicine\").\n\n- Heals 1 HP\n- +1 Morale for 1 hour\n- Save vs Poison or tipsy (-1 Dex)"
+    },
+    {
+        "id": "item-0016",
+        "name": "Megwynne's Emberbloom Igniter",
+        "category": "Wondrous Item",
+        "rarity": "Rare (Stolen)",
+        "description": "A rare mossling-crafted pocket fire-spirit lighter, disguised as an old soot-smudged brass lighter. Enmog stole this from Megwynne's apron. It feels warm, almost like it's breathing. Small brass box etched with swirling vine patterns, tiny red gem set into the striker wheel. Smells faintly of burnt honey and leaf-smoke. Emits a soft tick... tick... tick when held, like a beetle shifting inside.",
+        "rules": "**1. Flame-On Command (Always):**\n- Flame cannot be extinguished by wind, rain, or swamp gas\n- Burns with a gold-and-orange shimmer\n- Counts as holy fire against minor swamp spirits\n\n**2. Emberbloom Spark (3/day):**\nIf used to light organic material (leaf, bark, reed, pipeleaf):\n- Releases burst of harmless fire-motes\n- Illuminate 20 ft area\n- Reveal invisible or spirit entities for 1 round\n- Cause frogs to croak loudly in 100 ft radius\n\n**3. The Fire-Sprite Within:**\nA tiny bound fire-sprite reacts:\n- WARM in presence of magic\n- HOT in presence of danger\n- COLD near influence of the Hag\n- FLICKERS WILDLY if a lie is spoken within 10 ft (doesn't detect WHO lied)\n\n**4. Spirits Notice It:**\nAny fae or mossling artisan recognizes this is:\n- Valuable\n- Slightly illegal\n- Definitely stolen from someplace magical\n\n**If Megwynne Finds Out:**\nShe will be FURIOUS in a grandmotherly, lecture-you-into-the-ground way. Currently she blames 'mischievous sprites.'",
+        "why_great_for_enmog": "Useful in the swamp. Helps track supernatural things. Gives flavor tools. Can save the party in wet/dark conditions. Won't break combat balance. Reacts to Hag-tainted magic.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "lighter",
+            "enmog",
+            "fire",
+            "stolen",
+            "mossling",
+            "megwynne",
+            "fire-sprite",
+            "hag detection",
+            "rare"
+        ],
+        "paste_block": "**Megwynne's Emberbloom Igniter** (Enmog STOLE this) — Rare\n\nMossling fire-spirit lighter. Feels warm, almost breathing. Tick... tick... tick.\n\n**1. Flame-On:** Inextinguishable, counts as holy fire\n**2. Emberbloom Spark (3/day):** 20ft light, reveals invisible/spirits 1 round\n**3. Fire-Sprite Within:**\n- Warm = magic, Hot = danger, Cold = Hag\n- Flickers = lie spoken within 10ft\n**4. Spirits Notice:** Valuable, illegal, stolen\n\n*Megwynne blames 'mischievous sprites' for now...*"
+    },
+    {
+        "id": "item-0017",
+        "name": "Old Cutter Axe",
+        "category": "Weapon",
+        "rarity": "Uncommon",
+        "description": "A woodcutter's axe imbued faintly with forest spirit memory. Belongs to Enmog.",
+        "rules": "**Damage:** 1d6\n- +1 to attack vs plant creatures or animated wood\n\n**Special:**\n- Once per day, can chop through non-magical barriers twice as fast\n- Glows faintly when Reedwalkers are near",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "axe",
+            "weapon",
+            "enmog",
+            "plant",
+            "reedwalkers",
+            "wood"
+        ],
+        "paste_block": "**Old Cutter Axe** (Enmog)\n\nA woodcutter's axe imbued with forest spirit memory.\n\n**Damage:** 1d6 | +1 to attack vs plant creatures or animated wood\n\n- 1/day: Chop non-magical barriers twice as fast\n- Glows faintly when Reedwalkers are near"
+    },
+    {
+        "id": "item-0018",
+        "name": "Frost Sigil",
+        "category": "Magical Mark",
+        "rarity": "Rare",
+        "description": "A magical rune burned into Enmog's skin.",
+        "rules": "**Permanent Effects:**\n- Grants resistance to cold damage\n- Grants darkvision 30 ft (frost-tint)\n- Once per encounter, may freeze a curse or corruption, delaying its effect for 1 round\n\n**Activated Mode (1/day):**\n- Creates a 10 ft frost aura\n- Enemies entering must Save vs Breath or take 1d4 cold damage & be slowed",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "sigil",
+            "enmog",
+            "frost",
+            "cold",
+            "darkvision",
+            "curse"
+        ],
+        "paste_block": "**Frost Sigil** (Enmog) — Magical Mark\n\nA magical rune burned into Enmog's skin.\n\n**Permanent:**\n- Resistance to cold damage\n- Darkvision 30 ft (frost-tint)\n- 1/encounter: Freeze a curse, delay 1 round\n\n**Activated (1/day):**\n- 10 ft frost aura\n- Enemies: Save vs Breath or 1d4 cold + slowed"
+    },
+    {
+        "id": "item-0019",
+        "name": "Frost Sight",
+        "category": "Magical Mark",
+        "rarity": "Rare",
+        "description": "Secondary effect of the Frost Sigil. Grants Enmog the ability to perceive corruption and cold traces.",
+        "rules": "- Ability to see \"heat signatures\" of corruption\n- Detect cursed or evil presence within 20 ft\n- Tracks footprints of creatures with cold aura or curse residue",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "sigil",
+            "enmog",
+            "frost",
+            "vision",
+            "corruption",
+            "detection"
+        ],
+        "paste_block": "**Frost Sight** (Enmog) — Sigil Effect\n\nSecondary effect of the Frost Sigil.\n\n- See \"heat signatures\" of corruption\n- Detect cursed/evil presence within 20 ft\n- Track footprints of cold aura or curse residue"
+    },
+    {
+        "id": "item-0020",
+        "name": "Town Reed",
+        "category": "Trinket",
+        "rarity": "Common",
+        "description": "Simple woven reed, possibly a token or charm.",
+        "rules": "- Advantage (or +1) on interactions with townsfolk who recognize the craft\n- RP world-building item",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "trinket",
+            "rp",
+            "townsfolk",
+            "charm"
+        ],
+        "paste_block": "**Town Reed**\n\nSimple woven reed, a token or charm.\n\n- +1 on interactions with townsfolk who recognize the craft"
+    },
+    {
+        "id": "item-0021",
+        "name": "Lucky Knot",
+        "category": "Trinket",
+        "rarity": "Uncommon",
+        "description": "Small woven charm. Belongs to Ninuel.",
+        "rules": "- Once per day, reroll a failed Save vs Fear or Paralysis\n- Knot breaks after being used 3 times (track uses)",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "trinket",
+            "ninuel",
+            "luck",
+            "fear",
+            "paralysis"
+        ],
+        "paste_block": "**Lucky Knot** (Ninuel)\n\nSmall woven charm.\n\n- 1/day: Reroll failed Save vs Fear or Paralysis\n- Breaks after 3 uses (track: __/3)"
+    },
+    {
+        "id": "item-0022",
+        "name": "Jerky",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Dried meat. Roleplay item.",
+        "rules": "No mechanical effects unless offered to NPCs (often helps reactions).",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "food",
+            "rp",
+            "npc"
+        ],
+        "paste_block": "**Jerky**\n\nDried meat. RP item.\n\n- No mechanical effect\n- Offering to NPCs often helps reactions"
+    },
+    {
+        "id": "item-0023",
+        "name": "Blessed Saddle Water",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "Water from the woodcutters' blessed trough.",
+        "rules": "- Sprinkling on corrupted creatures gives them -1 to Save vs purification effects.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "water",
+            "blessed",
+            "purification",
+            "corruption"
+        ],
+        "paste_block": "**Blessed Saddle Water**\n\nWater from the woodcutters' blessed trough.\n\n- Sprinkle on corrupted creatures: -1 to Save vs purification effects"
+    },
+    {
+        "id": "item-0024",
+        "name": "Grey Leather Skin",
+        "category": "Trophy",
+        "rarity": "Common",
+        "description": "RP trophy item. No inherent mechanical effect unless assigned one later.",
+        "rules": "No mechanical effect currently.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "trophy",
+            "rp",
+            "leather"
+        ],
+        "paste_block": "**Grey Leather Skin**\n\nRP trophy item. No mechanical effect (yet)."
+    },
+    {
+        "id": "item-0025",
+        "name": "Pin of the Poniard",
+        "category": "Trinket",
+        "rarity": "Uncommon",
+        "description": "A bronze pin shaped like a dagger in a stump. Belongs to Enmog.",
+        "rules": "- Advantage (or +1) to reaction rolls with woodcutters\n- They treat the wearer as \"one of theirs\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pin",
+            "enmog",
+            "woodcutters",
+            "faction"
+        ],
+        "paste_block": "**Pin of the Poniard** (Enmog)\n\nA bronze pin shaped like a dagger in a stump.\n\n- +1 to reaction rolls with woodcutters\n- They treat the wearer as \"one of theirs\""
+    },
+    {
+        "id": "item-0026",
+        "name": "White Flame Mark of Saint Meiylu",
+        "category": "Magical Mark",
+        "rarity": "Unique Artifact",
+        "description": "A faint white brand beneath the skin, visible only in certain light. Ninuel received this mark when he discovered an idol of Saint Meiylu deep within a dungeon. When he tipped the brazier, the flame rose instead of falling, singing three descending notes that left him marked and gave him a second, alien heartbeat.",
+        "rules": "**Permanent Effects:**\n- Faint white brand beneath the skin (barely visible)\n- Second, alien heartbeat (can be heard in silence)\n- One of the three keys to purifying the Cores\n\n**White Flame Abilities:**\n- Can sense corruption and spiritual parasites\n- Stabilizes portals and spiritual wounds\n- Purification touch against corruption (Save vs Spells to resist)\n\n**Connection to Saint Meiylu:**\n- The mark ties Ninuel to the White Flame of Judgment\n- Her idols act as psychic mirrors — revealing guilt or debts owed to Azelach\n- The sigil may serve as a key to unlock the Choir's Subvaults\n\n**Doctrine:**\n\"All flame is ledger. All light, a judgment. When the fire speaks your name, count your sins and pay in kind.\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "mark",
+            "ninuel",
+            "saint meiylu",
+            "white flame",
+            "purification",
+            "azelach",
+            "choir",
+            "cores",
+            "artifact"
+        ],
+        "paste_block": "**White Flame Mark of Saint Meiylu** (Ninuel) — Unique Artifact\n\nA faint white brand beneath the skin, received when Ninuel tipped Saint Meiylu's brazier. The flame rose instead of falling, singing three descending notes. Now he bears a second, alien heartbeat.\n\n**Connection:** One of the three keys to purifying the Cores.\n\n**Abilities:**\n- Sense corruption and spiritual parasites\n- Stabilize portals and spiritual wounds\n- Purification touch (Save vs Spells to resist)\n\n**Doctrine:** \"All flame is ledger. All light, a judgment. When the fire speaks your name, count your sins and pay in kind.\""
+    },
+    {
+        "id": "item-0027",
+        "name": "Ruby Amulet of Azelach",
+        "category": "Cursed Artifact",
+        "rarity": "Unique Artifact",
+        "description": "A ruby amulet taken from the slain necromancer Quintius. When Enmog held it toward the fire during the Lantern-Bearer battle, the world stopped. The flames froze mid-air, drawn into the stone like smoke into a bottle. Then the gem pulsed — once, twice — and Ninuel's eyes snapped open, burning red. Azelach stepped forth from the ruby.",
+        "rules": "**Invoke Azelach (1 use):**\nHolding the amulet toward flame and calling for aid invokes the Debt-Binder.\n- Azelach will restore a dying soul to life\n- A debt forms instantly: one life restored = one life owed\n- Time limit: One lunar cycle\n- Failure: The debtor AND the pledged soul join the Choir as bound voices\n\n**Current State:**\nThe ruby now dims, pulsing faintly like a heartbeat. It is tied to the Ruby Contract — tracking the debt owed.\n\n**Warning:**\nAzelach does not cheat. He does not trick. He simply follows the arithmetic.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "artifact",
+            "azelach",
+            "debt",
+            "ruby",
+            "enmog",
+            "ninuel",
+            "contract",
+            "cursed"
+        ],
+        "paste_block": "**Ruby Amulet of Azelach** — Cursed Artifact\n\nA ruby amulet taken from the necromancer Quintius. When invoked, it summons Azelach, the Debt-Binder.\n\n**The Ruby Contract:**\n- One life restored = one life owed\n- Time limit: One lunar cycle\n- Failure: Debtor AND pledged soul join the Choir\n\n**Current State:** Pulses faintly like a heartbeat, tracking the debt.\n\n*Azelach does not cheat. He simply follows the arithmetic.*"
+    },
+    {
+        "id": "item-0028",
+        "name": "Lantern-Brooch of Foggarty",
+        "category": "Wondrous Item",
+        "rarity": "Uncommon",
+        "description": "A small silver brooch shaped like a lantern, offered by Father Jymes Horsely as a reward for investigating the Lantern-House Crypt.",
+        "rules": "**Once per day, the wearer may choose ONE:**\n- Cast Sanctuary\n- OR cast Light with double duration\n- OR automatically succeed on a check to navigate in darkness or fog\n\n**Status:** Quest reward — not yet earned",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "brooch",
+            "lantern",
+            "foggarty",
+            "sanctuary",
+            "light",
+            "navigation",
+            "quest reward"
+        ],
+        "paste_block": "**Lantern-Brooch of Foggarty** — Quest Reward\n\nA small silver brooch shaped like a lantern.\n\n**Once per day, choose ONE:**\n- Cast Sanctuary\n- Cast Light (double duration)\n- Auto-succeed navigation in darkness or fog\n\n*Reward for investigating the Lantern-House Crypt*"
+    },
+    {
+        "id": "item-0029",
+        "name": "Brooch of Shielding",
+        "category": "Wondrous Item",
+        "rarity": "Rare",
+        "description": "A protective brooch offered by Father Jymes Horsely as a reward for driving the Hag out of Hag's Addle.",
+        "rules": "**Effect:** Grants protection against magical attacks.\n- +2 to saving throws vs. Spells\n- Absorbs the first 10 points of magical damage per day\n\n**Status:** Quest reward — not yet earned",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "brooch",
+            "shielding",
+            "protection",
+            "magic",
+            "quest reward",
+            "hag"
+        ],
+        "paste_block": "**Brooch of Shielding** — Quest Reward\n\nA protective brooch.\n\n- +2 to saving throws vs. Spells\n- Absorbs first 10 magical damage per day\n\n*Reward for driving out the Hag of Hag's Addle*"
+    },
+    {
+        "id": "item-0030",
+        "name": "The Woodcutter's Poniard",
+        "category": "Weapon (Ceremonial)",
+        "rarity": "Uncommon (Cultural Artifact)",
+        "description": "A ceremonial woodcutter's dagger used during woodcutter rites and considered a symbol of their lineage. The dagger isn't magical, but culturally it's priceless. It was stolen by Reedwalkers who brought it to the Hag's Hut, where it was embedded in a reed idol as part of a ritual to corrupt woodcutter tradition and weaken community morale.",
+        "rules": "**Damage:** 1d4\n**Current Status:** Embedded in a reed idol in the Hag's Hut. Can be retrieved by completing the Hag's Bargain (Three Feathers quest).\n\n**Cultural Significance:**\n- Symbol of woodcutter lineage\n- Used in woodcutter rites\n- Returning it earns the party hero status among woodcutters\n\n**FUTURE UPGRADE — THE CUTTER'S OATH:**\nOnce the party gathers all 5 Cores, the Poniard may transform into a legendary weapon:\n- Blessed by woodcutters\n- Meant to resist fae corruption\n- Could become symbolic in a liberation arc against the Hag",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "dagger",
+            "poniard",
+            "ceremonial",
+            "woodcutters",
+            "jock furngle",
+            "hag",
+            "reedwalkers",
+            "cultural"
+        ],
+        "paste_block": "**The Woodcutter's Poniard** — Ceremonial Weapon\n\nA ceremonial dagger used in woodcutter rites. Not magical, but culturally priceless.\n\n**Damage:** 1d4\n\n**Status:** Currently embedded in a reed idol in the Hag's Hut.\n\n**To retrieve:** Complete the Hag's Bargain (Three Feathers quest).\n\n**Future:** May transform into THE CUTTER'S OATH when all 5 Cores are gathered."
+    },
+    {
+        "id": "item-0031",
+        "name": "Black Goat Porter (Growler)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "The Stump & Poniard's signature brew. Thick, smoky, dark as swamp water at midnight. Notes: Roasted malt, burnt oak, hint of molasses, finishes with a black-pepper bite.",
+        "rules": "**Price:** 3 gp per growler\n**Rumored Effect (1-in-20 chance):** Drinkers gain +1 to Morale for 1 hour.\n\nJock says: \"Warms the bones. Chills the guilt.\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "porter"
+        ],
+        "paste_block": "**Black Goat Porter** — 3 gp/growler\n\nSignature brew. Thick, smoky, dark as swamp water.\n\n**Effect (1-in-20):** +1 Morale for 1 hour\n\n*\"Warms the bones. Chills the guilt.\"*"
+    },
+    {
+        "id": "item-0032",
+        "name": "Glowcap Fritter Ale (Growler)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "A pale ale infused with crushed glowcap mushrooms. Herbal, effervescent, with slight shimmering particles that glow faintly in darkness. Locals call it 'Pixie Piss.'",
+        "rules": "**Price:** 2 gp per growler\n**Effect (harmless):** Your burps glow light-blue for 5 minutes.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "glowcap",
+            "mushroom"
+        ],
+        "paste_block": "**Glowcap Fritter Ale** — 2 gp/growler\n\nPale ale with crushed glowcap mushrooms. Glows faintly in darkness.\n\n**Effect:** Burps glow light-blue for 5 minutes.\n\n*Locals call it \"Pixie Piss.\"*"
+    },
+    {
+        "id": "item-0033",
+        "name": "Woodcutter's Amber (Growler)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Hardworking, no-nonsense, not-too-fancy ale brewed from forest grains. Notes: Nutty, slight caramel, very smooth.",
+        "rules": "**Price:** 2 gp per growler\n**Effect:** After two pints, advantage on bravado or storytelling rolls.\n\nJock says: \"Keeps the lads braggin' till dawn.\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "amber",
+            "woodcutters"
+        ],
+        "paste_block": "**Woodcutter's Amber** — 2 gp/growler\n\nNo-nonsense ale brewed from forest grains. Nutty, caramel, smooth.\n\n**Effect:** Advantage on bravado/storytelling rolls after 2 pints.\n\n*\"Keeps the lads braggin' till dawn.\"*"
+    },
+    {
+        "id": "item-0034",
+        "name": "Sawdust Lager (Growler)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "A cheap, thin, but surprisingly refreshing beer that goes down easy. Notes: Dry, crisp, tastes like river water filtered through pine boards.",
+        "rules": "**Price:** 1 gp per growler\n**Effect:** None except mild hydration and slight embarrassment. Locals tease outsiders for drinking it.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "cheap",
+            "lager"
+        ],
+        "paste_block": "**Sawdust Lager** — 1 gp/growler\n\nCheap, thin, refreshing. Tastes like pine-filtered river water.\n\n**Effect:** None. Locals tease outsiders for drinking it."
+    },
+    {
+        "id": "item-0035",
+        "name": "Foggarty's Lantern Brew (Growler)",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "A special-occasion beer flavored with honey, heather, and a whisper of magical lantern oil (blessed). Notes: Sweet, warming, aromatic.",
+        "rules": "**Price:** 4 gp per growler\n**Effect (mechanical):** For 1 hour after drinking, the drinker's footsteps make no sound on natural surfaces. Used by hunters… and cheaters.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "foggarty",
+            "stealth",
+            "magical"
+        ],
+        "paste_block": "**Foggarty's Lantern Brew** — 4 gp/growler\n\nSpecial-occasion brew with honey, heather, and blessed lantern oil.\n\n**Effect:** Footsteps silent on natural surfaces for 1 hour.\n\n*Used by hunters… and cheaters.*"
+    },
+    {
+        "id": "item-0036",
+        "name": "Drowned Pony Stout (Growler)",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "STRONG. Practically a meal. Legend says a dwarf pony once fell in the mash barrel and drowned. Notes: Heavy, thick as tar, chocolate & burnt grain. Leaves a black mustache.",
+        "rules": "**Price:** 5 gp per growler\n**Effect (mechanical):** +1 to Saves vs Fear until sober. BUT –1 to all WIS checks while drunk. See double. Or triple.\n\nJock says: \"Careful with that one. It'll put hair on your lungs.\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "stout",
+            "strong",
+            "fear"
+        ],
+        "paste_block": "**Drowned Pony Stout** — 5 gp/growler\n\nSTRONG. Thick as tar. Chocolate & burnt grain. Leaves a black mustache.\n\n**Effect:** +1 Save vs Fear, BUT –1 WIS checks while drunk.\n\n*\"Careful with that one. It'll put hair on your lungs.\"*"
+    },
+    {
+        "id": "item-0037",
+        "name": "Bogwater Brown (Growler)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Brewed using swamp herbs from Hex 1009. Notes: Earthy, dark greenish tint, smells like moss and woodsmoke.",
+        "rules": "**Price:** 3 gp per growler\n**Effect (fun, non-mechanical):** If drunk near a swamp, frogs croak louder around you.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "swamp",
+            "brown ale"
+        ],
+        "paste_block": "**Bogwater Brown** — 3 gp/growler\n\nBrewed with swamp herbs. Earthy, greenish, smells like moss.\n\n**Effect:** If drunk near a swamp, frogs croak louder around you."
+    },
+    {
+        "id": "item-0038",
+        "name": "River-Wife's Red (Growler)",
+        "category": "Consumable",
+        "rarity": "Rare",
+        "description": "Rare. Sweet. Slightly magical. Mead and ale blend. Notes: Berry honey, deep red color.",
+        "rules": "**Price:** 6 gp per growler\n**Effect (minor enchantment):** The drinker can hold their breath twice as long for 24 hours. Useful for swamp dungeons.\n\nJock whispers: \"If ye want to really impress someone… take a growler o' River-Wife's Red. Folk say it's blessed by somethin' that lives in the deep.\"",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "growler",
+            "stump & poniard",
+            "jock furngle",
+            "mead",
+            "magical",
+            "rare"
+        ],
+        "paste_block": "**River-Wife's Red** — 6 gp/growler\n\nRare mead-ale blend. Berry honey, deep red.\n\n**Effect:** Hold breath twice as long for 24 hours.\n\n*\"Folk say it's blessed by somethin' that lives in the deep.\"*"
+    },
+    {
+        "id": "item-0039",
+        "name": "Deepwater Tear",
+        "category": "Gemstone (Magical)",
+        "rarity": "Rare",
+        "description": "A semi-magical gemstone formed in enchanted underground pools. Gleams like still water at midnight. Light inside refracts in slow spirals — unnatural, almost hypnotic. Beiric traded this to Megwynne for her sampler pack and received the River Serpent Bowl pipe in exchange.",
+        "rules": "**Value:** 80-120 gp normally\n**Magical Resonance:** Responds to drowned spirits, swamp magic, and dreamwater.\n\n**Hidden Feature:**\nWhen pressed to water, it shows faint ripples indicating the direction of a nearby submerged magical source.\n→ Perfect for finding the Lantern-House Crypt!\n\n**What Megwynne Said:**\n\"This is no mere jewel. This is a Deepwater Tear. There's an echo inside this one. A sorrow. The water remembers something...\"",
+        "status": "Given to Megwynne",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "gemstone",
+            "magical",
+            "beiric",
+            "megwynne",
+            "water",
+            "divination",
+            "traded"
+        ],
+        "paste_block": "**Deepwater Tear** — Rare Magical Gemstone\n\nGleams like still water at midnight. Light refracts in slow spirals.\n\n**Hidden Feature:** When pressed to water, ripples point toward nearby submerged magic sources.\n\n*\"There's an echo inside this one. A sorrow. The water remembers something...\"*\n\n**Status:** Given to Megwynne in exchange for sampler + River Serpent Bowl"
+    },
+    {
+        "id": "item-0040",
+        "name": "Wandering Mossleaf",
+        "category": "Pipeleaf (Rare)",
+        "rarity": "Rare",
+        "description": "A rare pipeleaf that gives smokers vivid sensory hallucinations of locations they've visited before. Megwynne whispers: 'Wanderers' leaf, my dears. Helps you retrace steps you didn't know you took.'",
+        "rules": "**Price:** 8 gp per pouch\n**Stock:** Rare (2-in-6 normally)\n\n**Effect:**\nFor 10 minutes, gain +2 on tracking or remembering details about a visited area.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipeleaf",
+            "rare",
+            "megwynne",
+            "memory",
+            "tracking",
+            "divination"
+        ],
+        "paste_block": "**Wandering Mossleaf** — 8 gp/pouch (Rare)\n\nVivid sensory hallucinations of visited locations.\n\n**Effect:** +2 tracking/remembering visited areas for 10 min.\n\n*\"Wanderers' leaf, my dears. Helps you retrace steps you didn't know you took.\"*"
+    },
+    {
+        "id": "item-0041",
+        "name": "Wyrm-Ring Pipe",
+        "category": "Pipe (Enchanted)",
+        "rarity": "Uncommon",
+        "description": "One of Megwynne's enchanted pipes. Blows smoke rings that twist into tiny wyrm-shapes that glide through the air. 'Mossling artistry! They say a wyrm is a good omen for safe travels.'",
+        "rules": "**Price:** 100 gp\n\n**Effect:**\nOnce per day, a wyrm-smoke ring can deliver a whispered message (Message spell, 30 ft range).",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipe",
+            "enchanted",
+            "megwynne",
+            "message",
+            "wyrm"
+        ],
+        "paste_block": "**Wyrm-Ring Pipe** — 100 gp\n\nBlows smoke rings that twist into tiny wyrm-shapes.\n\n**Effect (1/day):** Wyrm-smoke delivers whispered message (30 ft).\n\n*\"A wyrm is a good omen for safe travels.\"*"
+    },
+    {
+        "id": "item-0042",
+        "name": "Purple Plume Pipe",
+        "category": "Pipe (Enchanted)",
+        "rarity": "Uncommon",
+        "description": "One of Megwynne's enchanted pipes. Exhales thick violet smoke that hangs in the air longer than it should.",
+        "rules": "**Price:** 100 gp\n\n**Effects:**\n- Smoker gains +1 to INT-based checks for 30 minutes\n- Once per day, smoker may automatically recall a forgotten detail",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipe",
+            "enchanted",
+            "megwynne",
+            "intelligence",
+            "memory"
+        ],
+        "paste_block": "**Purple Plume Pipe** — 100 gp\n\nExhales thick violet smoke that hangs in the air.\n\n**Effects:**\n- +1 INT checks for 30 min\n- 1/day: Auto-recall a forgotten detail"
+    },
+    {
+        "id": "item-0043",
+        "name": "Carnival Pipe",
+        "category": "Pipe (Enchanted)",
+        "rarity": "Uncommon",
+        "description": "One of Megwynne's enchanted pipes. Colored smoke jets out in swirling patterns like festival fireworks. Beiric would LOVE this one.",
+        "rules": "**Price:** 100 gp\n\n**Effect:**\nAdvantage (+2 OSE) on performing, storytelling, boasting, or seduction checks while smoking.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "pipe",
+            "enchanted",
+            "megwynne",
+            "performance",
+            "charisma",
+            "beiric"
+        ],
+        "paste_block": "**Carnival Pipe** — 100 gp\n\nColored smoke in festival firework patterns.\n\n**Effect:** +2 on performing, storytelling, boasting, or seduction checks.\n\n*Beiric would LOVE this one.*"
+    },
+    {
+        "id": "item-0044",
+        "name": "Foggarty's Lantern Oil",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "Burns with a steady yellow-gold flame even in wind or mist. Jock swears it's 'half miracle, half pig fat.'",
+        "rules": "**Price:** 10 gp\n\n**While lantern using it is lit:**\n- +1 to checks to avoid getting lost\n- Undead must roll morale when first entering the light",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "oil",
+            "lantern",
+            "foggarty",
+            "undead",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**Foggarty's Lantern Oil** — 10 gp\n\nSteady yellow-gold flame, even in wind or mist.\n\n- +1 avoid getting lost\n- Undead morale check upon entering light\n\n*\"Half miracle, half pig fat.\"*"
+    },
+    {
+        "id": "item-0045",
+        "name": "Bog-Mettle Ointment",
+        "category": "Consumable",
+        "rarity": "Uncommon",
+        "description": "A pungent green paste made from herbs and rendered swamp frog fat. Smells absolutely horrible.",
+        "rules": "**Price:** 15 gp / tin\n\n**Smear on boots or legs:**\n- Resist leeches (automatic success vs being latched onto)\n- Ignore the first point of poison damage from swamp creatures",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "ointment",
+            "swamp",
+            "leech",
+            "poison",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**Bog-Mettle Ointment** — 15 gp/tin\n\nPungent green paste. Smells HORRIBLE.\n\n- Auto-resist leeches\n- Ignore first point swamp poison damage"
+    },
+    {
+        "id": "item-0046",
+        "name": "Stump-Smoked Jerky",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "As tough as bark, tastes like sadness. Never molds. Woodcutters eat this like candy.",
+        "rules": "**Price:** 2 gp for 3 days' worth\n\n- Never molds\n- Restores +1 extra HP when eaten after a rest",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "food",
+            "jerky",
+            "healing",
+            "stump & poniard",
+            "jock furngle",
+            "woodcutters"
+        ],
+        "paste_block": "**Stump-Smoked Jerky** — 2 gp (3 days)\n\nTough as bark, tastes like sadness.\n\n- Never molds\n- +1 HP when eaten after rest"
+    },
+    {
+        "id": "item-0047",
+        "name": "Woodcutter's Lucky Knot",
+        "category": "Charm",
+        "rarity": "Common",
+        "description": "A braided charm 'to keep axes sharp and feet steady.' Looks like a shoelace. Feels like magic.",
+        "rules": "**Price:** 5 gp\n**One Use**\n\n**Effect:**\nAdvantage (+2 OSE) on your next Save vs Fear or Morale check.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "charm",
+            "luck",
+            "fear",
+            "morale",
+            "stump & poniard",
+            "jock furngle",
+            "woodcutters"
+        ],
+        "paste_block": "**Woodcutter's Lucky Knot** — 5 gp (one use)\n\nLooks like a shoelace. Feels like magic.\n\n**Effect:** +2 next Save vs Fear or Morale check"
+    },
+    {
+        "id": "item-0048",
+        "name": "Old Cutter's Hatchet",
+        "category": "Weapon",
+        "rarity": "Common",
+        "description": "The handle is worn smooth, but it's surprisingly well balanced. Woodcutters swear it 'never misses twice.'",
+        "rules": "**Price:** 7 gp\n**Damage:** 1d6\n\n**On natural 20:** Deal +1d4 extra damage",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "weapon",
+            "hatchet",
+            "axe",
+            "crit",
+            "stump & poniard",
+            "jock furngle",
+            "woodcutters"
+        ],
+        "paste_block": "**Old Cutter's Hatchet** — 7 gp\n\nWorn smooth, well balanced.\n\n**Damage:** 1d6\n**On nat 20:** +1d4 extra damage\n\n*\"Never misses twice.\"*"
+    },
+    {
+        "id": "item-0049",
+        "name": "The Sawdust Flask",
+        "category": "Wondrous Item",
+        "rarity": "Uncommon",
+        "description": "A wooden hip flask sealed with pitch. When filled with ale, it subtly changes flavor over an hour. Jock insists it's magic; Ninuel may think it's just wood soaking.",
+        "rules": "**Price:** 12 gp\n\n**Effect:**\nAle placed inside transforms over 1 hour into either:\n- Smoky Cedar Ale, or\n- Honey Pine Brew",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "flask",
+            "ale",
+            "transformation",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**The Sawdust Flask** — 12 gp\n\nWooden flask sealed with pitch.\n\n**Effect:** Ale inside transforms (1hr) into Smoky Cedar Ale or Honey Pine Brew.\n\n*Jock insists it's magic.*"
+    },
+    {
+        "id": "item-0050",
+        "name": "Jock's Stump Nail",
+        "category": "Trinket",
+        "rarity": "Common",
+        "description": "A bent 6-inch iron nail. Removing the original from the tavern supposedly curses you; Jock sells new ones that aren't cursed.",
+        "rules": "**Price:** 1 gp\n\n**If carried:** +1 to reaction rolls with woodcutters",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "trinket",
+            "nail",
+            "luck",
+            "woodcutters",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**Jock's Stump Nail** — 1 gp\n\nBent iron nail. Not cursed (unlike the original).\n\n**If carried:** +1 reaction with woodcutters"
+    },
+    {
+        "id": "item-0051",
+        "name": "Clewyd's Treats",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "Father Horsely's shaggy dog LOVES these.",
+        "rules": "**Price:** 1 gp per handful\n\n**Effect:**\nFeeding Clewyd gives you:\n- His instant friendship\n- +1 bonus on persuading Father Horsely afterward (because Clewyd comes sit next to you)",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "treats",
+            "dog",
+            "clewyd",
+            "father horsely",
+            "persuasion",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**Clewyd's Treats** — 1 gp/handful\n\nFather Horsely's dog LOVES these.\n\n**Effect:** Feed Clewyd → +1 persuading Father Horsely"
+    },
+    {
+        "id": "item-0052",
+        "name": "Honey-Shine (Illicit Swill)",
+        "category": "Consumable",
+        "rarity": "Common",
+        "description": "An illegal moonshine brewed by someone in Hex 1009 (Enmog can guess who). Locals love it. Outsiders... struggle.",
+        "rules": "**Price:** 5 gp per bottle\n\n**Effects:**\n- 1st drink: +1 Morale\n- 2nd drink: -1 to INT-based checks\n- 3rd drink: Save vs Poison or pass out",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drink",
+            "moonshine",
+            "illegal",
+            "morale",
+            "stump & poniard",
+            "jock furngle"
+        ],
+        "paste_block": "**Honey-Shine** — 5 gp/bottle (Illicit)\n\n1st drink: +1 Morale\n2nd drink: -1 INT checks\n3rd drink: Save vs Poison or pass out\n\n*Locals love it. Outsiders struggle.*"
+    },
+    {
+        "id": "item-0053",
+        "name": "Cutter's Lantern-Shield",
+        "category": "Armor",
+        "rarity": "Rare (Unique)",
+        "description": "Not a real shield — a thick wooden buckler with a slot for a lantern inside. Jock's uncle made it. Only one exists. SECRET ITEM: Jock only offers this if he REALLY likes you (Enmog's nat 20 qualifies).",
+        "rules": "**Price:** 25 gp\n\n**While carried:**\n- AC +1\n- Light sources inside cannot be blown out by wind or swamp gas\n\nGreat for exploring bogs or crypts.",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "shield",
+            "lantern",
+            "armor",
+            "unique",
+            "stump & poniard",
+            "jock furngle",
+            "secret"
+        ],
+        "paste_block": "**Cutter's Lantern-Shield** — 25 gp (SECRET ITEM)\n\nWooden buckler with lantern slot. Jock's uncle made it.\n\n- AC +1\n- Light inside unextinguishable by wind/gas\n\n*Only offered if Jock REALLY likes you.*"
+    },
+    {
+        "id": "item-0054",
+        "name": "Ivory Drinking Horn",
+        "category": "Wondrous Item",
+        "rarity": "Uncommon",
+        "description": "An ornate drinking horn carved from ivory, belonging to Enmog. When drink is poured inside, the liquid briefly glows ember-red, a faint metallic hum rises from the horn, and the drink transforms into a far superior beverage — smoother, richer, perfectly warm.",
+        "rules": "**The Horn Judges the Liquor:**\nAny drink poured into the horn is refined into a superior version.\n\n**Effect:**\nEnmog gains +1 to his next CHA-based check (until end of scene).\n\n**Visual Cues:**\n- Liquid glows ember-red momentarily\n- Faint metallic hum\n- Drink becomes smoother, richer, perfectly warm",
+        "owner": "Enmog",
+        "created_on": "2025-12-09",
+        "source": "ChatGPT",
+        "tags": [
+            "drinking horn",
+            "ivory",
+            "enmog",
+            "charisma",
+            "drink",
+            "transformation"
+        ],
+        "paste_block": "**Ivory Drinking Horn** (Enmog) — Uncommon\n\nThe horn judges the liquor. Drink glows ember-red, hums faintly, and transforms into a superior version.\n\n**Effect:** +1 to next CHA-based check (until end of scene)"
+    },
+    {
+        "id": "item-0055",
+        "name": "Backpack",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Has two straps and can be worn on the back, keeping the hands free. Holds up to 400 coins.",
+        "rules": "**Price:** 5 gp\n**Capacity:** 400 coins",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "storage",
+            "ose"
+        ],
+        "paste_block": "**Backpack** — 5 gp | Holds 400 coins"
+    },
+    {
+        "id": "item-0056",
+        "name": "Crowbar",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "2–3' long and made of solid iron. Can be used for forcing doors and other objects open.",
+        "rules": "**Price:** 10 gp\n**Use:** Force doors open",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "tool",
+            "ose"
+        ],
+        "paste_block": "**Crowbar** — 10 gp | Force doors open"
+    },
+    {
+        "id": "item-0057",
+        "name": "Garlic",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A bunch of garlic cloves. Useful against vampires and other undead.",
+        "rules": "**Price:** 5 gp",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "undead",
+            "vampire",
+            "ose"
+        ],
+        "paste_block": "**Garlic** — 5 gp | Repels vampires"
+    },
+    {
+        "id": "item-0058",
+        "name": "Grappling Hook",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Has 3 or 4 prongs. Can be used for anchoring a rope.",
+        "rules": "**Price:** 25 gp\n**Use:** Anchor rope for climbing",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "climbing",
+            "ose"
+        ],
+        "paste_block": "**Grappling Hook** — 25 gp | Anchor rope"
+    },
+    {
+        "id": "item-0059",
+        "name": "Hammer (Small)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Can be used for construction or as a mallet with iron or wooden spikes.",
+        "rules": "**Price:** 2 gp",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "tool",
+            "ose"
+        ],
+        "paste_block": "**Hammer (Small)** — 2 gp | Use with spikes"
+    },
+    {
+        "id": "item-0060",
+        "name": "Holy Symbol",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A divine spell caster is required to own a holy symbol of their deity, often worn as a necklace. Each religion has its own holy symbol.",
+        "rules": "**Price:** 25 gp\n**Required for:** Divine spellcasters",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "cleric",
+            "divine",
+            "ose"
+        ],
+        "paste_block": "**Holy Symbol** — 25 gp | Required for clerics"
+    },
+    {
+        "id": "item-0061",
+        "name": "Holy Water (Vial)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Water that has been blessed by a holy person. Used in religious rituals and inflicts damage on undead. Does not retain power if stored in another container.",
+        "rules": "**Price:** 25 gp\n**Damage:** 1d8 vs undead (thrown)\n**Note:** Must stay in blessed vial",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "undead",
+            "weapon",
+            "ose"
+        ],
+        "paste_block": "**Holy Water (Vial)** — 25 gp | 1d8 vs undead"
+    },
+    {
+        "id": "item-0062",
+        "name": "Iron Spikes (12)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "May be used for wedging doors open or shut, as an anchor for rope, and many other purposes.",
+        "rules": "**Price:** 1 gp for 12\n**Use:** Wedge doors, anchor rope",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "dungeon",
+            "ose"
+        ],
+        "paste_block": "**Iron Spikes (12)** — 1 gp | Wedge doors, anchor rope"
+    },
+    {
+        "id": "item-0063",
+        "name": "Lantern",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Can be closed to hide the light. Burns one oil flask every four hours (24 turns). Casts light in a 30' radius.",
+        "rules": "**Price:** 10 gp\n**Light:** 30' radius\n**Fuel:** 1 oil flask per 4 hours",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "light",
+            "ose"
+        ],
+        "paste_block": "**Lantern** — 10 gp | 30' light, 4hr/oil"
+    },
+    {
+        "id": "item-0064",
+        "name": "Mirror (Hand-Sized, Steel)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Useful for looking around corners or for reflecting a gaze attack.",
+        "rules": "**Price:** 5 gp\n**Use:** Look around corners, reflect gaze attacks",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "utility",
+            "ose"
+        ],
+        "paste_block": "**Mirror (Steel)** — 5 gp | Look around corners, reflect gaze"
+    },
+    {
+        "id": "item-0065",
+        "name": "Oil Flask",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Fuels a lantern for four hours. Can be lit and thrown as a weapon, or poured on ground (3' diameter, burns 1 turn).",
+        "rules": "**Price:** 2 gp\n**Fuel:** 4 hours lantern\n**Weapon:** Throw lit, or pour pool (3' diameter, 1 turn burn)",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "fuel",
+            "weapon",
+            "ose"
+        ],
+        "paste_block": "**Oil Flask** — 2 gp | 4hr lantern fuel, throwable weapon"
+    },
+    {
+        "id": "item-0066",
+        "name": "Pole (10' Wooden)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A 2\" thick wooden pole useful for poking and prodding suspicious items in a dungeon.",
+        "rules": "**Price:** 1 gp\n**Use:** Poke suspicious items, trigger traps safely",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "dungeon",
+            "ose"
+        ],
+        "paste_block": "**Pole (10')** — 1 gp | Poke suspicious things"
+    },
+    {
+        "id": "item-0067",
+        "name": "Rations (Iron, 7 Days)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Dried and preserved food to be carried on long voyages when securing fresh food may be uncertain.",
+        "rules": "**Price:** 15 gp\n**Duration:** 7 days\n**Note:** Preserved, won't spoil",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "food",
+            "ose"
+        ],
+        "paste_block": "**Rations (Iron, 7 Days)** — 15 gp | Preserved food"
+    },
+    {
+        "id": "item-0068",
+        "name": "Rations (Standard, 7 Days)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Fresh, unpreserved food.",
+        "rules": "**Price:** 5 gp\n**Duration:** 7 days\n**Note:** Fresh, may spoil",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "food",
+            "ose"
+        ],
+        "paste_block": "**Rations (Standard, 7 Days)** — 5 gp | Fresh food"
+    },
+    {
+        "id": "item-0069",
+        "name": "Rope (50')",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Can hold the weight of approximately three human-sized beings.",
+        "rules": "**Price:** 1 gp\n**Length:** 50'\n**Capacity:** 3 humans",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "climbing",
+            "ose"
+        ],
+        "paste_block": "**Rope (50')** — 1 gp | Holds 3 humans"
+    },
+    {
+        "id": "item-0070",
+        "name": "Sack (Large)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A large sack for carrying loot and equipment.",
+        "rules": "**Price:** 2 gp\n**Capacity:** 600 coins",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "storage",
+            "ose"
+        ],
+        "paste_block": "**Sack (Large)** — 2 gp | Holds 600 coins"
+    },
+    {
+        "id": "item-0071",
+        "name": "Sack (Small)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A small sack for carrying loot and equipment.",
+        "rules": "**Price:** 1 gp\n**Capacity:** 200 coins",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "storage",
+            "ose"
+        ],
+        "paste_block": "**Sack (Small)** — 1 gp | Holds 200 coins"
+    },
+    {
+        "id": "item-0072",
+        "name": "Stakes (3) and Mallet",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A wooden mallet and three 18\" long stakes. Valuable when confronting vampires.",
+        "rules": "**Price:** 3 gp\n**Use:** Kill vampires",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "undead",
+            "vampire",
+            "ose"
+        ],
+        "paste_block": "**Stakes (3) & Mallet** — 3 gp | Kill vampires"
+    },
+    {
+        "id": "item-0073",
+        "name": "Thieves' Tools",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "This kit contains all of the tools needed to pick locks.",
+        "rules": "**Price:** 25 gp\n**Required for:** Thieves to pick locks",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "thief",
+            "lockpicking",
+            "ose"
+        ],
+        "paste_block": "**Thieves' Tools** — 25 gp | Pick locks"
+    },
+    {
+        "id": "item-0074",
+        "name": "Tinder Box (Flint & Steel)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Used to light fires, including torches. Using a tinder box takes one round. There is a 2-in-6 chance of success per round.",
+        "rules": "**Price:** 3 gp\n**Use:** Light fires (2-in-6 per round)",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "fire",
+            "ose"
+        ],
+        "paste_block": "**Tinder Box** — 3 gp | Light fires (2-in-6/round)"
+    },
+    {
+        "id": "item-0075",
+        "name": "Torches (6)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "A torch burns for 1 hour (6 turns), clearly illuminating a 30' radius. May also be used in combat.",
+        "rules": "**Price:** 1 gp for 6\n**Light:** 30' radius\n**Duration:** 1 hour each\n**Combat:** 1d4 damage",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "light",
+            "weapon",
+            "ose"
+        ],
+        "paste_block": "**Torches (6)** — 1 gp | 30' light, 1hr each, 1d4 weapon"
+    },
+    {
+        "id": "item-0076",
+        "name": "Waterskin",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "This container, made of hide, will hold 2 pints (1 quart) of fluid.",
+        "rules": "**Price:** 1 gp\n**Capacity:** 2 pints",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "water",
+            "ose"
+        ],
+        "paste_block": "**Waterskin** — 1 gp | Holds 2 pints"
+    },
+    {
+        "id": "item-0077",
+        "name": "Wine (2 Pints)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "Two pints of wine for drinking or trade.",
+        "rules": "**Price:** 1 gp",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "drink",
+            "ose"
+        ],
+        "paste_block": "**Wine (2 Pints)** — 1 gp"
+    },
+    {
+        "id": "item-0078",
+        "name": "Wolfsbane (1 Bunch)",
+        "category": "Adventuring Gear",
+        "rarity": "Common",
+        "description": "This herb can be used to repel lycanthropes. The creature must be hit with the herb in melee combat.",
+        "rules": "**Price:** 10 gp\n**Use:** Repel lycanthropes (melee hit required)",
+        "created_on": "2025-12-09",
+        "source": "OSE",
+        "tags": [
+            "gear",
+            "adventuring",
+            "lycanthrope",
+            "werewolf",
+            "ose"
+        ],
+        "paste_block": "**Wolfsbane** — 10 gp | Repel lycanthropes (melee hit)"
+    }
+]

@@ -1,0 +1,754 @@
+[
+    {
+        "id": "quest-0001",
+        "name": "The Five Cores of Suffering",
+        "type": "Main Quest",
+        "status": "In Progress",
+        "description": "Long ago, the Hag of Hag's Addle wove a forbidden ritual meant to harvest the five deepest human emotions — grief, rage, fear, desire, and hope — and condense them into five Eldritch Cores. With all five, she would breach a gate into a forgotten faerie dominion, restore her ancient power, and rewrite the balance between human and fairy realms. But the ritual failed. Instead of binding the emotions to herself, they scattered into mortal souls across Dolmenwood — each becoming a cursed host.",
+        "objectives": [
+            {
+                "text": "Find the Core of Grief (Weeping Feather Core)",
+                "status": "complete",
+                "notes": "Extracted from Zoemina"
+            },
+            {
+                "text": "Find the Core of Rage",
+                "status": "incomplete",
+                "notes": "Host unknown, likely in High Wold"
+            },
+            {
+                "text": "Find the Core of Fear",
+                "status": "incomplete",
+                "notes": "Host unknown, likely in marshes/fog"
+            },
+            {
+                "text": "Find the Core of Desire",
+                "status": "incomplete",
+                "notes": "Host unknown, likely on Fairy Road"
+            },
+            {
+                "text": "Find the Core of Hope",
+                "status": "incomplete",
+                "notes": "Host unknown, hardest emotionally"
+            }
+        ],
+        "related_characters": [
+            "char-0001",
+            "char-0002",
+            "char-0003",
+            "char-0004",
+            "char-0005",
+            "char-0006"
+        ],
+        "related_items": [
+            "item-0002",
+            "item-0003"
+        ],
+        "related_shops": [],
+        "sub_quests": [
+            "quest-0002",
+            "quest-0003",
+            "quest-0004",
+            "quest-0005",
+            "quest-0006"
+        ],
+        "antagonists": [
+            "The Hag of Hag's Addle",
+            "The Grimalkins"
+        ],
+        "allies": [
+            "Queen of Blackbirds (complicated)"
+        ],
+        "stakes": "If the Hag gets all 5 Cores, she will breach a gate into a forgotten faerie dominion and rewrite the balance between human and fairy realms.",
+        "themes": [
+            "grief",
+            "corruption",
+            "faerie",
+            "sacrifice",
+            "love"
+        ],
+        "tags": [
+            "main quest",
+            "cores",
+            "hag",
+            "dolmenwood",
+            "faerie"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0002",
+        "name": "Core of Grief — The Weeping Feather",
+        "type": "Core Quest",
+        "status": "Complete",
+        "parent_quest": "quest-0001",
+        "emotion": "Grief",
+        "host": "char-0004",
+        "core_item": "item-0003",
+        "description": "Zoemina, the innkeeper of the Roost Inn, was one of the Five Cursed Bearers. Her curse evolved into the Weeping Feather Core. Her lover Thirlirgwe risked everything, accepting power from the Queen of Blackbirds to save her.",
+        "objectives": [
+            {
+                "text": "Discover Zoemina's curse",
+                "status": "complete"
+            },
+            {
+                "text": "Find a way to extract the core",
+                "status": "complete"
+            },
+            {
+                "text": "Use the Anti-Prism to amplify and crack the curse",
+                "status": "complete"
+            },
+            {
+                "text": "Extract the Weeping Feather Core with Cain's Pulpit",
+                "status": "complete"
+            }
+        ],
+        "mechanics": {
+            "extraction_method": "Cain's Pulpit soul chain",
+            "party_roles": {
+                "Beiric": "Extraction with Cain's Pulpit",
+                "Ninuel": "Stabilization with White Flame",
+                "Enmog": "Support"
+            },
+            "core_abilities": [
+                "Emotional Resonance",
+                "Curse Sense (1/day, 120ft)"
+            ]
+        },
+        "related_characters": [
+            "char-0004",
+            "char-0005",
+            "char-0006"
+        ],
+        "related_items": [
+            "item-0002",
+            "item-0003"
+        ],
+        "related_shops": [],
+        "aftermath": "The Grimalkins watched the extraction, signaling the Hag now knows the party can pull out Cores. The core now pulses with sorrow, memory, emotional resonance, and the echo of Thirlirgwe's devotion.",
+        "current_holder": "char-0001",
+        "symbol": "Raven tear",
+        "biome": "Town / Roost Inn",
+        "themes": [
+            "love",
+            "loss",
+            "sacrifice",
+            "devotion"
+        ],
+        "tags": [
+            "core quest",
+            "grief",
+            "zoemina",
+            "thirlirgwe",
+            "complete"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0003",
+        "name": "Core of Rage — The Burning Brand",
+        "type": "Core Quest",
+        "status": "Not Started",
+        "parent_quest": "quest-0001",
+        "emotion": "Rage",
+        "host": null,
+        "core_item": null,
+        "description": "Someone whose anger is literally eating them from inside. The corruption manifests as berserk fury.",
+        "objectives": [
+            {
+                "text": "Find the host of the Core of Rage",
+                "status": "incomplete"
+            },
+            {
+                "text": "Restrain the host before extraction",
+                "status": "incomplete"
+            },
+            {
+                "text": "Extract the Core of Rage",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": {
+            "extraction_method": "Must restrain before extraction",
+            "challenge": "Empowered berserk corruption",
+            "party_roles": {
+                "Beiric": "Extraction with Cain's Pulpit",
+                "Ninuel": "Purification/restraint with White Flame",
+                "Enmog": "Freeze curse tendrils"
+            },
+            "core_abilities": [
+                "Unknown — speculation: rage empowerment, berserker mode"
+            ]
+        },
+        "related_characters": [],
+        "related_items": [],
+        "related_shops": [],
+        "aftermath": null,
+        "current_holder": null,
+        "symbol": "Unknown",
+        "biome": "High Wold or forest-hunter region",
+        "themes": [
+            "anger",
+            "loss of control",
+            "violence",
+            "restraint"
+        ],
+        "tags": [
+            "core quest",
+            "rage",
+            "not started"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0004",
+        "name": "Core of Fear — The Hollow Mask",
+        "type": "Core Quest",
+        "status": "Not Started",
+        "parent_quest": "quest-0001",
+        "emotion": "Fear",
+        "host": null,
+        "core_item": null,
+        "description": "Someone living in hiding or illusion. The corruption creates fear hallucinations.",
+        "objectives": [
+            {
+                "text": "Find the host of the Core of Fear",
+                "status": "incomplete"
+            },
+            {
+                "text": "Overcome the fear hallucinations",
+                "status": "incomplete"
+            },
+            {
+                "text": "Extract the Core of Fear",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": {
+            "extraction_method": "Requires courage-saving synergy",
+            "challenge": "Creates fear hallucinations",
+            "party_roles": {
+                "Beiric": "Extraction with Cain's Pulpit",
+                "Ninuel": "Stabilize with White Flame, resist fear",
+                "Enmog": "Frost Sight to see through illusions"
+            },
+            "core_abilities": [
+                "Unknown — speculation: fear aura, illusion sense"
+            ]
+        },
+        "related_characters": [],
+        "related_items": [],
+        "related_shops": [],
+        "aftermath": null,
+        "current_holder": null,
+        "symbol": "Unknown",
+        "biome": "Marshes, fog, abandoned villages",
+        "themes": [
+            "terror",
+            "hiding",
+            "courage",
+            "facing truth"
+        ],
+        "tags": [
+            "core quest",
+            "fear",
+            "not started"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0005",
+        "name": "Core of Desire — The Gilded Chain",
+        "type": "Core Quest",
+        "status": "Not Started",
+        "parent_quest": "quest-0001",
+        "emotion": "Desire",
+        "host": null,
+        "core_item": null,
+        "description": "Someone seduced by faerie beauty or addiction. The corruption charms those who try to extract it.",
+        "objectives": [
+            {
+                "text": "Find the host of the Core of Desire",
+                "status": "incomplete"
+            },
+            {
+                "text": "Resist the charm effects",
+                "status": "incomplete"
+            },
+            {
+                "text": "Extract the Core of Desire",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": {
+            "extraction_method": "Must resist charm; chains become drawn toward the wielder",
+            "challenge": "Charms the extractor",
+            "party_roles": {
+                "Beiric": "Extraction — but vulnerable to charm",
+                "Ninuel": "White Flame protection from charm",
+                "Enmog": "Frost to break enchantment chains"
+            },
+            "core_abilities": [
+                "Unknown — speculation: charm aura, desire sense"
+            ]
+        },
+        "related_characters": [],
+        "related_items": [],
+        "related_shops": [],
+        "aftermath": null,
+        "current_holder": null,
+        "symbol": "Unknown",
+        "biome": "Fairy Road or mossling region",
+        "themes": [
+            "temptation",
+            "addiction",
+            "beauty",
+            "self-control"
+        ],
+        "tags": [
+            "core quest",
+            "desire",
+            "not started"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0006",
+        "name": "Core of Hope — The Fading Light",
+        "type": "Core Quest",
+        "status": "Not Started",
+        "parent_quest": "quest-0001",
+        "emotion": "Hope",
+        "host": null,
+        "core_item": null,
+        "description": "Often a child, new parent, or innocent. The hardest core to extract — hope resists separation, and the corruption feeds on it. This one will hit emotionally the hardest.",
+        "objectives": [
+            {
+                "text": "Find the host of the Core of Hope",
+                "status": "incomplete"
+            },
+            {
+                "text": "Find a way to extract without destroying hope",
+                "status": "incomplete"
+            },
+            {
+                "text": "Extract the Core of Hope",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": {
+            "extraction_method": "Hope resists separation; requires gentleness",
+            "challenge": "The corruption feeds on hope; extracting may kill the host's spirit",
+            "party_roles": {
+                "Beiric": "Extraction — must be gentle",
+                "Ninuel": "White Flame to preserve the soul",
+                "Enmog": "Unknown — comic relief may become tragic here"
+            },
+            "core_abilities": [
+                "Unknown — speculation: hope aura, morale boost, light"
+            ]
+        },
+        "related_characters": [],
+        "related_items": [],
+        "related_shops": [],
+        "aftermath": null,
+        "current_holder": null,
+        "symbol": "Unknown",
+        "biome": "Prigwort or a place with festivals",
+        "themes": [
+            "innocence",
+            "sacrifice",
+            "protection",
+            "moral weight"
+        ],
+        "tags": [
+            "core quest",
+            "hope",
+            "not started",
+            "emotional"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0007",
+        "name": "The Grimalkins' Watch",
+        "type": "Side Quest",
+        "status": "In Progress",
+        "parent_quest": "quest-0001",
+        "description": "The Grimalkins are mysterious fae cats tied to the Queen of Blackbirds — or perhaps the Hag. They perch on trees, ruins, rooftops: watching, counting, judging, reporting. Their presence will escalate as more cores awaken.",
+        "objectives": [
+            {
+                "text": "Discover who the Grimalkins truly serve",
+                "status": "incomplete"
+            },
+            {
+                "text": "Determine if they are friend or foe",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": null,
+        "related_characters": [
+            "char-0006"
+        ],
+        "related_items": [],
+        "related_shops": [],
+        "stakes": "They may lead the Hag directly to the party, or they may be secretly helping.",
+        "themes": [
+            "mystery",
+            "surveillance",
+            "faerie politics"
+        ],
+        "tags": [
+            "side quest",
+            "grimalkins",
+            "mystery"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0008",
+        "name": "The Hag's Gambit",
+        "type": "Antagonist Arc",
+        "status": "In Progress",
+        "parent_quest": "quest-0001",
+        "description": "The Hag wants the party to gather all 5 Cores because she can't locate all the hosts herself — some are protected by other faerie powers. She will subtly guide, manipulate, test, deceive, reward, and threaten. When the 5 cores are brought together, she will attempt to rip them from the party and ignite the ritual properly.",
+        "objectives": [
+            {
+                "text": "Survive the Hag's manipulations",
+                "status": "in_progress"
+            },
+            {
+                "text": "Discover her true plan",
+                "status": "incomplete"
+            },
+            {
+                "text": "Stop her from completing the ritual",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": null,
+        "related_characters": [],
+        "related_items": [],
+        "related_shops": [],
+        "stakes": "The Hag will attempt to take all 5 Cores by force once gathered.",
+        "themes": [
+            "manipulation",
+            "deception",
+            "power"
+        ],
+        "tags": [
+            "antagonist",
+            "hag",
+            "main threat"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0009",
+        "name": "The Queen's Counter",
+        "type": "Faction Arc",
+        "status": "In Progress",
+        "parent_quest": "quest-0001",
+        "description": "The Queen of Blackbirds has a competing agenda. Since Thirlirgwe is tied to her, she may send agents, offer boons, warn the party, or try to take the Cores for herself. Her domain is memory, sorrow, and transformation, making her a direct thematic rival to the Hag.",
+        "objectives": [
+            {
+                "text": "Determine the Queen's true intentions",
+                "status": "incomplete"
+            },
+            {
+                "text": "Decide whether to ally with her",
+                "status": "incomplete"
+            }
+        ],
+        "mechanics": null,
+        "related_characters": [
+            "char-0005",
+            "char-0006"
+        ],
+        "related_items": [],
+        "related_shops": [],
+        "stakes": "The Queen may help or hinder — her goals are not the party's goals.",
+        "themes": [
+            "memory",
+            "sorrow",
+            "transformation",
+            "faerie politics"
+        ],
+        "tags": [
+            "faction",
+            "queen of blackbirds",
+            "ally or enemy"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0010",
+        "name": "The Ruby Contract",
+        "type": "Debt Quest",
+        "status": "In Progress",
+        "description": "When Enmog raised the ruby amulet during the Lantern-Bearer battle, Azelach answered. A life was restored — Ninuel breathed again. But a debt formed instantly. One life restored = one life owed.",
+        "objectives": [
+            {
+                "text": "Deliver a living soul to Azelach within one lunar cycle",
+                "status": "incomplete",
+                "notes": "The life must be: living, resisting death, conscious of its own mortality. Souls already in the Land of the Dead are ineligible."
+            },
+            {
+                "text": "OR: Find a way to break the contract",
+                "status": "incomplete"
+            },
+            {
+                "text": "OR: Ascend to the Land of the Living (escape his jurisdiction)",
+                "status": "incomplete"
+            }
+        ],
+        "time_limit": "One lunar cycle",
+        "failure_consequence": "The debtor (Enmog) AND the pledged soul (Ninuel) both join the Choir as bound voices",
+        "related_characters": [
+            "char-0002",
+            "char-0003",
+            "char-0017"
+        ],
+        "related_items": [
+            "item-0027"
+        ],
+        "stakes": "Failure means Enmog and Ninuel are lost forever to the Choir.",
+        "themes": [
+            "debt",
+            "sacrifice",
+            "resurrection",
+            "cosmic justice"
+        ],
+        "tags": [
+            "debt",
+            "azelach",
+            "ruby",
+            "contract",
+            "urgent"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0011",
+        "name": "The Hag's Bargain — Three Feathers",
+        "type": "Side Quest",
+        "status": "In Progress",
+        "description": "The party struck a deal with the Hag of Hag's Addle. In exchange for the stolen poniard, they must find three souls marked with raven feathers by the Queen of Blackbirds and pluck the feathers free.",
+        "objectives": [
+            {
+                "text": "Find the first feathered soul",
+                "status": "incomplete"
+            },
+            {
+                "text": "Find the second feathered soul",
+                "status": "incomplete"
+            },
+            {
+                "text": "Find the third feathered soul",
+                "status": "incomplete"
+            },
+            {
+                "text": "Pluck the feathers and return them to the Hag",
+                "status": "incomplete"
+            }
+        ],
+        "reward": "The stolen poniard (for Jock Furngle)",
+        "warning": "Alfwine says: 'These feathers are curses. They mark those the Queen watches. Pluck them, and the victims will never dream again.'",
+        "related_characters": [
+            "char-0018",
+            "char-0019",
+            "char-0020"
+        ],
+        "related_items": [],
+        "stakes": "The party is now in the middle of a faerie cold war between the Hag and the Queen of Blackbirds.",
+        "themes": [
+            "bargain",
+            "curse",
+            "faerie politics",
+            "moral cost"
+        ],
+        "tags": [
+            "hag",
+            "feathers",
+            "queen of blackbirds",
+            "bargain"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0012",
+        "name": "The Stolen Poniard",
+        "type": "Side Quest",
+        "status": "In Progress",
+        "description": "A ceremonial woodcutter's dagger (the Poniard) was stolen from Jock Furngle at the Stump & Poniard Tavern. The dagger isn't magical, but culturally it's priceless — used during woodcutter rites and considered a symbol of their lineage. Its theft caused shame, anger, and fear that something unnatural lurked nearby. Enmog negotiated partial ownership of the tavern if he could recover it.",
+        "objectives": [
+            {
+                "text": "PHASE 1: Gather clues at the Stump & Poniard",
+                "status": "complete",
+                "notes": "Found reed fibers, swampy mud, hoof-like tracks (Reedwalkers), trail heading NW"
+            },
+            {
+                "text": "PHASE 2: Track the thief through the swamp",
+                "status": "complete",
+                "notes": "Visited Flotsam Pools, met Tekwell Onehorn, learned Reedwalkers serve the Hag"
+            },
+            {
+                "text": "PHASE 3: Navigate the Louping Wood crossroads",
+                "status": "complete",
+                "notes": "Party took multiple paths including Tower of Frost, Soul Pond"
+            },
+            {
+                "text": "PHASE 4: Confront the Hag at her lair",
+                "status": "complete",
+                "notes": "Found poniard embedded in a reed idol. Made bargain with the Hag instead of taking it by force."
+            },
+            {
+                "text": "Complete the Hag's Bargain (Three Feathers) to retrieve it",
+                "status": "incomplete"
+            },
+            {
+                "text": "Return the poniard to Jock Furngle",
+                "status": "incomplete"
+            }
+        ],
+        "evidence_found": [
+            "Reed fibers stuck in the windowsill",
+            "Mud with distinctly swampy smell",
+            "Small hoof-like impressions (Reedwalker tracks)",
+            "Metal drag in mud — as if a dagger sheath was pulled along",
+            "Direction of travel: NW toward deeper Hag's Addle"
+        ],
+        "what_the_hag_was_doing": "Not magical — symbolic. She's corrupting the dagger to break woodcutter tradition and weaken community morale. Part of a larger plan to dissolve loyalties and replace them with her influence.",
+        "rewards": {
+            "from_jock": [
+                "Free lodging for life at the Stump & Poniard",
+                "Free drinks for life (or 1/day)",
+                "Local woodcutters treat the party as heroes",
+                "+1 on Reaction rolls with woodcutter NPCs",
+                "Rumors, leads, future quests in the region"
+            ],
+            "already_earned": [
+                "Pin of the Poniard (Enmog) — social benefits, 'blood-brother' to woodcutters"
+            ],
+            "optional_physical_rewards": [
+                "A Woodcutter's Axe (+1 vs plant creatures)",
+                "A cask of Woodcutter Amber Ale",
+                "A handcrafted wooden charm against fey"
+            ]
+        },
+        "hidden_meta_reward": "By disrupting the Reedwalkers' theft and finding the Hag's lair, the party is now marked as 'dangerously capable.' The Hag sends Grimalkins to observe them. She becomes interested in their ability to extract Cores. She rewrote her plans to USE them rather than oppose them. The Stolen Poniard Quest unintentionally put the party on the Hag's path — leading directly into the Five Cores arc.",
+        "future_upgrade": "Once the party gathers all 5 cores, the Poniard may transform into THE CUTTER'S OATH — a weapon blessed by woodcutters, meant to resist fae corruption. Could become symbolic in a liberation arc against the Hag.",
+        "related_characters": [
+            "char-0009",
+            "char-0011",
+            "char-0018"
+        ],
+        "related_items": [
+            "item-0030"
+        ],
+        "related_shops": [
+            "shop-0001",
+            "shop-0004"
+        ],
+        "themes": [
+            "theft",
+            "tradition",
+            "community",
+            "fae corruption",
+            "negotiation"
+        ],
+        "tags": [
+            "poniard",
+            "jock furngle",
+            "tavern",
+            "enmog",
+            "reedwalkers",
+            "hag"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0013",
+        "name": "The Lantern-House Crypt",
+        "type": "Side Quest",
+        "status": "Not Started",
+        "description": "Father Jymes Horsely asks the party to investigate the Lantern-House Crypt. It was once a shrine to St. Foggarty before the swamp swallowed it. A holy relic known as Foggarty's First Flame was housed there — a flame that never went out, used by lost travelers to find their way home. Recently, strange lights have been seen in that direction — green, not gold. The father worries something unholy has taken root.",
+        "objectives": [
+            {
+                "text": "Travel to the Lantern-House Crypt",
+                "status": "incomplete"
+            },
+            {
+                "text": "Investigate the strange green lights",
+                "status": "incomplete"
+            },
+            {
+                "text": "Recover or cleanse Foggarty's First Flame",
+                "status": "incomplete"
+            },
+            {
+                "text": "Report back to Father Horsely",
+                "status": "incomplete"
+            }
+        ],
+        "reward": "item-0028",
+        "related_characters": [
+            "char-0012"
+        ],
+        "related_items": [
+            "item-0028"
+        ],
+        "themes": [
+            "holy relic",
+            "corruption",
+            "investigation"
+        ],
+        "tags": [
+            "foggarty",
+            "crypt",
+            "lantern",
+            "father horsely"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "quest-0014",
+        "name": "Drive Out the Hag",
+        "type": "Side Quest",
+        "status": "In Progress",
+        "description": "Father Horsely asked the party to drive the Hag out of Hag's Addle. Her lair moves with the dawn. The swamps have been 'louder' lately — whispering at night, the marsh lights burning green instead of gold, and travelers reporting strange silhouettes watching from the reeds.",
+        "objectives": [
+            {
+                "text": "Find the Hag's Hut",
+                "status": "complete"
+            },
+            {
+                "text": "Drive her out of Hag's Addle",
+                "status": "incomplete",
+                "notes": "Complicated — the party made a deal with her instead"
+            }
+        ],
+        "reward": "item-0029",
+        "related_characters": [
+            "char-0012",
+            "char-0018"
+        ],
+        "related_items": [
+            "item-0029"
+        ],
+        "stakes": "The Hag's presence corrupts the land. But can she even be driven out?",
+        "themes": [
+            "corruption",
+            "swamp",
+            "hag"
+        ],
+        "tags": [
+            "hag",
+            "father horsely",
+            "swamp",
+            "brooch"
+        ],
+        "created_on": "2025-12-09"
+    }
+]

@@ -1,0 +1,112 @@
+/* ============================================
+   D&D VAULT - CSS DESIGN SYSTEM
+   ============================================ */
+
+:root {
+    /* ===== COLORS ===== */
+    
+    /* Background layers (dark to light) */
+    --bg-deepest: #0d1117;
+    --bg-deep: #161b22;
+    --bg-surface: #21262d;
+    --bg-elevated: #30363d;
+    --bg-hover: #3d444d;
+    
+    /* Accent colors */
+    --accent-primary: #6b8f71;      /* Moss green */
+    --accent-primary-hover: #7fa085;
+    --accent-secondary: #d4a84b;    /* Candle gold */
+    --accent-secondary-hover: #e0bb6b;
+    
+    /* Status colors */
+    --status-urgent: #f85149;
+    --status-warning: #d29922;
+    --status-success: #56d364;
+    --status-info: #58a6ff;
+    
+    /* Text colors */
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-muted: #6e7681;
+    --text-link: var(--accent-secondary);
+    
+    /* Borders */
+    --border-default: #30363d;
+    --border-muted: #21262d;
+    --border-accent: var(--accent-primary);
+    
+    /* ===== TYPOGRAPHY ===== */
+    
+    --font-serif: 'Crimson Text', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Consolas', 'Monaco', monospace;
+    
+    /* Font sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    
+    /* Font weights */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* Line heights */
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+    
+    /* ===== SPACING ===== */
+    
+    --space-0: 0;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    
+    /* ===== SIZES ===== */
+    
+    --sidebar-width: 240px;
+    --header-height: 60px;
+    --max-content-width: 1200px;
+    
+    /* ===== BORDERS ===== */
+    
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    
+    /* ===== SHADOWS ===== */
+    
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(107, 143, 113, 0.2);
+    
+    /* ===== TRANSITIONS ===== */
+    
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 350ms ease;
+    
+    /* ===== Z-INDEX ===== */
+    
+    --z-sidebar: 100;
+    --z-header: 200;
+    --z-modal: 300;
+    --z-toast: 400;
+}

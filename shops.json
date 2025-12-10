@@ -1,0 +1,538 @@
+[
+    {
+        "id": "shop-0001",
+        "name": "Stump & Poniard Tavern",
+        "owner": "Jock Furngle",
+        "location": "Woodcutters' Encampment",
+        "type": "Tavern",
+        "description": "A woodcutter's tavern built around a great tree trunk that stabs through the roof. Known for its amber ale, local gossip, and growler fills. When asked about growlers, Jock slaps the counter and grins: 'Growlers, is it? Aye, we've got drink enough to drown a pony. What'll it be, lads?'",
+        "inventory": [
+            {
+                "name": "Tavern Meals",
+                "price": "2 sp",
+                "stock": "common"
+            },
+            {
+                "name": "Pint (any brew)",
+                "price": "varies",
+                "stock": "common"
+            }
+        ],
+        "growler_menu": [
+            {
+                "name": "Black Goat Porter",
+                "price": "3 gp",
+                "item_id": "item-0031",
+                "effect": "1-in-20: +1 Morale 1hr",
+                "jock_says": "Warms the bones. Chills the guilt."
+            },
+            {
+                "name": "Glowcap Fritter Ale",
+                "price": "2 gp",
+                "item_id": "item-0032",
+                "effect": "Burps glow blue 5min",
+                "nickname": "Pixie Piss"
+            },
+            {
+                "name": "Woodcutter's Amber",
+                "price": "2 gp",
+                "item_id": "item-0033",
+                "effect": "Advantage bravado/storytelling after 2 pints",
+                "jock_says": "Keeps the lads braggin' till dawn."
+            },
+            {
+                "name": "Sawdust Lager",
+                "price": "1 gp",
+                "item_id": "item-0034",
+                "effect": "None. Slight embarrassment.",
+                "note": "Locals tease outsiders for drinking it."
+            },
+            {
+                "name": "Foggarty's Lantern Brew",
+                "price": "4 gp",
+                "item_id": "item-0035",
+                "effect": "Silent footsteps 1hr",
+                "note": "Used by hunters... and cheaters."
+            },
+            {
+                "name": "Drowned Pony Stout",
+                "price": "5 gp",
+                "item_id": "item-0036",
+                "effect": "+1 Save vs Fear, BUT -1 WIS",
+                "jock_says": "Careful with that one. It'll put hair on your lungs."
+            },
+            {
+                "name": "Bogwater Brown",
+                "price": "3 gp",
+                "item_id": "item-0037",
+                "effect": "Frogs croak louder near you"
+            },
+            {
+                "name": "River-Wife's Red",
+                "price": "6 gp",
+                "item_id": "item-0038",
+                "effect": "Hold breath 2x as long 24hr",
+                "jock_whispers": "Folk say it's blessed by somethin' that lives in the deep."
+            }
+        ],
+        "oddments_menu": [
+            {
+                "name": "Foggarty's Lantern Oil",
+                "price": "10 gp",
+                "item_id": "item-0044",
+                "effect": "+1 avoid lost, undead morale check",
+                "jock_says": "Half miracle, half pig fat."
+            },
+            {
+                "name": "Bog-Mettle Ointment",
+                "price": "15 gp/tin",
+                "item_id": "item-0045",
+                "effect": "Auto-resist leeches, -1 swamp poison"
+            },
+            {
+                "name": "Stump-Smoked Jerky",
+                "price": "2 gp (3 days)",
+                "item_id": "item-0046",
+                "effect": "Never molds, +1 HP after rest"
+            },
+            {
+                "name": "Woodcutter's Lucky Knot",
+                "price": "5 gp",
+                "item_id": "item-0047",
+                "effect": "+2 next Save vs Fear (one use)"
+            },
+            {
+                "name": "Old Cutter's Hatchet",
+                "price": "7 gp",
+                "item_id": "item-0048",
+                "effect": "1d6 dmg, nat 20 = +1d4"
+            },
+            {
+                "name": "The Sawdust Flask",
+                "price": "12 gp",
+                "item_id": "item-0049",
+                "effect": "Transforms ale into cedar/pine brew"
+            },
+            {
+                "name": "Jock's Stump Nail",
+                "price": "1 gp",
+                "item_id": "item-0050",
+                "effect": "+1 reaction woodcutters"
+            },
+            {
+                "name": "Clewyd's Treats",
+                "price": "1 gp/handful",
+                "item_id": "item-0051",
+                "effect": "+1 persuade Father Horsely"
+            },
+            {
+                "name": "Honey-Shine (Illicit)",
+                "price": "5 gp/bottle",
+                "item_id": "item-0052",
+                "effect": "+1 Morale, then -1 INT, then pass out"
+            }
+        ],
+        "secret_items": [
+            {
+                "name": "Cutter's Lantern-Shield",
+                "price": "25 gp",
+                "item_id": "item-0053",
+                "effect": "AC +1, light unextinguishable",
+                "requirement": "Jock must REALLY like you (nat 20 or poniard quest)"
+            }
+        ],
+        "acquired_here": [
+            "item-0025"
+        ],
+        "stolen_from": [],
+        "quest_items": [
+            "item-0030"
+        ],
+        "notes": "Pin of the Poniard acquired by Enmog. Stolen Poniard quest originated here. Enmog negotiated partial ownership if he recovers the dagger. SECRET: Cutter's Lantern-Shield only offered to those Jock truly likes.",
+        "tags": [
+            "tavern",
+            "woodcutters",
+            "food",
+            "drink",
+            "growlers",
+            "oddments",
+            "jock furngle"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0002",
+        "name": "Church of St. Foggarty",
+        "owner": "Father Jymes Horsley",
+        "location": "Town",
+        "type": "Church",
+        "description": "A small church offering blessings and quest rewards. No normal shop inventory.",
+        "inventory": [],
+        "acquired_here": [],
+        "stolen_from": [],
+        "quest_items": [
+            "Brooch of Shielding"
+        ],
+        "notes": "Brooch of Shielding offered as reward for swamp dungeon quest.",
+        "tags": [
+            "church",
+            "quests",
+            "blessings"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0003",
+        "name": "Marrowbold's Smoke Shop",
+        "owner": "Megwynne Marrowbold",
+        "location": "Hex 1109 (Woodcutters' Encampment)",
+        "type": "Specialty Shop",
+        "description": "A thatched cottage at a slight lean, with two tall wooden towers behind it and smoke drifting from herb-drying racks. Sign shows a chubby shorthorn breggle looking surprised as a mischievous face swirls from his pipe-smoke. Inside, the air is warm and thick with sweet herbal smoke. Shelves packed to overflowing.",
+        "inventory": [
+            {
+                "name": "Standard Pipes",
+                "price": "5 sp",
+                "stock": "common"
+            },
+            {
+                "name": "Common Pipeleaf",
+                "price": "1 sp",
+                "stock": "common"
+            },
+            {
+                "name": "Uncommon Pipeleaf",
+                "price": "5 sp",
+                "stock": "common"
+            },
+            {
+                "name": "Mallow-Puff",
+                "price": "10 gp",
+                "item_id": "item-0008",
+                "stock": "rare (2-in-6)"
+            },
+            {
+                "name": "Purple Shag",
+                "price": "10 gp",
+                "item_id": "item-0009",
+                "stock": "rare (2-in-6)"
+            },
+            {
+                "name": "Sticky Gilly",
+                "price": "10 gp",
+                "item_id": "item-0010",
+                "stock": "rare (2-in-6)"
+            },
+            {
+                "name": "Wanton Wisp",
+                "price": "30 gp",
+                "item_id": "item-0011",
+                "stock": "rare (2-in-6)",
+                "effect": "+1 detect traps/hidden for 30min"
+            },
+            {
+                "name": "Wandering Mossleaf",
+                "price": "8 gp",
+                "item_id": "item-0040",
+                "stock": "rare (2-in-6)",
+                "effect": "+2 remember visited areas 10min"
+            }
+        ],
+        "enchanted_pipes": [
+            {
+                "name": "Pipe of Jingling Melodies",
+                "price": "100 gp",
+                "effect": "+1 reaction, calm animals/children"
+            },
+            {
+                "name": "Wyrm-Ring Pipe",
+                "price": "100 gp",
+                "item_id": "item-0041",
+                "effect": "1/day Message spell via smoke wyrm"
+            },
+            {
+                "name": "Purple Plume Pipe",
+                "price": "100 gp",
+                "item_id": "item-0042",
+                "effect": "+1 INT 30min, 1/day recall detail"
+            },
+            {
+                "name": "Mossling Whisper-Pipe",
+                "price": "100 gp",
+                "effect": "1/day yes/no divination via smoke"
+            },
+            {
+                "name": "Pipe of Moonlit Rings",
+                "price": "100 gp",
+                "effect": "Dim 10ft light, undead morale check"
+            },
+            {
+                "name": "Slow-Curl Pipe",
+                "price": "100 gp",
+                "effect": "1/day slow-fall 20ft"
+            },
+            {
+                "name": "Ember-Gnarl Pipe",
+                "price": "100 gp",
+                "effect": "Instant fire, unextinguishable 1min"
+            },
+            {
+                "name": "Frog-Spirit Pipe",
+                "price": "100 gp",
+                "effect": "Swamp creatures non-hostile 1d6 turns"
+            },
+            {
+                "name": "Pipe of Seeing-Through",
+                "price": "100 gp",
+                "effect": "1/day +1 find traps/secrets 10min"
+            },
+            {
+                "name": "Gale-Puff Pipe",
+                "price": "100 gp",
+                "effect": "+1 physical stunts, gust 1/day"
+            },
+            {
+                "name": "Carnival Pipe",
+                "price": "100 gp",
+                "item_id": "item-0043",
+                "effect": "+2 perform/storytell/seduce"
+            },
+            {
+                "name": "Lantern-Soul Pipe",
+                "price": "100 gp",
+                "item_id": "item-0004",
+                "effect": "Light 20min, fae attracted"
+            },
+            {
+                "name": "Spritelure Pipe",
+                "price": "100 gp",
+                "effect": "Summons harmless scout smoke-sprite"
+            },
+            {
+                "name": "Trickster's Whim-Pipe",
+                "price": "100 gp",
+                "effect": "1/day target laughs 1 round"
+            },
+            {
+                "name": "Murk-Baffler Pipe",
+                "price": "100 gp",
+                "effect": "1/day 5ft smoke cloud, +1 AC 1 turn"
+            }
+        ],
+        "pipeleaf_sampler_effects": {
+            "description": "Free sampler tray with random effects. Roll 1d6:",
+            "1": "Coughing fit (no effect)",
+            "2": "Lightheaded (+1 CHA for 1 hour)",
+            "3": "Eyes water uncontrollably (-1 WIS for 10 min)",
+            "4": "Feel euphoric (+1 Morale for next combat)",
+            "5": "Light spell effect from exhaled smoke",
+            "6": "Small glowing face appears in smoke and giggles (no harm)"
+        },
+        "sampler_pack_contents": [
+            "Mallow-Puff",
+            "Purple Shag",
+            "Sticky Gilly",
+            "Wanton Wisp",
+            "Old Cutter's Burnt Moss",
+            "Gadberry Twist"
+        ],
+        "acquired_here": [
+            "item-0005",
+            "item-0004",
+            "item-0006",
+            "item-0007",
+            "item-0008",
+            "item-0009",
+            "item-0010",
+            "item-0011"
+        ],
+        "stolen_from": [
+            "item-0016"
+        ],
+        "traded_for_deepwater_tear": [
+            "item-0039"
+        ],
+        "beiric_relationship": {
+            "attitude": "Friendly (maxed)",
+            "benefits": [
+                "+2 reaction rolls with Megwynne",
+                "Free refills and samples on visits",
+                "Free identification of strange herbs/swamp plants"
+            ],
+            "reason": "Traded Deepwater Tear, impressed her with smoke-boat performance"
+        },
+        "notes": "River Serpent Bowl pipe given to Beiric in exchange for Deepwater Tear gemstone. Lantern-Soul Pipe given to Ninuel. Sample Leaf Pack paid with gemstone. Emberbloom Igniter stolen by Enmog (Megwynne blames 'mischievous sprites').",
+        "tags": [
+            "pipes",
+            "pipeleaf",
+            "smoke",
+            "megwynne",
+            "mossling",
+            "enchanted",
+            "beiric"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0004",
+        "name": "Flotsam Pools",
+        "owner": "Tekwell Onehorn",
+        "location": "Waterfront",
+        "type": "Curio Shop",
+        "description": "A strange shop selling exotic fish, cursed items, and odd aquatic curios.",
+        "inventory": [
+            {
+                "name": "Thin Leathery Fish",
+                "price": "1 gp",
+                "stock": "common"
+            },
+            {
+                "name": "Bulbous Anglerfish w/ Glow Gland",
+                "price": "10 gp",
+                "stock": "uncommon"
+            },
+            {
+                "name": "Long-Head Eel",
+                "price": "10 gp",
+                "stock": "uncommon"
+            },
+            {
+                "name": "Jarred Red Exploding Fish",
+                "price": "20 gp",
+                "stock": "rare"
+            },
+            {
+                "name": "Toxic Golden-Ring Octopus",
+                "price": "10 gp",
+                "stock": "uncommon"
+            },
+            {
+                "name": "Empty Stone Bowl of Illusory Water",
+                "price": "50 gp",
+                "stock": "rare"
+            },
+            {
+                "name": "Fish-Eye Copper Locket (contains PC's hair)",
+                "price": "10 gp",
+                "stock": "unique"
+            },
+            {
+                "name": "Cursed Ring of Water Walking",
+                "price": "100 gp",
+                "stock": "cursed"
+            },
+            {
+                "name": "Case of 8 Hematite Fish-Idols",
+                "price": "20 gp/case",
+                "stock": "uncommon"
+            }
+        ],
+        "acquired_here": [],
+        "stolen_from": [],
+        "quest_items": [],
+        "notes": "Nothing purchased this session, but stock recorded for future use.",
+        "tags": [
+            "fish",
+            "curios",
+            "cursed",
+            "aquatic",
+            "tekwell"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0005",
+        "name": "Bragwen Hoad's Hut",
+        "owner": "Bragwen Hoad",
+        "location": "Louping Wood",
+        "type": "Witch's Hut",
+        "description": "The hut of a witch in the Louping Wood, offering potions and curse removal services.",
+        "inventory": [
+            {
+                "name": "Healing Potion",
+                "price": "50 gp",
+                "stock": "common"
+            },
+            {
+                "name": "Potion of Transformation",
+                "price": "100 gp",
+                "stock": "uncommon"
+            },
+            {
+                "name": "Curse Removal (service)",
+                "price": "varies",
+                "stock": "service"
+            }
+        ],
+        "acquired_here": [],
+        "stolen_from": [],
+        "quest_items": [],
+        "treasure_present": [
+            "Silver Amulet of Screaming Face",
+            "2× Prismatic Elixir",
+            "Coin piles (gp/sp)"
+        ],
+        "notes": "Players did not purchase any potions. Witch offered them services.",
+        "tags": [
+            "witch",
+            "potions",
+            "curses",
+            "louping wood"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0006",
+        "name": "Tower of Frost",
+        "owner": "Lady Misthraine",
+        "location": "Northern Reaches",
+        "type": "Location",
+        "description": "Not a store, but a location with magical items and effects. Lady Misthraine resides here.",
+        "inventory": [],
+        "acquired_here": [
+            "item-0018",
+            "item-0019"
+        ],
+        "stolen_from": [],
+        "quest_items": [],
+        "treasure_present": [
+            "Talisman of Spell Reflection",
+            "Chest of 100pp",
+            "16 Frost Quartz Crystals",
+            "Winter clothing (white dresses, wolf cloaks)"
+        ],
+        "notes": "Enmog received a magical frost mark here (Frost Sigil & Frost Sight).",
+        "tags": [
+            "frost",
+            "tower",
+            "lady misthraine",
+            "magic"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "shop-0007",
+        "name": "The Lunch Arch",
+        "owner": "The Archway Spirit",
+        "location": "Wilderness",
+        "type": "Shrine/Location",
+        "description": "A mysterious archway with a resident spirit. No shop items, but offerings and trinkets are found around the stones.",
+        "inventory": [],
+        "acquired_here": [],
+        "stolen_from": [],
+        "quest_items": [],
+        "treasure_present": [
+            "Old cloth scraps",
+            "Rusty pins",
+            "Leftover offerings",
+            "Trinkets around the stones"
+        ],
+        "notes": "RP items only. Shrine to an archway spirit.",
+        "tags": [
+            "shrine",
+            "spirit",
+            "archway",
+            "offerings"
+        ],
+        "created_on": "2025-12-09"
+    }
+]

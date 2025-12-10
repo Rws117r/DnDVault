@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "item-0001",
+      "name": "Rod of Testing",
+      "category": "Weapon",
+      "rarity": "Common",
+      "description": "The Rod of Testing is given to every new program starting out its journey to becoming the best it can be.",
+      "rules": "Can test as many times as the program desires.",
+      "created_on": "2025-12-09",
+      "source": "ChatGPT",
+      "tags": [
+        "."
+      ],
+      "paste_block": "Beric uses **Rod of Testing**.\n\n*Description*:\nThe Rod of Testing is given to every new program starting out its journey to becoming the best it can be.\n\n*Effect*:\nCan test as many times as the program desires."
+    }
+  ],
+  "monsters": []
+}

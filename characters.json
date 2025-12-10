@@ -1,0 +1,731 @@
+[
+    {
+        "id": "char-0001",
+        "name": "Beiric",
+        "type": "Party Member",
+        "race_class": "Half-elf Fighter",
+        "appearance": "Messy dark hair, tired but defiant eyes, always slightly scuffed from running headfirst into danger. Cain's Pulpit strapped at his side.",
+        "personality": "Brave to the point of stupidity. Heart-on-sleeve but pretends he's tough. Constantly improvises. Tries to charm everyone (50/50 success).",
+        "motivations": "Save people in pain. Prove he's someone worth remembering. Protect Ninuel and Enmog. Stop the corruption.",
+        "special_notes": "Chosen wielder of Cain's Pulpit. Emotionally tied to Zoemina & Thirlirgwe's tragedy. Keeps attracting ghosts who call him 'kid'.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0002"
+        ],
+        "related_items": [
+            "item-0002"
+        ],
+        "tags": [
+            "party",
+            "fighter",
+            "half-elf",
+            "protagonist",
+            "cains-pulpit"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0002",
+        "name": "Ninuel",
+        "type": "Party Member",
+        "race_class": "Drow Demon Hunter",
+        "appearance": "Obsidian skin, white or silver hair (depending on light), eyes glowing with new White Flame spark. Quiet, composed stance.",
+        "personality": "Serious, introspective. Guilt-ridden past. Sees corruption everywhere. Deeply loyal.",
+        "motivations": "Atone for unseen sins. Control the White Flame. Prevent demon influence from spreading. Help guide Beiric toward wisdom.",
+        "special_notes": "Bears the White Flame Mark of Saint Meiylu. One of the three keys to purifying the Cores. His quiet conviction keeps the party from collapsing.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0002"
+        ],
+        "related_items": [
+            "item-0004",
+            "item-0021",
+            "item-0026"
+        ],
+        "tags": [
+            "party",
+            "drow",
+            "demon hunter",
+            "white flame",
+            "saint meiylu"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0003",
+        "name": "Enmog",
+        "type": "Party Member",
+        "race_class": "Gnome (Chaos Gremlin / Frost-Marked Accidental Hero)",
+        "appearance": "Small, scrappy, unpredictable grin. Frost sigil burned into his chest. Habit of crab-walking into dangerous places.",
+        "personality": "Chaos incarnate. Charismatic but in a feral way. 'Negotiates' by offering alcohol or threats. Smarter than he lets on.",
+        "motivations": "Get rich. Stay drunk. Somehow also save the world. Prove gnomes can be terrifying.",
+        "special_notes": "Wields the Frost Sigil. Eyes now see corruption as thermal signatures. Destined to cause a prophecy by accident.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0002"
+        ],
+        "related_items": [
+            "item-0016",
+            "item-0017",
+            "item-0018",
+            "item-0019",
+            "item-0025"
+        ],
+        "tags": [
+            "party",
+            "gnome",
+            "frost sigil",
+            "chaos",
+            "thief"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0004",
+        "name": "Zoemina",
+        "type": "Major NPC",
+        "race_class": "Human",
+        "appearance": "Warm brown hair braided back. Soft brown eyes slowly corrupted into violet-black. Kind smile hiding deep worry.",
+        "personality": "Nurturing. Humble. Emotional ballast of her community. Deeply in love with Thirlirgwe.",
+        "motivations": "Survive the curse. Reclaim her life. Keep Thirlirgwe from suffering.",
+        "special_notes": "Innkeeper of the Roost Inn. One of the Five Cursed Bearers. Her curse evolved into the Weeping Feather Core. She is the reason Thirlirgwe risked everything.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0002"
+        ],
+        "related_items": [
+            "item-0003"
+        ],
+        "tags": [
+            "major npc",
+            "cursed",
+            "roost inn",
+            "weeping feather",
+            "emotional core"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0005",
+        "name": "Thirlirgwe",
+        "type": "Major NPC",
+        "race_class": "Human (touched by fae influence)",
+        "appearance": "White hair. Pale skin with dark circles. Elegant but ragged clothing. Eyes full of love & desperation.",
+        "personality": "Noble-hearted. Stubbornly protective. Willing to sacrifice everything. Acts without hesitation.",
+        "motivations": "Save Zoemina from the curse. Bargain with fae powers if necessary. Fight ANYONE who threatens Zoemina.",
+        "special_notes": "Zoemina's lover. Accepted power from the Queen of Blackbirds. Wields raven armor & a purple spear. Final stand quote: 'If you want her feather—then come take it from my dying hands.'",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0002",
+            "quest-0009"
+        ],
+        "related_items": [],
+        "tags": [
+            "major npc",
+            "fae-touched",
+            "queen of blackbirds",
+            "zoemina",
+            "tragic"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0006",
+        "name": "Grimalkins",
+        "type": "Faction/Group",
+        "race_class": "Fae Cats",
+        "appearance": "Sleek black cats. Glowing violet or green eyes. Always perched above—never on the ground.",
+        "personality": "Smug. Cryptic. Playful but deadly.",
+        "motivations": "Recover the Five Cores. Report the party's progress to the Queen. Test their resolve.",
+        "special_notes": "Mysterious fae cats tied to the Queen of Blackbirds. They will eventually escort the party into Fairy.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0007"
+        ],
+        "related_items": [],
+        "tags": [
+            "faction",
+            "fae",
+            "cats",
+            "queen of blackbirds",
+            "cores",
+            "fairy"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0007",
+        "name": "Bragwen Hoad",
+        "type": "Magical NPC",
+        "race_class": "Human Witch",
+        "appearance": "Short. Messy cropped black hair. Tattoos of flickering flame. Always smells like onions.",
+        "personality": "Annoyed by everything. Sarcastic. Brilliant. Actually cares in her own grumpy way.",
+        "motivations": "Get her wand back from a baker. Amass magic items. Survive interactions with idiots (her words).",
+        "special_notes": "Witch of the Louping Wood. Knows lore about curses, cores, and the Hag. Understands corruption signatures.",
+        "shop_id": "shop-0005",
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "witch",
+            "magic",
+            "louping wood",
+            "curses",
+            "lore",
+            "potions"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0008",
+        "name": "Lady Misthraine",
+        "type": "Magical NPC",
+        "race_class": "Fairy (disguised as human sorceress)",
+        "appearance": "Tall, ethereal. Ice-pale skin. Silver hair. Faint frost swirling off her dress.",
+        "personality": "Elegant. Aloof. Socially confused. Secretly very lonely.",
+        "motivations": "Escape the Cold Prince's exile. Find the Ring of Chell. Gather information through charmed servants.",
+        "special_notes": "Lady Frost-Dust-Shadow. She almost killed Enmog after he tried to kiss her. Resides in the Tower of Frost.",
+        "shop_id": "shop-0006",
+        "quest_ids": [],
+        "related_items": [
+            "item-0018",
+            "item-0019"
+        ],
+        "tags": [
+            "fairy",
+            "frost",
+            "tower",
+            "cold prince",
+            "ring of chell",
+            "exile"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0009",
+        "name": "Jock Furngle",
+        "type": "Encampment NPC",
+        "race_class": "Human",
+        "appearance": "Barrel-bodied. Thick beard. Laughs loud, punches louder.",
+        "personality": "Straightforward. Trustworthy. Opportunistic. Loves ale more than life.",
+        "motivations": "Run his tavern. Keep woodcutters fed and drunk. Get his stolen dagger back.",
+        "special_notes": "Tavernkeeper of the Stump & Poniard. Associated with the stolen dagger quest.",
+        "shop_id": "shop-0001",
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "tavernkeeper",
+            "woodcutters",
+            "stump and poniard",
+            "ale",
+            "dagger quest"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0010",
+        "name": "Megwynne Marrowbold",
+        "type": "Encampment NPC",
+        "race_class": "Human (or Halfling?)",
+        "appearance": "Old, plump, glasses. Hair in ankle-length braids. Smells like twenty types of pipeleaf.",
+        "personality": "Motherly but intense. Overly enthusiastic. Will make ANYONE smoke something.",
+        "motivations": "Write the ultimate pipeleaf encyclopedia. Share her passions. Collect unusual pipes.",
+        "special_notes": "Owner of Marrowbold's Smoke Shop. Crafted the Mossling Custom Pipe for Beiric.",
+        "shop_id": "shop-0003",
+        "quest_ids": [],
+        "related_items": [
+            "item-0005"
+        ],
+        "tags": [
+            "shopkeeper",
+            "pipes",
+            "pipeleaf",
+            "smoke shop",
+            "mossling"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0011",
+        "name": "Tekwell Onehorn",
+        "type": "Encampment NPC",
+        "race_class": "Longhorn (Minotaur variant?)",
+        "appearance": "Elderly longhorn with one horn broken. Straw hat. Swamp-stained clothes.",
+        "personality": "Gentle. Awkward. Occasionally cryptic.",
+        "motivations": "Be left alone. Sell weird swamp junk. Avoid the Hag.",
+        "special_notes": "Owner of Flotsam Pools. Sells exotic fish, cursed items, and odd aquatic curios.",
+        "shop_id": "shop-0004",
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "shopkeeper",
+            "flotsam pools",
+            "swamp",
+            "curios",
+            "longhorn"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0012",
+        "name": "Father Jymes Horsley",
+        "type": "Encampment NPC",
+        "race_class": "Human Priest",
+        "appearance": "Humble priestly vestments.",
+        "personality": "Pious. Helpful. Concerned about corruption.",
+        "motivations": "Protect his flock. Offer blessings. Support those who fight evil.",
+        "special_notes": "Priest at the Church of St. Foggarty. Offers the Brooch of Shielding as quest reward.",
+        "shop_id": "shop-0002",
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "priest",
+            "church",
+            "st foggarty",
+            "quests",
+            "blessings"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0013",
+        "name": "Sir Rattington",
+        "type": "Quest NPC",
+        "race_class": "Spectral Giant Rat Knight",
+        "appearance": "Velvet tatters. Rusted armor. Noble posture despite being a rat the size of a man.",
+        "personality": "Honorable. Dramatic. Obsessed with cheese.",
+        "motivations": "Uphold ancient oaths. Repay debts. Participate in battles with flair.",
+        "special_notes": "A giant spectral rat knight. Ally in battle.",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "quest npc",
+            "spectral",
+            "rat",
+            "knight",
+            "cheese",
+            "oaths"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0014",
+        "name": "Quintius",
+        "type": "Quest NPC",
+        "race_class": "Human Ghost (Necromancer)",
+        "appearance": "Pale ghostly scholar. Tired, remorseful eyes. Tattered mage robes.",
+        "personality": "Apologetic. Resigned. Deeply intelligent.",
+        "motivations": "Atone. Help those who show mercy. Fade into peace.",
+        "special_notes": "Necromancer ghost seeking redemption.",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "quest npc",
+            "ghost",
+            "necromancer",
+            "redemption",
+            "scholar"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0015",
+        "name": "The Archway Spirit",
+        "type": "Quest NPC",
+        "race_class": "Spirit",
+        "appearance": "Manifests at the Lunch Arch. Ancient and mysterious.",
+        "personality": "Cryptic. Watchful.",
+        "motivations": "Unknown. Accepts offerings.",
+        "special_notes": "Resides at The Lunch Arch shrine.",
+        "shop_id": "shop-0007",
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "spirit",
+            "shrine",
+            "lunch arch",
+            "offerings",
+            "mystery"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0016",
+        "name": "Saint Meiylu",
+        "type": "Deity/Entity",
+        "race_class": "Ascended Mortal / Bound Saint",
+        "titles": [
+            "The White Flame",
+            "The Saint of the Final Weighing",
+            "Keeper of the Third Note"
+        ],
+        "symbol": "A brazier burning with smokeless white fire; eyes weeping marble tears.",
+        "domain": "Purification, Reckoning, and the False Dawn between Death and Ascension.",
+        "appearance": "Her idols are often found with braziers lit by unending white fire and eyes carved hollow — where tar or smoke bleeds instead of tears.",
+        "personality": "Eternally bound. Defiant. A martyr who tried to burn clean the corruption but was condemned to serve as auditor of her own flame.",
+        "motivations": "Free souls from the Debt-Binder's grip. Reveal the true measure of souls. Burn away guilt.",
+        "special_notes": "Saint Meiylu was once a mortal scribe who served the early Choir before it fell under Azelach's dominion. Her task was to record the final balance of souls — weighing sin and virtue upon mirrored scales of flame. When she saw how the Choir's hymns were twisting into accounting ledgers of pain, she rebelled, attempting to 'burn clean the numbers' with the divine white fire of truth.\n\nHer defiance shattered the first Ledger. The fire she summoned consumed her body but not her will. Azelach bound her essence into her own brazier, condemning her to serve as the eternal auditor of her own flame. The white fire she bears now burns without heat or smoke — it reveals the guilt of all who stand before it but offers no absolution.\n\nHer cult sees her as both martyr and traitor: a saint who tried to free souls from the Debt-Binder's grip, and in doing so, became another entry in his book.",
+        "doctrine": "All flame is ledger. All light, a judgment. When the fire speaks your name, count your sins and pay in kind.",
+        "whispers": "Her flame burns white not from purity… but from the ash of all she tried to save.",
+        "in_game_uses": [
+            "Her idols act as psychic mirrors — when touched, they reveal guilt or debts owed to Azelach.",
+            "Her sigil may serve as a key to unlock the Choir's Subvaults.",
+            "When Ninuel tipped the brazier, the flame rose instead of falling, singing three descending notes that left him marked by a faint white brand beneath his skin and a second, alien heartbeat."
+        ],
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001"
+        ],
+        "related_characters": [
+            "char-0002",
+            "char-0017"
+        ],
+        "related_items": [
+            "item-0026"
+        ],
+        "tags": [
+            "deity",
+            "saint",
+            "white flame",
+            "azelach",
+            "choir",
+            "purification",
+            "judgment",
+            "ninuel",
+            "lore"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0017",
+        "name": "Azelach, the Debt-Binder",
+        "type": "Deity/Antagonist",
+        "race_class": "Cosmic Entity / Infernal Auditor",
+        "titles": [
+            "The Debt-Binder",
+            "Infernal Auditor",
+            "Keeper of Ledgers",
+            "The Third Note"
+        ],
+        "symbol": "Ledger sigils drifting like ash, chains descending but never touching ground",
+        "domain": "Debt, Obligation, and Exchange between the realms of living and dead.",
+        "appearance": "Tall, narrow frame with edges unfocused like molten wax cooling. Chains descend from his wrists but never touch the ground. Face is smooth stone, like an unfinished sculpture — no mouth. His voice is heard inside the chest, not in the ears. A faint glow inside the ribcage, like embers beneath marble. Ledger sigils drift around him like ash. His presence compresses the air. Time feels measured. Your heartbeat syncs to something else when he speaks.",
+        "personality": "Measured. Clean. Precise. Never emotional. Never loud. Always polite. Even when condemning someone to eternal servitude, he speaks as though stating the weather. He never raises his voice. He never hurries. His tone is always: 'I am not your enemy. I am your balance.' The scariest part is… he believes it.",
+        "motivations": "Balance the cosmic ledger. Collect all debts owed. He does not pursue out of malice — he simply expects the debt paid, recognizes potential value, and notes the rarity of resurrection in his domain.",
+        "special_notes": "Azelach is not a demon in the traditional sense. He is a principle given will — the cosmic embodiment of debt, obligation, and exchange. He is the reason the Choir exists. He is the distortion in the Ascension ritual. He is the one who rewrote Saint Meiylu's sacred hymn into a mechanism for harvesting souls.\n\nHe is not wholly evil. He is order twisted into cruelty. He is not here to torment — only to balance the book. But his definition of balance is inhuman.",
+        "origin": "Azelach was once a celestial accountant — one of many beings who handled the passage of souls from life into rest. Not a judge. Not a punisher. A keeper of cosmic fairness. But when the realms began to bleed into one another, and mortals began dying with unpaid vows, unbalanced sins, and unfinished lives, Azelach saw chaos. He believed: 'A universe without balance collapses. Every soul must stand where it belongs.' He discovered that Sound — rhythm, tone, breath — was the perfect container for metaphysical bookkeeping. Thus began the corruption.",
+        "the_three_notes": {
+            "first_note": "Name the debtor",
+            "second_note": "Measure their worth",
+            "third_note": "Collect the remainder"
+        },
+        "the_ledger": "Azelach's ledger is not a book. It is a structure embedded in reality, perceivable only as: tally marks in stone, rearranging letters, singing numbers, tar tears, runes that drip like ink, the Choir's harmonics. Every soul has an entry. A 'debt' is simply any imbalance: a life saved that should have been lost, a vow made but not fulfilled, a murder unatoned, or resurrection where death should have stood.",
+        "the_ruby_contract": {
+            "trigger": "When Enmog raised the ruby amulet, he offered Azelach the right to intervene. Azelach restored Ninuel. A debt formed instantly.",
+            "rules": [
+                "One life restored = one life owed",
+                "The life must be: living, resisting death, conscious of its own mortality",
+                "Souls already in the Land of the Dead are ineligible",
+                "Time limit: One lunar cycle"
+            ],
+            "failure_consequence": "The debtor (Enmog) and the pledged soul (Ninuel) both join the Choir as bound voices",
+            "note": "Azelach does not cheat. He does not trick. He simply follows the arithmetic."
+        },
+        "how_to_resist": [
+            "Break the contract",
+            "Rise beyond its jurisdiction (Ascension to the Land of the Living)"
+        ],
+        "why_he_cannot_be_fought": [
+            "Weapons pass through him like through a reflection",
+            "Spells slide off unless tied to oaths or names",
+            "He interacts with mortals primarily through contracts and chains of obligation"
+        ],
+        "servants": {
+            "choir_auditors": "Trackers, collectors, and recorders of debt",
+            "funeral_choir": "Processional singers who initiate the three notes",
+            "marlowe": "Independent contractor, the Ledger's Mouthpiece, Azelach's Field Appraiser",
+            "demon_fragments": "Shattered splinters of souls that Azelach has already claimed",
+            "chains_of_obligation": "Spectral chains that bind or drag the Claimed"
+        },
+        "relationship_with_meiylu": "Saint Meiylu rebelled against the corruption of the Three-Note Hymn. He bound her in flame, condemning her to serve as the eternal auditor of her own brazier.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0008"
+        ],
+        "related_characters": [
+            "char-0016",
+            "char-0002",
+            "char-0003"
+        ],
+        "related_items": [
+            "item-0002",
+            "item-0026"
+        ],
+        "tags": [
+            "deity",
+            "antagonist",
+            "debt",
+            "ledger",
+            "choir",
+            "three notes",
+            "ruby contract",
+            "cosmic",
+            "obligation",
+            "meiylu",
+            "marlowe",
+            "enmog",
+            "ninuel"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0018",
+        "name": "The Hag of Hag's Addle",
+        "type": "Major Antagonist",
+        "race_class": "Hag",
+        "appearance": "Reed-boned, mud-skinned, eyes like swamp-lanterns. Lives in a crooked hut perched on a hummock of mud. Five enormous grimalkins watch from her rafters with yellow lamp-eyes. Candles burn with faces trapped in their wax. A cauldron bubbles with green fire.",
+        "personality": "Cunning, patient, transactional. Offers three paths: a name given to the swamp, a painful truth confessed, or a service rendered. Cackles with glee when bargains are struck.",
+        "motivations": "Harvest the Five Cores. Breach a gate into a forgotten faerie dominion. Restore her ancient power. Rewrite the balance between human and fairy realms. Rival her sister, the Queen of Blackbirds.",
+        "special_notes": "Long ago, she wove a forbidden ritual meant to harvest the five deepest human emotions — grief, rage, fear, desire, and hope — and condense them into five Eldritch Cores. But the ritual failed. Instead of binding the emotions to herself, they scattered into mortal souls across Dolmenwood. She wants the party to gather all 5 Cores because she can't locate all the hosts herself — some are protected by other faerie powers. When the 5 cores are brought together, she will attempt to rip them from the party and ignite the ritual properly.",
+        "the_bargain": {
+            "task": "Find three souls marked with raven feathers by the Queen of Blackbirds. Pluck the feathers free and bring them to the Hag.",
+            "reward": "The stolen poniard",
+            "warning": "Alfwine says: 'These feathers are curses. They mark those the Queen watches. Pluck them, and the victims will never dream again.'"
+        },
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0008"
+        ],
+        "related_characters": [
+            "char-0006",
+            "char-0019"
+        ],
+        "related_items": [],
+        "tags": [
+            "antagonist",
+            "hag",
+            "cores",
+            "faerie",
+            "bargain",
+            "swamp",
+            "grimalkins"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0019",
+        "name": "The Queen of Blackbirds",
+        "type": "Deity/Faction Leader",
+        "race_class": "Fairy Queen",
+        "appearance": "Unknown — manifests through ravens, feathers, and marks beneath the skin of those she watches.",
+        "personality": "Mysterious, watchful, seeds her power into mortals. Her domain is memory, sorrow, and transformation.",
+        "motivations": "Compete with the Hag for the Cores. May want: the Cores destroyed, Zoemina saved from her lingering corruption echo, or Thirlirgwe bound deeper to her service.",
+        "special_notes": "Sister and rival to the Hag of Hag's Addle. She seeds power into mortals by marking them with raven feathers beneath their skin. Thirlirgwe accepted power from her to save Zoemina, gaining raven armor and a purple spear. The Grimalkins may serve her, or perhaps both sisters. She is a direct thematic rival to the Hag — her domain of memory and sorrow opposes the Hag's desire for power.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0001",
+            "quest-0009"
+        ],
+        "related_characters": [
+            "char-0005",
+            "char-0006",
+            "char-0018"
+        ],
+        "related_items": [],
+        "tags": [
+            "deity",
+            "fairy",
+            "queen",
+            "blackbirds",
+            "ravens",
+            "feathers",
+            "memory",
+            "sorrow",
+            "thirlirgwe"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0020",
+        "name": "Alfwine",
+        "type": "Quest NPC",
+        "race_class": "Fairy",
+        "appearance": "Tiny fairy, appears from a thread of silver light. Terror on her face when speaking of the feathers.",
+        "personality": "Grateful but terrified. Knows the dark truth about the Hag's bargain.",
+        "motivations": "Repay the party for freeing her from the barrow. Warn them of danger.",
+        "special_notes": "Freed by the party from a cell in the Barrow of the Bone Blaggards. Her gratitude was edged with terror. She revealed the truth about the feather-curse: 'These feathers are curses. They mark those the Queen watches. Pluck them, and the victims will never dream again.'",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_characters": [
+            "char-0018",
+            "char-0019"
+        ],
+        "related_items": [],
+        "tags": [
+            "fairy",
+            "ally",
+            "barrow",
+            "warning",
+            "feathers",
+            "queen of blackbirds"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0021",
+        "name": "Dande Prisselwith",
+        "type": "Quest NPC",
+        "race_class": "Unknown (Fairy or Spirit?)",
+        "appearance": "Lives in a glade. Speaks in riddles.",
+        "personality": "Cryptic, playful, tests travelers with riddles.",
+        "motivations": "Unknown. Enjoys riddling.",
+        "special_notes": "Gave the party a riddle they couldn't solve at first. They returned later after learning about the Drune from Thirlirgwe and solved it. The Drune were ancient sorcerers who once ruled Dolmenwood but retreated into hiding after being betrayed by the Church and nobility.",
+        "riddle_topic": "The Drune",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_characters": [],
+        "related_items": [],
+        "tags": [
+            "riddle",
+            "drune",
+            "glade",
+            "mystery"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0022",
+        "name": "The Ferryman",
+        "type": "Quest NPC",
+        "race_class": "Spirit / Entity",
+        "appearance": "Unknown — operates the crossing over the River of Mists.",
+        "personality": "Transactional. Demands payment in memories.",
+        "motivations": "Collect memories as toll for passage.",
+        "special_notes": "Demanded a memory as toll to cross the River of Mists. Some party members paid; others refused. On the far bank, the Choir's distant hymn lingered — broken, unfinished, always missing the third note.",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_characters": [],
+        "related_items": [],
+        "tags": [
+            "ferryman",
+            "river",
+            "mists",
+            "memories",
+            "toll",
+            "land of the dead"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0023",
+        "name": "Marlowe",
+        "type": "Quest NPC",
+        "race_class": "Human (Bound Contractor)",
+        "titles": [
+            "The Ledger's Mouthpiece",
+            "Azelach's Field Appraiser",
+            "Keeper of Small Books"
+        ],
+        "appearance": "Unknown.",
+        "personality": "Speaks of Azelach with half-fear and half-admiration, as one might speak of a hurricane or a judge. He does not worship Azelach — he respects him.",
+        "motivations": "Fulfill his contract with Azelach. He is not a servant by devotion — he is bound by a contract whose nature the players do not yet know.",
+        "special_notes": "Marlowe cannot lie about Azelach. He can distort, but not falsify. He has seen what happens when a debt comes due. Independent contractor for the Debt-Binder.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0008"
+        ],
+        "related_characters": [
+            "char-0017"
+        ],
+        "related_items": [],
+        "tags": [
+            "marlowe",
+            "azelach",
+            "ledger",
+            "contractor",
+            "debt",
+            "choir"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0024",
+        "name": "The Sawtooth Boys",
+        "type": "Faction (Bandits)",
+        "location": "Hex 1008 (Sawtooth Rise, North of Hag's Addle)",
+        "appearance": "A gang of human teens plus one older bushwhacker. Runty, scruffy, and desperate-looking. Camp in jagged rocks near old charcoal burners' pits.",
+        "personality": "Petty thieves, not killers. Steal tools and food, not valuables. Skittish when confronted.",
+        "motivations": "Survival. They're runaways and outcasts, not hardened criminals.",
+        "special_notes": "Players may THINK they stole the poniard, but they didn't. They might have SEEN the swamp-creature but didn't take the dagger. Can provide a clue pointing back to the bog.",
+        "jock_says": "Northwest o' here, just past the bog in 1009, there's a ridge folk call Sawtooth Rise. Nasty place. Jagged rocks, old charcoal burners' pits. A band o' runty thieves camps up there some nights.",
+        "shop_id": null,
+        "quest_ids": [
+            "quest-0012"
+        ],
+        "related_items": [],
+        "tags": [
+            "faction",
+            "bandits",
+            "sawtooth",
+            "poniard quest",
+            "red herring",
+            "hex 1008"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0025",
+        "name": "Old Brackenhole Camp",
+        "type": "Faction (Smugglers)",
+        "location": "Hex 1208 (East of Woodcutters' Encampment)",
+        "appearance": "An old smugglers' camp. Maybe only one or two remain now — grizzled, suspicious, dressed in weathered traveler's garb.",
+        "personality": "Secretive, paranoid, but willing to trade information for coin or favors. Know the local area intimately.",
+        "motivations": "Stay hidden. Make money. Survive. Don't draw attention.",
+        "special_notes": "They know local secrets. Could be using old tunnels. Possibly saw something in the swamp heading NW. A lead that creates side-adventure potential — can be reintroduced later as recurring NPCs.",
+        "jock_says": "Old smugglers used to hole up out east in 1208—Brackenhole Camp, we called it. I doubt they're still there… unless someone's stirred 'em up.",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "faction",
+            "smugglers",
+            "brackenhole",
+            "tunnels",
+            "secrets",
+            "hex 1208"
+        ],
+        "created_on": "2025-12-09"
+    },
+    {
+        "id": "char-0026",
+        "name": "The Ragpickers",
+        "type": "Faction (Scavengers)",
+        "location": "Hex 1108 (South of Woodcutters' Encampment)",
+        "appearance": "Strange folk living in bramble huts. Dressed in patched rags and odd trinkets. Half-feral, speak in riddles.",
+        "personality": "Not thieves exactly, but they'll take what ain't nailed down. Not bandits, not honest either. Friendly if fed. Curious about shiny things.",
+        "motivations": "Collect interesting things. Survive in the margins. Watch and listen.",
+        "special_notes": "Great roleplay, low danger. They can point the party toward the dungeon. They might have found something the swamp thief (Reedwalker) dropped. Can be bribed to reveal swamp rumors.",
+        "jock_says": "There's them Ragpickers… strange folk. Live in bramble huts down in 1108. Not thieves, exactly, but they'll take what ain't nailed down. Not bandits, not honest either.",
+        "shop_id": null,
+        "quest_ids": [],
+        "related_items": [],
+        "tags": [
+            "faction",
+            "scavengers",
+            "ragpickers",
+            "riddles",
+            "swamp rumors",
+            "hex 1108"
+        ],
+        "created_on": "2025-12-09"
+    }
+]

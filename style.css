@@ -1,0 +1,234 @@
+/* ============================================
+   D&D VAULT - MAIN STYLES
+   ============================================ */
+
+/* Dashboard-specific styles and any page overrides go here */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-6);
+}
+
+@media (max-width: 1100px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dashboard-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.dashboard-right {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+/* Campaign header */
+.campaign-header {
+    background: linear-gradient(135deg, var(--bg-surface), var(--bg-deep));
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+}
+
+.campaign-title {
+    font-family: var(--font-serif);
+    font-size: var(--text-3xl);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+}
+
+.campaign-arc {
+    font-size: var(--text-sm);
+    color: var(--accent-secondary);
+    margin-top: var(--space-2);
+}
+
+/* Recently used */
+.recent-list {
+    list-style: none;
+}
+
+.recent-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.recent-item:hover {
+    background: var(--bg-elevated);
+}
+
+.recent-icon {
+    color: var(--text-muted);
+}
+
+.recent-name {
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+}
+
+.recent-type {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-left: auto;
+}
+
+/* Filter bar */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.filter-label {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.filter-select {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: var(--space-12);
+    color: var(--text-muted);
+}
+
+.empty-icon {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+}
+
+.empty-text {
+    font-size: var(--text-lg);
+}
+
+/* Loading */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-12);
+    color: var(--text-muted);
+}
+
+/* Keyboard shortcut hint */
+.kbd {
+    display: inline-block;
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    background: var(--bg-deep);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+}
+
+/* Copy button states */
+.copy-btn.copied {
+    background: var(--status-active) !important;
+    color: white !important;
+}
+
+.copy-btn.copied::after {
+    content: ' ✓';
+}
+
+/* Clickable tags */
+.chip[data-tag] {
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.chip[data-tag]:hover {
+    background: var(--accent-primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Compact mode */
+body.compact-mode .card {
+    padding: var(--space-3);
+}
+
+body.compact-mode .card-body {
+    padding: var(--space-3);
+}
+
+body.compact-mode .detail-section {
+    margin-bottom: var(--space-4);
+}
+
+body.compact-mode .data-table td,
+body.compact-mode .data-table th {
+    padding: var(--space-2);
+    font-size: var(--text-xs);
+}
+
+body.compact-mode .detail-columns {
+    gap: var(--space-4);
+}
+
+body.compact-mode .detail-left,
+body.compact-mode .detail-right {
+    gap: var(--space-3);
+}
+
+/* Compact toggle in header */
+.compact-toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.compact-toggle input {
+    accent-color: var(--accent-primary);
+}
+
+/* Pinned item styles */
+.btn.pinned {
+    color: var(--accent-gold) !important;
+}
+
+/* Stat box compact */
+body.compact-mode .stat-box {
+    padding: var(--space-3);
+}
+
+body.compact-mode .stat-number {
+    font-size: var(--text-xl);
+}
