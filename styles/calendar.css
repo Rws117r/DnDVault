@@ -1,0 +1,682 @@
+/* ============================================
+   D&D VAULT - DOLMENWOOD CALENDAR STYLES
+   ============================================ */
+
+.calendar-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: var(--space-5);
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+    .calendar-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+/* Header badges */
+.day-name-badge {
+    background: var(--bg-surface);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+.moon-badge {
+    background: var(--bg-surface);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    color: var(--accent-gold);
+}
+
+.deadline-badge {
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+}
+
+.deadline-badge.urgent {
+    background: var(--status-urgent);
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+/* Calendar Grid Container */
+.calendar-grid-container {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-xl);
+    padding: var(--space-4);
+    overflow-y: auto;
+}
+
+.calendar-header-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+}
+
+.season-badge {
+    padding: var(--space-1) var(--space-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    color: white;
+    font-weight: var(--font-medium);
+}
+
+/* Weekdays header */
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: var(--space-2);
+}
+
+.weekday-header {
+    text-align: center;
+    padding: var(--space-2);
+    font-size: var(--text-xs);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Days grid */
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    min-height: 60px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    padding: var(--space-1);
+    position: relative;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.calendar-day:hover:not(.empty) {
+    border-color: var(--accent-primary);
+    transform: scale(1.02);
+}
+
+.calendar-day.empty {
+    background: transparent;
+    border-color: transparent;
+    cursor: default;
+}
+
+.calendar-day.today {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+.calendar-day.today .day-number {
+    color: white;
+    font-weight: var(--font-bold);
+}
+
+.calendar-day.has-festival {
+    border-color: var(--accent-gold);
+}
+
+.calendar-day.has-saint {
+    border-color: var(--status-active);
+}
+
+.calendar-day.has-urgent {
+    border-color: var(--status-urgent);
+    animation: pulse-border 2s infinite;
+}
+
+@keyframes pulse-border {
+
+    0%,
+    100% {
+        border-color: var(--status-urgent);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+.calendar-day.wysenday {
+    background: linear-gradient(135deg, var(--accent-secondary) 0%, rgba(139, 92, 246, 0.3) 100%);
+    border: 2px dashed var(--accent-secondary);
+}
+
+.calendar-day.wysenday.today {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    border: 2px solid var(--accent-primary);
+}
+
+.wysenday-name {
+    display: block;
+    font-size: 7px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.legend-wysenday {
+    color: var(--accent-secondary);
+}
+
+.day-number {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+}
+
+/* Moon and event markers */
+.moon-marker {
+    position: absolute;
+    top: var(--space-1);
+    right: var(--space-1);
+    font-size: var(--text-xs);
+}
+
+.moon-marker.new {
+    color: var(--text-muted);
+}
+
+.moon-marker.full {
+    color: var(--accent-gold);
+}
+
+.event-marker {
+    position: absolute;
+    bottom: var(--space-1);
+    left: var(--space-1);
+    font-size: 8px;
+    color: var(--status-active);
+}
+
+.event-marker.urgent {
+    color: var(--status-urgent);
+}
+
+/* Legend */
+.calendar-legend {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.legend-saint {
+    color: var(--status-active);
+}
+
+.legend-festival {
+    color: var(--accent-gold);
+}
+
+.legend-urgent {
+    color: var(--status-urgent);
+}
+
+/* Sidebar */
+.calendar-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    overflow-y: auto;
+}
+
+.calendar-panel {
+    flex-shrink: 0;
+}
+
+/* Time Display */
+.time-display {
+    text-align: center;
+    margin-bottom: var(--space-3);
+}
+
+.current-time {
+    font-size: var(--text-2xl);
+    font-family: var(--font-serif);
+    color: var(--accent-gold);
+}
+
+.time-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2);
+}
+
+.time-btn {
+    padding: var(--space-2);
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.time-btn:hover {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: white;
+}
+
+/* Events list */
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-2);
+    font-size: var(--text-sm);
+}
+
+.event-item.past {
+    opacity: 0.5;
+}
+
+.event-item.today {
+    background: var(--accent-primary);
+}
+
+.event-item.today .event-day,
+.event-item.today .event-name {
+    color: white;
+}
+
+.event-item.urgent {
+    background: rgba(239, 68, 68, 0.2);
+    border-left: 3px solid var(--status-urgent);
+}
+
+.event-day {
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    min-width: 24px;
+}
+
+.event-name {
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.event-type-badge {
+    font-size: var(--text-xs);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+}
+
+.event-type-badge.saint {
+    background: var(--status-active);
+    color: white;
+}
+
+.event-type-badge.festival {
+    background: var(--accent-gold);
+    color: black;
+}
+
+.event-type-badge.solstice,
+.event-type-badge.equinox {
+    background: var(--accent-secondary);
+    color: white;
+}
+
+.event-type-badge.moon {
+    background: #374151;
+    color: var(--accent-gold);
+}
+
+.event-type-badge.urgent {
+    background: var(--status-urgent);
+    color: white;
+}
+
+/* Active seasons */
+.active-season {
+    padding: var(--space-3);
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-2);
+}
+
+.season-name {
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.season-desc {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-bottom: var(--space-2);
+}
+
+/* Deadlines */
+.deadline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2);
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-2);
+}
+
+.deadline-item.critical {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid var(--status-urgent);
+}
+
+.deadline-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.deadline-name {
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+}
+
+.deadline-date {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.deadline-countdown {
+    font-weight: var(--font-bold);
+    color: var(--status-urgent);
+    font-size: var(--text-sm);
+}
+
+.empty-text {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: var(--space-2);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ============================================
+   WEATHER PANEL
+   ============================================ */
+
+.weather-panel {
+    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(99, 102, 241, 0.05) 100%);
+}
+
+.weather-current {
+    text-align: center;
+    padding: var(--space-2) 0;
+}
+
+.weather-desc {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    font-family: var(--font-serif);
+    margin-bottom: var(--space-1);
+}
+
+.weather-meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.weather-season {
+    text-transform: capitalize;
+}
+
+.weather-roll {
+    font-family: var(--font-mono);
+}
+
+.weather-effects {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border-default);
+}
+
+.weather-effect {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    background: rgba(239, 68, 68, 0.1);
+    border-left: 3px solid var(--status-urgent);
+    cursor: help;
+}
+
+.effect-icon {
+    font-size: var(--text-lg);
+}
+
+.effect-name {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   DAY DETAIL MODAL
+   ============================================ */
+
+.day-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-4);
+}
+
+.day-info-section,
+.day-events-section {
+    background: var(--bg-secondary);
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-default);
+}
+
+.day-info-section h4,
+.day-events-section h4,
+.day-logs-section h4 {
+    margin-top: 0;
+    margin-bottom: var(--space-3);
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border-subtle);
+    padding-bottom: var(--space-1);
+}
+
+.modal-text {
+    font-size: var(--text-base);
+    color: var(--text-primary);
+}
+
+.modal-weather {
+    text-align: center;
+    background: var(--bg-tertiary);
+    padding: var(--space-3);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-2);
+}
+
+.weather-desc-lg {
+    font-size: var(--text-lg);
+    font-family: var(--font-serif);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+    font-weight: var(--font-semibold);
+}
+
+.weather-meta-sm {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.modal-event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-event-item {
+    margin-bottom: var(--space-2);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px dashed var(--border-subtle);
+    font-size: var(--text-sm);
+}
+
+.modal-event-item:last-child {
+    border-bottom: none;
+}
+
+.modal-event-item .badgex {
+    display: inline-block;
+    padding: 1px 4px;
+    border-radius: var(--radius-sm);
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-right: var(--space-1);
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+}
+
+.modal-event-item .urgent {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.modal-divider {
+    border: 0;
+    height: 1px;
+    background: var(--border-default);
+    margin: var(--space-4) 0;
+}
+
+/* LOGGING SYSTEM */
+.day-logs-section {
+    margin-top: var(--space-4);
+}
+
+.log-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: var(--space-3);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    background: var(--bg-secondary);
+}
+
+.log-entry {
+    padding: var(--space-2);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.log-entry:last-child {
+    border-bottom: none;
+}
+
+.log-entry.travel {
+    border-left: 3px solid #10b981;
+}
+
+.log-entry.event {
+    border-left: 3px solid #8b5cf6;
+}
+
+.log-entry.combat {
+    border-left: 3px solid #ef4444;
+}
+
+.log-entry.note {
+    border-left: 3px solid #6b7280;
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-1);
+}
+
+.log-type-badge {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.log-time {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-left: auto;
+    margin-right: var(--space-2);
+}
+
+.log-text {
+    font-size: var(--text-sm);
+    color: var(--text-primary);
+    white-space: pre-wrap;
+}
+
+.add-log-form {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.day-actions-row {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-4);
+    padding-top: var(--space-3);
+    border-top: 1px dashed var(--border-subtle);
+}

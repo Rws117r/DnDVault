@@ -1,0 +1,148 @@
+{
+    "monsters": [
+        {
+            "id": "elemental_fire",
+            "name": "Elemental, Fire (Greater)",
+            "description": "Whirling columns of fire from the elemental plane.",
+            "ac": -2,
+            "aac": 21,
+            "hd": "16*",
+            "hp_avg": 72,
+            "attacks": [
+                {
+                    "name": "blow",
+                    "damage": "3d8"
+                }
+            ],
+            "thac0": 8,
+            "attack_bonus": 11,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 2,
+                "W": 3,
+                "P": 4,
+                "B": 3,
+                "S": 6
+            },
+            "save_as": "16 HD",
+            "morale": 10,
+            "alignment": "Neutral",
+            "xp": 2300,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Mundane damage immunity",
+                "Blocked by water",
+                "Harm cold-based creatures: +1d8 damage"
+            ],
+            "tags": [
+                "elemental",
+                "fire",
+                "summoned"
+            ]
+        },
+        {
+            "id": "elf",
+            "name": "Elf",
+            "description": "Slender, fey demihumans with pointed ears.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "1+1*",
+            "hp_avg": 5,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 13,
+                "B": 15,
+                "S": 15
+            },
+            "save_as": "Elf 1",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 19,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "2d12"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Spells: Each has one random 1st level arcane spell",
+                "Leader: Level 1d6+1 for groups of 15+"
+            ],
+            "tags": [
+                "humanoid",
+                "demihuman",
+                "fey"
+            ]
+        },
+        {
+            "id": "eye_of_terror",
+            "name": "Eye of Terror",
+            "description": "Floating scaled spheres with a toothy maw and 11 eyes.",
+            "ac": 0,
+            "aac": 19,
+            "hd": "11*****",
+            "hp_avg": 49,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "2d4"
+                },
+                {
+                    "name": "eye rays",
+                    "damage": "varies"
+                }
+            ],
+            "thac0": 11,
+            "attack_bonus": 8,
+            "mv": {
+                "base": 30,
+                "encounter": 10
+            },
+            "saves": {
+                "D": 6,
+                "W": 7,
+                "P": 8,
+                "B": 8,
+                "S": 10
+            },
+            "save_as": "11 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 5100,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "0"
+            },
+            "treasure_type": "L, N, O",
+            "special": [
+                "Anti-magic ray: Central eye dispels magic 60' in front",
+                "Eye stalks: 10 rays (charm, sleep, petrify, disintegrate, fear, slow, wounds, death)",
+                "Eye regeneration: Disabled eyes regenerate in 2d4 days"
+            ],
+            "tags": [
+                "aberration",
+                "magical",
+                "boss"
+            ]
+        }
+    ]
+}

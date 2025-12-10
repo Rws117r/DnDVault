@@ -1,0 +1,49 @@
+{
+    "monsters": [
+        {
+            "id": "zombie",
+            "name": "Zombie",
+            "description": "Mindless animated corpses that serve their creators.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "2",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 20,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "4d6"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Undead: Immune to poison, charm, sleep, hold",
+                "Always lose initiative"
+            ],
+            "tags": [
+                "undead",
+                "mindless"
+            ]
+        }
+    ]
+}

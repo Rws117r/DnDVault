@@ -1,0 +1,537 @@
+{
+    "monsters": [
+        {
+            "id": "gargoyle",
+            "name": "Gargoyle",
+            "description": "Magical monsters that look like hideous, horned, winged statues.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "4",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d3",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d6"
+                },
+                {
+                    "name": "horn",
+                    "damage": "1d4"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "fly": 150
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "8 HD",
+            "morale": 11,
+            "alignment": "Chaotic",
+            "xp": 75,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "2d4"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Blend in with stone: May be mistaken for statues",
+                "Guardians: Almost always attack when approached",
+                "Mundane damage immunity",
+                "Spell immunity: Sleep and charm"
+            ],
+            "tags": [
+                "magical",
+                "guardian",
+                "flying"
+            ]
+        },
+        {
+            "id": "gelatinous_cube",
+            "name": "Gelatinous Cube",
+            "description": "10' cubes of transparent jelly that absorb debris and creatures.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "4*",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "2d4",
+                    "special": "paralysis"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 125,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "0"
+            },
+            "treasure_type": "V",
+            "special": [
+                "Surprise: On 1-4 due to near-invisibility",
+                "Paralysis: 2d4 turns (save vs paralysis)",
+                "Energy immunity: Cold and lightning",
+                "Embedded items: Carries indigestible items inside"
+            ],
+            "tags": [
+                "ooze",
+                "mindless",
+                "paralysis"
+            ]
+        },
+        {
+            "id": "ghoul",
+            "name": "Ghoul",
+            "description": "Grotesque, animalistic, undead humans that crave flesh.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "2*",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d3",
+                    "count": 2,
+                    "special": "paralysis"
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d3",
+                    "special": "paralysis"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 25,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "2d8"
+            },
+            "treasure_type": "B",
+            "special": [
+                "Paralysis: 2d4 turns (save vs paralysis), elves immune",
+                "Undead: Immune to poison, sleep, charm"
+            ],
+            "tags": [
+                "undead",
+                "paralysis"
+            ]
+        },
+        {
+            "id": "giant_hill",
+            "name": "Giant, Hill",
+            "description": "Hairy, brutish, 12' tall humanoids of low intelligence.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "8",
+            "hp_avg": 36,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "2d8"
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "8 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 650,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "2d4"
+            },
+            "treasure_type": "E + 5000gp",
+            "special": [
+                "Weapons: Giant clubs and spears"
+            ],
+            "tags": [
+                "giant",
+                "humanoid"
+            ]
+        },
+        {
+            "id": "gnoll",
+            "name": "Gnoll",
+            "description": "Lazy, humanoid hyenas of low intelligence.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "2",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "2d4"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 20,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "3d6"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Leader: Groups of 20+ led by 3HD gnoll (16hp)"
+            ],
+            "tags": [
+                "humanoid",
+                "hyena"
+            ]
+        },
+        {
+            "id": "gnome",
+            "name": "Gnome",
+            "description": "Short demihumans with long noses and beards.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "1",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 14,
+                "S": 11
+            },
+            "save_as": "Gnome 1",
+            "morale": 8,
+            "alignment": "Lawful or Neutral",
+            "xp": 10,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "5d8"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Infravision: 90'",
+                "Hate kobolds: Attack on sight",
+                "Love machinery and mining"
+            ],
+            "tags": [
+                "humanoid",
+                "demihuman"
+            ]
+        },
+        {
+            "id": "goblin",
+            "name": "Goblin",
+            "description": "Small, grotesque humanoids with glowing red eyes.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "1-1",
+            "hp_avg": 3,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 14,
+                "W": 15,
+                "P": 16,
+                "B": 17,
+                "S": 18
+            },
+            "save_as": "NH",
+            "morale": 7,
+            "alignment": "Chaotic",
+            "xp": 5,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "6d10"
+            },
+            "treasure_type": "R",
+            "special": [
+                "Infravision: 90'",
+                "Hate the sun: -1 to hit in daylight",
+                "Wolf riders: 20% have dire wolf mounts",
+                "Hate dwarves: Attack on sight"
+            ],
+            "tags": [
+                "humanoid",
+                "goblinoid"
+            ]
+        },
+        {
+            "id": "golem_flesh",
+            "name": "Golem, Flesh",
+            "description": "7' tall humanoids formed of stitched-together body parts.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "9",
+            "hp_avg": 40,
+            "attacks": [
+                {
+                    "name": "fist",
+                    "damage": "2d8",
+                    "count": 2
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 900,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Mundane damage immunity",
+                "Immunity: Gas, charm, hold, sleep",
+                "Energy immunity: Fire, cold, electricity",
+                "Healed by electricity"
+            ],
+            "tags": [
+                "construct",
+                "magical"
+            ]
+        },
+        {
+            "id": "gorgon",
+            "name": "Gorgon",
+            "description": "Iron-scaled bulls with petrifying breath.",
+            "ac": 2,
+            "aac": 17,
+            "hd": "8*",
+            "hp_avg": 36,
+            "attacks": [
+                {
+                    "name": "gore",
+                    "damage": "2d6"
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "8 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 1200,
+            "number_appearing": {
+                "dungeon": "1d2",
+                "lair": "1d4"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Charge: Double damage with 20 yard run",
+                "Petrifying breath: 60' cloud, 10' wide, save vs petrify"
+            ],
+            "tags": [
+                "beast",
+                "magical",
+                "petrification"
+            ]
+        },
+        {
+            "id": "grey_ooze",
+            "name": "Grey Ooze",
+            "description": "Slimy horrors that lurk on stone surfaces.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "3*",
+            "hp_avg": 13,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "2d8"
+                }
+            ],
+            "thac0": 17,
+            "attack_bonus": 2,
+            "mv": {
+                "base": 10,
+                "encounter": 3
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 50,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Blend in with stone",
+                "Acid: Destroys armor immediately, 2d8/round",
+                "Energy immunity: Cold and fire"
+            ],
+            "tags": [
+                "ooze",
+                "mindless"
+            ]
+        },
+        {
+            "id": "griffon",
+            "name": "Griffon",
+            "description": "Large predators combining eagle head/wings with lion body.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "7",
+            "hp_avg": 31,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d4",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "2d8"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "fly": 360
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 450,
+            "number_appearing": {
+                "dungeon": "0",
+                "lair": "2d8"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Attack horses: Within 120' unless morale check passed",
+                "Defend nest: Attack if approached",
+                "Taming: Young can be trained as loyal mounts"
+            ],
+            "tags": [
+                "beast",
+                "hybrid",
+                "flying"
+            ]
+        }
+    ]
+}

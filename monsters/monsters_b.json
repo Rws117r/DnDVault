@@ -1,0 +1,428 @@
+{
+    "monsters": [
+        {
+            "id": "bandit",
+            "name": "Bandit",
+            "description": "NPC thieves who live by robbery.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "1",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 13,
+                "W": 14,
+                "P": 13,
+                "B": 16,
+                "S": 15
+            },
+            "save_as": "Thief 1",
+            "morale": 8,
+            "alignment": "Neutral or Chaotic",
+            "xp": 10,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "3d10"
+            },
+            "treasure_type": "U",
+            "special": [
+                "Trickery: Use disguise to surprise victims",
+                "Leader: May have a leader of 2nd level or higher"
+            ],
+            "tags": [
+                "humanoid",
+                "thief",
+                "npc"
+            ]
+        },
+        {
+            "id": "banshee",
+            "name": "Banshee",
+            "description": "Incorporeal female spirits that linger after death.",
+            "ac": 0,
+            "aac": 19,
+            "hd": "7*",
+            "hp_avg": 31,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d8"
+                },
+                {
+                    "name": "wail",
+                    "damage": "death",
+                    "special": "save or die"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 150,
+                "encounter": 50
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "7 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 850,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Undead",
+                "Mundane damage immunity",
+                "Energy immunity: cold/electrical",
+                "Wail: All within 30' save vs death or die (1/day, darkness only)"
+            ],
+            "tags": [
+                "undead",
+                "incorporeal"
+            ]
+        },
+        {
+            "id": "basilisk",
+            "name": "Basilisk",
+            "description": "10' long serpentine lizards with petrifying gaze.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "6+1**",
+            "hp_avg": 28,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d10",
+                    "special": "petrification"
+                },
+                {
+                    "name": "gaze",
+                    "damage": "petrification"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "6 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 950,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "1d6"
+            },
+            "treasure_type": "F",
+            "special": [
+                "Petrifying touch: Save vs petrify or turn to stone",
+                "Petrifying gaze: Save vs petrify or turn to stone",
+                "Mirrors: May be petrified by own reflection"
+            ],
+            "tags": [
+                "beast",
+                "magical",
+                "petrification"
+            ]
+        },
+        {
+            "id": "bat_giant",
+            "name": "Bat, Giant",
+            "description": "Carnivorous bats that may attack adventurers.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "2",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d4"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 30,
+                "encounter": 10,
+                "fly": 180
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 20,
+            "number_appearing": {
+                "dungeon": "1d10",
+                "lair": "1d10"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Echolocation: Unaffected by effects that impair sight"
+            ],
+            "tags": [
+                "beast",
+                "flying"
+            ]
+        },
+        {
+            "id": "bear_cave",
+            "name": "Bear, Cave",
+            "description": "Ferocious 15' tall grizzly bears found in caves.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "7",
+            "hp_avg": 31,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d8",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "2d6"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 450,
+            "number_appearing": {
+                "dungeon": "1d2",
+                "lair": "1d2"
+            },
+            "treasure_type": "V",
+            "special": [
+                "Bear hug: If both claws hit, extra 2d8 automatic damage",
+                "Keen smell: Follow blood trails by scent"
+            ],
+            "tags": [
+                "beast",
+                "bear"
+            ]
+        },
+        {
+            "id": "beetle_fire",
+            "name": "Beetle, Fire",
+            "description": "2½' long beetles commonly found underground.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "1+2",
+            "hp_avg": 6,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "2d4"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 15,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "2d6"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Glowing nodules: Three glands cast light 10' radius, glow 1d6 days if removed"
+            ],
+            "tags": [
+                "beast",
+                "insect"
+            ]
+        },
+        {
+            "id": "berserker",
+            "name": "Berserker",
+            "description": "Fighters who enter a rage in battle. Never take prisoners.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "1+1*",
+            "hp_avg": 5,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 19,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "3d10"
+            },
+            "treasure_type": "P",
+            "special": [
+                "Battle rage: +2 to hit humans and humanoids, may attack allies"
+            ],
+            "tags": [
+                "humanoid",
+                "warrior"
+            ]
+        },
+        {
+            "id": "black_pudding",
+            "name": "Black Pudding",
+            "description": "Huge (5'-30' across), mindless blobs of amorphous black jelly.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "10*",
+            "hp_avg": 45,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "3d8"
+                }
+            ],
+            "thac0": 11,
+            "attack_bonus": 8,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "5 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 1600,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "0"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Immunity: Only harmed by fire",
+                "Division: Non-fire attacks cause division into 2HD puddings",
+                "Erode: Dissolves wood/metal in 1 turn",
+                "Cling: Moves on walls/ceilings"
+            ],
+            "tags": [
+                "ooze",
+                "mindless"
+            ]
+        },
+        {
+            "id": "bugbear",
+            "name": "Bugbear",
+            "description": "Large, hairy goblins with an ungainly gait.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "3+1",
+            "hp_avg": 14,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "2d4"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 50,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "5d4"
+            },
+            "treasure_type": "B",
+            "special": [
+                "Surprise: On 1-3 due to stealth"
+            ],
+            "tags": [
+                "humanoid",
+                "goblinoid"
+            ]
+        }
+    ]
+}

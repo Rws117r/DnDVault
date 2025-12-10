@@ -1,0 +1,204 @@
+{
+    "monsters": [
+        {
+            "id": "vampire",
+            "name": "Vampire",
+            "description": "Dread undead lords with many supernatural powers.",
+            "ac": 2,
+            "aac": 17,
+            "hd": "7** to 9**",
+            "hp_avg": 36,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d10",
+                    "special": "energy drain"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "fly": 180
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "7-9 HD",
+            "morale": 11,
+            "alignment": "Chaotic",
+            "xp": 1250,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d6"
+            },
+            "treasure_type": "F",
+            "special": [
+                "Undead",
+                "Energy drain: Touch drains 2 levels",
+                "Mundane damage immunity: Only harmed by magical attacks",
+                "Regeneration: 3 hp/round",
+                "Gaseous form: At will",
+                "Charm gaze: Save vs spells or charmed",
+                "Summon creatures: Bats, wolves, rats",
+                "Spawn: Victims become vampires",
+                "Weaknesses: Sunlight, running water, garlic, holy symbols, mirrors"
+            ],
+            "tags": [
+                "undead",
+                "boss",
+                "level_drain",
+                "shapeshifter"
+            ]
+        },
+        {
+            "id": "wight",
+            "name": "Wight",
+            "description": "Undead creatures that drain life energy with their touch.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "3*",
+            "hp_avg": 13,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "energy drain"
+                }
+            ],
+            "thac0": 17,
+            "attack_bonus": 2,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 50,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "1d8"
+            },
+            "treasure_type": "B",
+            "special": [
+                "Undead",
+                "Energy drain: Touch drains 1 level",
+                "Mundane damage immunity: Only harmed by silver or magical attacks",
+                "Spawn: Victims become wights under control"
+            ],
+            "tags": [
+                "undead",
+                "level_drain"
+            ]
+        },
+        {
+            "id": "wraith",
+            "name": "Wraith",
+            "description": "Insubstantial undead creatures of pure malevolence.",
+            "ac": 3,
+            "aac": 16,
+            "hd": "4**",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d6",
+                    "special": "energy drain"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "fly": 240
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 175,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d6"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Undead",
+                "Energy drain: Touch drains 1 level",
+                "Mundane damage immunity: Only harmed by silver or magical attacks",
+                "Spawn: Victims become wraiths"
+            ],
+            "tags": [
+                "undead",
+                "incorporeal",
+                "level_drain"
+            ]
+        },
+        {
+            "id": "werewolf",
+            "name": "Werewolf",
+            "description": "Semi-intelligent pack-hunting lycanthropes.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "4*",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "2d4"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 180,
+                "encounter": 60
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 125,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "2d6"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Mundane damage immunity (animal form): Only harmed by silver or magic",
+                "Summon wolves",
+                "Infection: Lose more than half hp to bites, become werewolf",
+                "Wolfsbane: Save vs poison or flee in terror"
+            ],
+            "tags": [
+                "lycanthrope",
+                "shapeshifter"
+            ]
+        }
+    ]
+}

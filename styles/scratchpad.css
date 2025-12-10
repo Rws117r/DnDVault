@@ -1,0 +1,166 @@
+/* ============================================
+   D&D VAULT - SCRATCHPAD STYLES
+   ============================================ */
+
+.scratchpad-container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-4);
+    height: calc(100vh - 120px);
+    padding: var(--space-4);
+}
+
+@media (max-width: 900px) {
+    .scratchpad-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sessions-sidebar {
+        display: none;
+    }
+}
+
+/* Header */
+.scratchpad-header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.session-title-input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    font-family: var(--font-serif);
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.session-title-input:hover,
+.session-title-input:focus {
+    background: var(--bg-surface);
+    border-color: var(--border-default);
+    outline: none;
+}
+
+.session-date {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+/* Giant Textarea */
+.scratchpad-textarea {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-4);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--text-primary);
+    resize: none;
+    transition: border-color var(--transition-fast);
+}
+
+.scratchpad-textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.scratchpad-textarea::placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Sessions Sidebar */
+.sessions-sidebar {
+    grid-column: 2;
+    grid-row: 2;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: var(--space-3);
+    overflow-y: auto;
+}
+
+.sessions-sidebar h3 {
+    margin: 0 0 var(--space-3) 0;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.session-item {
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    margin-bottom: var(--space-2);
+    transition: background var(--transition-fast);
+}
+
+.session-item:hover {
+    background: var(--bg-elevated);
+}
+
+.session-item.active {
+    background: var(--accent-primary);
+}
+
+.session-item.active .session-item-title,
+.session-item.active .session-item-date,
+.session-item.active .session-item-preview {
+    color: white;
+}
+
+.session-item-title {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.session-item-date {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.session-item-preview {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.empty-sessions {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: var(--space-4);
+}
+
+/* Save Indicator */
+.save-indicator {
+    font-size: var(--text-sm);
+    color: var(--status-active);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.save-indicator.saving {
+    color: var(--accent-gold);
+}

@@ -1,0 +1,244 @@
+{
+    "monsters": [
+        {
+            "id": "skeleton",
+            "name": "Skeleton",
+            "description": "Animated bones of the dead, armed with weapons.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "1",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 10,
+            "number_appearing": {
+                "dungeon": "3d4",
+                "lair": "3d10"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Undead: Immune to poison, charm, sleep, hold",
+                "Half damage from edged weapons"
+            ],
+            "tags": [
+                "undead",
+                "mindless"
+            ]
+        },
+        {
+            "id": "snake_pit_viper",
+            "name": "Snake, Pit Viper",
+            "description": "5' long poisonous snakes with infrared pits.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "2*",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d4",
+                    "special": "poison"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 25,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "1d8"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Poison: Save or die in 1d4+2 turns",
+                "Infravision: Infrared pits allow seeing in darkness",
+                "Surprise: On 1-2 due to instant strikes"
+            ],
+            "tags": [
+                "beast",
+                "snake",
+                "poison"
+            ]
+        },
+        {
+            "id": "spectre",
+            "name": "Spectre",
+            "description": "Incorporeal, undead monsters with energy-draining touch.",
+            "ac": 2,
+            "aac": 17,
+            "hd": "6**",
+            "hp_avg": 27,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d8",
+                    "special": "energy drain"
+                }
+            ],
+            "thac0": 14,
+            "attack_bonus": 5,
+            "mv": {
+                "base": 150,
+                "encounter": 50,
+                "fly": 300
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "6 HD",
+            "morale": 11,
+            "alignment": "Chaotic",
+            "xp": 725,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d8"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Undead",
+                "Mundane damage immunity: Only harmed by magical attacks",
+                "Energy drain: Touch drains 2 levels",
+                "Spawn: Victims become spectres under control of master"
+            ],
+            "tags": [
+                "undead",
+                "incorporeal",
+                "level_drain"
+            ]
+        },
+        {
+            "id": "spider_giant_black_widow",
+            "name": "Spider, Giant Black Widow",
+            "description": "6' long black spiders with venomous bites.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "3*",
+            "hp_avg": 13,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "2d6",
+                    "special": "poison"
+                }
+            ],
+            "thac0": 17,
+            "attack_bonus": 2,
+            "mv": {
+                "base": 60,
+                "encounter": 20,
+                "web": 120
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 50,
+            "number_appearing": {
+                "dungeon": "1d3",
+                "lair": "1d3"
+            },
+            "treasure_type": "U",
+            "special": [
+                "Poison: Save or die in 1 turn",
+                "Webs: Trap prey, require STR check to escape",
+                "Climb walls: Can move on walls and ceilings"
+            ],
+            "tags": [
+                "beast",
+                "spider",
+                "poison"
+            ]
+        },
+        {
+            "id": "stirge",
+            "name": "Stirge",
+            "description": "1' long bird-like creatures with long beaks for blood drinking.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "1*",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "beak",
+                    "damage": "1d3",
+                    "special": "blood drain"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 30,
+                "encounter": 10,
+                "fly": 180
+            },
+            "saves": {
+                "D": 14,
+                "W": 15,
+                "P": 16,
+                "B": 17,
+                "S": 18
+            },
+            "save_as": "2 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 13,
+            "number_appearing": {
+                "dungeon": "1d10",
+                "lair": "3d12"
+            },
+            "treasure_type": "L",
+            "special": [
+                "Attack bonus: +2 to first attack roll",
+                "Blood drain: Once attached, drains 1d3 hp/round automatically"
+            ],
+            "tags": [
+                "beast",
+                "flying",
+                "blood_drain"
+            ]
+        }
+    ]
+}

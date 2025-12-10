@@ -1,0 +1,150 @@
+{
+    "monsters": [
+        {
+            "id": "kobold",
+            "name": "Kobold",
+            "description": "Small, wicked, hairless, canine humanoids with scaly skin.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "1/2",
+            "hp_avg": 2,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d4"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 14,
+                "W": 15,
+                "P": 16,
+                "B": 17,
+                "S": 18
+            },
+            "save_as": "NH",
+            "morale": 6,
+            "alignment": "Chaotic",
+            "xp": 5,
+            "number_appearing": {
+                "dungeon": "4d4",
+                "lair": "6d10"
+            },
+            "treasure_type": "P",
+            "special": [
+                "Ambush: Set up surprise attacks",
+                "Infravision: 90'",
+                "Hate gnomes: Attack on sight",
+                "Chieftain: 2HD chieftain with 1d6 1+1HD bodyguards"
+            ],
+            "tags": [
+                "humanoid",
+                "reptilian"
+            ]
+        },
+        {
+            "id": "lich",
+            "name": "Lich",
+            "description": "Magic-users whose evil magic has rendered them immortal in undeath.",
+            "ac": 0,
+            "aac": 19,
+            "hd": "11****",
+            "hp_avg": 49,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d10",
+                    "special": "paralysis"
+                }
+            ],
+            "thac0": 11,
+            "attack_bonus": 8,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 8,
+                "B": 11,
+                "S": 8
+            },
+            "save_as": "Magic-user 14",
+            "morale": 10,
+            "alignment": "Chaotic",
+            "xp": 4300,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "A",
+            "special": [
+                "Undead",
+                "Aura of fear: Save vs spells or flee 2d6 turns (4th+ level immune)",
+                "Mundane damage immunity",
+                "Energy immunity: Electrical and cold",
+                "Magic immunity: Polymorph, insanity, death",
+                "Arcane spells: 14th level magic-user",
+                "Paralysing touch: 6 turns"
+            ],
+            "tags": [
+                "undead",
+                "boss",
+                "spellcaster"
+            ]
+        },
+        {
+            "id": "lizard_man",
+            "name": "Lizard Man",
+            "description": "Semi-intelligent, tribal, aquatic humanoids with reptilian heads.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "2+1",
+            "hp_avg": 10,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6+1"
+                }
+            ],
+            "thac0": 17,
+            "attack_bonus": 2,
+            "mv": {
+                "base": 60,
+                "encounter": 20,
+                "swim": 120
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 25,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "6d6"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Weapons: Favour spears or large clubs",
+                "Man-eaters: Kidnap humans for food"
+            ],
+            "tags": [
+                "humanoid",
+                "reptilian",
+                "aquatic"
+            ]
+        }
+    ]
+}

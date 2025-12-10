@@ -1,0 +1,189 @@
+{
+    "monsters": [
+        {
+            "id": "ochre_jelly",
+            "name": "Ochre Jelly",
+            "description": "Giant, ochre amoeboids.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "5*",
+            "hp_avg": 22,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "2d6"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 30,
+                "encounter": 10
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 12,
+            "alignment": "Neutral",
+            "xp": 300,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "0"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Immunity: Only harmed by cold or fire",
+                "Division: Lightning/weapons cause 1d4+1 2HD jellies",
+                "Acid: 2d6/round to flesh, destroys cloth/leather/wood"
+            ],
+            "tags": [
+                "ooze",
+                "mindless"
+            ]
+        },
+        {
+            "id": "ogre",
+            "name": "Ogre",
+            "description": "Frightful humanoids, 8-10' tall, dressed in animal hides.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "4+1",
+            "hp_avg": 19,
+            "attacks": [
+                {
+                    "name": "club",
+                    "damage": "1d10"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 10,
+            "alignment": "Chaotic",
+            "xp": 125,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "2d6"
+            },
+            "treasure_type": "C + 1000gp",
+            "special": [
+                "Sack: Carry 1d6x100gp outside lair"
+            ],
+            "tags": [
+                "giant",
+                "humanoid"
+            ]
+        },
+        {
+            "id": "orc",
+            "name": "Orc",
+            "description": "Ugly, bad-tempered, animalistic humanoids that live underground.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "1",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 6,
+            "alignment": "Chaotic",
+            "xp": 10,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "1d6x10"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Hate the sun: -1 to hit in daylight",
+                "Craven: Afraid of larger creatures",
+                "Leader: 8hp leader with +1 damage",
+                "Giant companions: 1-in-6 chance of ogre per 20 orcs"
+            ],
+            "tags": [
+                "humanoid"
+            ]
+        },
+        {
+            "id": "owl_bear",
+            "name": "Owl Bear",
+            "description": "Huge (8' tall) ill-tempered bear-like creature with owl face.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "5",
+            "hp_avg": 22,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d8",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 175,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Bear hug: If both claws hit, extra 2d8 automatic damage"
+            ],
+            "tags": [
+                "beast",
+                "hybrid"
+            ]
+        }
+    ]
+}

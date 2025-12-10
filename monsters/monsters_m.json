@@ -1,0 +1,262 @@
+{
+    "monsters": [
+        {
+            "id": "manticore",
+            "name": "Manticore",
+            "description": "Monstrosities with man's face, lion's body, bat wings, spiked tail.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "6+1",
+            "hp_avg": 28,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d4",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "2d4"
+                },
+                {
+                    "name": "tail spike",
+                    "damage": "1d6",
+                    "count": 6,
+                    "range": 180
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "fly": 180
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "6 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 350,
+            "number_appearing": {
+                "dungeon": "1d2",
+                "lair": "1d4"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Tail spikes: 24 total, 2 regrow each day",
+                "Track and ambush: Follow humans, attack when they rest"
+            ],
+            "tags": [
+                "beast",
+                "hybrid",
+                "flying"
+            ]
+        },
+        {
+            "id": "medusa",
+            "name": "Medusa",
+            "description": "Deadly creatures with writhing snakes in place of hair.",
+            "ac": 8,
+            "aac": 11,
+            "hd": "4**",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "snakebites",
+                    "damage": "1d6",
+                    "special": "poison"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 175,
+            "number_appearing": {
+                "dungeon": "1d3",
+                "lair": "1d4"
+            },
+            "treasure_type": "F",
+            "special": [
+                "Disguise: Use hooded cloaks to lure victims",
+                "Petrification: Anyone looking turns to stone (save vs petrify)",
+                "Poison: Save or die in 1 turn",
+                "Magic resistance: +2 to saves vs spells"
+            ],
+            "tags": [
+                "humanoid",
+                "petrification",
+                "poison"
+            ]
+        },
+        {
+            "id": "mind_lasher",
+            "name": "Mind Lasher",
+            "description": "Evil octopus-headed humanoids that feed on brains.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "8***",
+            "hp_avg": 36,
+            "attacks": [
+                {
+                    "name": "tentacle",
+                    "damage": "1d2",
+                    "count": 4,
+                    "special": "brain probe"
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "8 HD",
+            "morale": 7,
+            "alignment": "Chaotic",
+            "xp": 2300,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "B, N, O",
+            "special": [
+                "Brain probe: Latched tentacle rips out brain in 1d4 rounds",
+                "Mind control: 30' range, save vs paralysis",
+                "Mind blast: 60' cone, save or paralysed 1 turn",
+                "ESP: Read thoughts 90'",
+                "Levitation: 20'/round"
+            ],
+            "tags": [
+                "aberration",
+                "psychic",
+                "boss"
+            ]
+        },
+        {
+            "id": "minotaur",
+            "name": "Minotaur",
+            "description": "Large, brutish, bull-headed men with a craving for human flesh.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "6",
+            "hp_avg": 27,
+            "attacks": [
+                {
+                    "name": "gore",
+                    "damage": "1d6"
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d6"
+                },
+                {
+                    "name": "weapon",
+                    "damage": "1d6+2"
+                }
+            ],
+            "thac0": 14,
+            "attack_bonus": 5,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "6 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 275,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "1d8"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Weapons: Prefer axes, clubs, spears",
+                "Aggressive: Attack same size or smaller on sight, pursue relentlessly"
+            ],
+            "tags": [
+                "humanoid",
+                "beast"
+            ]
+        },
+        {
+            "id": "mummy",
+            "name": "Mummy",
+            "description": "Undead humanoids wrapped in funerary bandages.",
+            "ac": 3,
+            "aac": 16,
+            "hd": "5+1*",
+            "hp_avg": 23,
+            "attacks": [
+                {
+                    "name": "touch",
+                    "damage": "1d12",
+                    "special": "disease"
+                }
+            ],
+            "thac0": 14,
+            "attack_bonus": 5,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "5 HD",
+            "morale": 12,
+            "alignment": "Chaotic",
+            "xp": 400,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d12"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Paralyse with terror: Save vs paralysis or frozen until attacked or out of sight",
+                "Disease: Magical healing ineffective, natural healing 10x slower",
+                "Damage immunity: Only harmed by fire or magic, half damage"
+            ],
+            "tags": [
+                "undead",
+                "disease"
+            ]
+        }
+    ]
+}

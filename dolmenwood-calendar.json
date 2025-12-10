@@ -1,0 +1,392 @@
+{
+    "weekDays": [
+        "Colly",
+        "Chime",
+        "Hayme",
+        "Moot",
+        "Frisk",
+        "Eggfast",
+        "Sunning"
+    ],
+    "months": [
+        {
+            "id": 1,
+            "name": "Grimvold",
+            "season": "Winter",
+            "seasonDesc": "The onset of winter",
+            "days": 30,
+            "wysendays": [
+                "Hanglemas",
+                "Dyboll's Day"
+            ],
+            "moonName": "Grinning Moon",
+            "newMoon": 4,
+            "fullMoon": 18,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "Hanglemas",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "Dyboll's Day",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Lymewald",
+            "season": "Winter",
+            "seasonDesc": "Deep winter",
+            "days": 28,
+            "wysendays": [],
+            "moonName": "Dead Moon",
+            "newMoon": 3,
+            "fullMoon": 17,
+            "events": [
+                {
+                    "day": 1,
+                    "name": "Vague Beginning Chance (1-in-10)",
+                    "type": "special",
+                    "chance": 10,
+                    "starts": "vague"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Haggryme",
+            "season": "Winter",
+            "seasonDesc": "The fading of winter",
+            "days": 30,
+            "wysendays": [
+                "Yarl's Day",
+                "The Day of Virgins"
+            ],
+            "moonName": "Beast Moon",
+            "newMoon": 2,
+            "fullMoon": 16,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "Yarl's Day",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "The Day of Virgins",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Symswald",
+            "season": "Spring",
+            "seasonDesc": "The onset of spring",
+            "days": 29,
+            "wysendays": [
+                "Hopfast"
+            ],
+            "moonName": "Squamous Moon",
+            "newMoon": 1,
+            "fullMoon": 15,
+            "events": [
+                {
+                    "day": 2,
+                    "name": "Feast of Cats",
+                    "type": "festival",
+                    "description": "Spring dances with screeching fiddle tunes, all masked as cats."
+                },
+                {
+                    "day": 29,
+                    "name": "Hopfast",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Harchment",
+            "season": "Spring",
+            "seasonDesc": "High spring",
+            "days": 29,
+            "wysendays": [
+                "Smithing"
+            ],
+            "moonName": "Knight's Moon",
+            "newMoon": 1,
+            "fullMoon": 15,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "Smithing",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Iggwyld",
+            "season": "Spring",
+            "seasonDesc": "The fading of spring",
+            "days": 30,
+            "wysendays": [
+                "Shortening",
+                "Longshank's Day"
+            ],
+            "moonName": "Rotting Moon",
+            "newMoon": 30,
+            "fullMoon": 14,
+            "events": [
+                {
+                    "day": 1,
+                    "name": "Colliggwyld Chance (1-in-4)",
+                    "type": "special",
+                    "chance": 4,
+                    "starts": "colliggwyld"
+                },
+                {
+                    "day": 29,
+                    "name": "Shortening",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "Longshank's Day",
+                    "type": "wysenday",
+                    "ends": "colliggwyld"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Chysting",
+            "season": "Summer",
+            "seasonDesc": "The onset of summer",
+            "days": 31,
+            "wysendays": [
+                "Bradging",
+                "Copsewallow",
+                "Chalice"
+            ],
+            "moonName": "Maiden's Moon",
+            "newMoon": 4,
+            "fullMoon": 18,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "Bradging",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "Copsewallow",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 31,
+                    "name": "Chalice",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Lillipythe",
+            "season": "Summer",
+            "seasonDesc": "High summer",
+            "days": 29,
+            "wysendays": [
+                "Old Dobey's Day"
+            ],
+            "moonName": "Witch's Moon",
+            "newMoon": 3,
+            "fullMoon": 17,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "Old Dobey's Day",
+                    "type": "wysenday"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Haelhold",
+            "season": "Summer",
+            "seasonDesc": "The fading of summer",
+            "days": 28,
+            "wysendays": [],
+            "moonName": "Robber's Moon",
+            "newMoon": 2,
+            "fullMoon": 16,
+            "events": [
+                {
+                    "day": 1,
+                    "name": "Chame Chance (1-in-20)",
+                    "type": "special",
+                    "chance": 20,
+                    "starts": "chame"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Reedwryme",
+            "season": "Autumn",
+            "seasonDesc": "The onset of autumn",
+            "days": 30,
+            "wysendays": [
+                "Shub's Eve",
+                "Druden Day"
+            ],
+            "moonName": "Goat Moon",
+            "newMoon": 1,
+            "fullMoon": 15,
+            "events": [
+                {
+                    "day": 25,
+                    "name": "Feast of St Clewyd",
+                    "type": "saint",
+                    "description": "Unicorn-effigies burned atop bonfires, pheasants and partridges baked into spiced pies."
+                },
+                {
+                    "day": 29,
+                    "name": "Shub's Eve",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "Druden Day (Festival of the Green Man)",
+                    "type": "wysenday",
+                    "description": "Manikins of moss and wood hung by their ankles in tree branches around villages."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Obthryme",
+            "season": "Autumn",
+            "seasonDesc": "Deep autumn",
+            "days": 28,
+            "wysendays": [],
+            "moonName": "Narrow Moon",
+            "newMoon": 1,
+            "fullMoon": 15,
+            "events": []
+        },
+        {
+            "id": 12,
+            "name": "Braghold",
+            "season": "Autumn",
+            "seasonDesc": "The fading of autumn",
+            "days": 30,
+            "wysendays": [
+                "The Day of Doors",
+                "Dolmenday"
+            ],
+            "moonName": "Black Moon",
+            "newMoon": 28,
+            "fullMoon": 14,
+            "events": [
+                {
+                    "day": 29,
+                    "name": "The Day of Doors",
+                    "type": "wysenday"
+                },
+                {
+                    "day": 30,
+                    "name": "Dolmenday (Hunting of the Winter Hart)",
+                    "type": "wysenday",
+                    "description": "A white fairy stag rushes through Dolmenwood. If caught, winter is banished for a year."
+                },
+                {
+                    "day": 30,
+                    "name": "Hitching Chance (1-in-4)",
+                    "type": "special",
+                    "chance": 4,
+                    "starts": "hitching"
+                }
+            ]
+        }
+    ],
+    "specialSeasons": {
+        "colliggwyld": {
+            "name": "Colliggwyld",
+            "description": "A magical wandering season when the boundaries between worlds thin. Uses Spring weather.",
+            "color": "#8B5CF6",
+            "weatherTable": "spring"
+        },
+        "hitching": {
+            "name": "The Hitching",
+            "description": "A strange time when unseen things move in the wood. Dense fogs and oppressive damp.",
+            "color": "#EC4899",
+            "weatherTable": "hitching"
+        },
+        "chame": {
+            "name": "Chame",
+            "description": "A rare phenomenon of oppressive stillness. Uses Summer weather.",
+            "color": "#6B7280",
+            "weatherTable": "summer"
+        },
+        "vague": {
+            "name": "The Vague",
+            "description": "An unsettling phenomenon of mist and fog during deep winter.",
+            "color": "#14B8A6",
+            "weatherTable": "vague"
+        }
+    },
+    "moonSigns": {
+        "grinning": {
+            "name": "Grinning Moon",
+            "month": 1
+        },
+        "dead": {
+            "name": "Dead Moon",
+            "month": 2
+        },
+        "beast": {
+            "name": "Beast Moon",
+            "month": 3
+        },
+        "squamous": {
+            "name": "Squamous Moon",
+            "month": 4
+        },
+        "knight": {
+            "name": "Knight's Moon",
+            "month": 5
+        },
+        "rotting": {
+            "name": "Rotting Moon",
+            "month": 6
+        },
+        "maiden": {
+            "name": "Maiden's Moon",
+            "month": 7
+        },
+        "witch": {
+            "name": "Witch's Moon",
+            "month": 8
+        },
+        "robber": {
+            "name": "Robber's Moon",
+            "month": 9
+        },
+        "goat": {
+            "name": "Goat Moon",
+            "month": 10
+        },
+        "narrow": {
+            "name": "Narrow Moon",
+            "month": 11
+        },
+        "black": {
+            "name": "Black Moon",
+            "month": 12
+        }
+    }
+}

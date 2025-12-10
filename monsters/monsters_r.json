@@ -1,0 +1,99 @@
+{
+    "monsters": [
+        {
+            "id": "rat_giant",
+            "name": "Rat, Giant",
+            "description": "3' long rats with disease-ridden bites.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "1/2",
+            "hp_avg": 2,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d3",
+                    "special": "disease"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "swim": 60
+            },
+            "saves": {
+                "D": 14,
+                "W": 15,
+                "P": 16,
+                "B": 17,
+                "S": 18
+            },
+            "save_as": "NH",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 6,
+            "number_appearing": {
+                "dungeon": "3d6",
+                "lair": "3d10"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Disease: 1-in-20 chance per bite, fatal in 1d6 days (save vs poison)",
+                "Swimmers: Can attack from water",
+                "Afraid of fire"
+            ],
+            "tags": [
+                "beast",
+                "disease",
+                "swarm"
+            ]
+        },
+        {
+            "id": "rust_monster",
+            "name": "Rust Monster",
+            "description": "Armadillo-sized creatures from the Underworld with rust-causing antennae.",
+            "ac": 2,
+            "aac": 17,
+            "hd": "5",
+            "hp_avg": 22,
+            "attacks": [
+                {
+                    "name": "antenna",
+                    "damage": "rust"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 175,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Rust: Metal armor/weapons touched instantly rust and are destroyed",
+                "Smell metal: Attracted to ferrous metals",
+                "Non-violent: Only interested in eating metal"
+            ],
+            "tags": [
+                "aberration",
+                "metal_destroyer"
+            ]
+        }
+    ]
+}

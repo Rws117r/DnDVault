@@ -1,0 +1,202 @@
+{
+    "monsters": [
+        {
+            "id": "harpy",
+            "name": "Harpy",
+            "description": "Hideous hags with wings and lower bodies of giant eagles.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "3*",
+            "hp_avg": 13,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d4",
+                    "count": 2
+                },
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                },
+                {
+                    "name": "song",
+                    "damage": "charm"
+                }
+            ],
+            "thac0": 17,
+            "attack_bonus": 2,
+            "mv": {
+                "base": 60,
+                "encounter": 20,
+                "fly": 150
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 7,
+            "alignment": "Chaotic",
+            "xp": 50,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "2d4"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Charm: Save vs spells or move towards harpies, defend them, unable to harm them"
+            ],
+            "tags": [
+                "humanoid",
+                "flying",
+                "charm"
+            ]
+        },
+        {
+            "id": "hellhound",
+            "name": "Hellhound",
+            "description": "Monstrous, cunning, intelligent hounds that breathe fire.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "5*",
+            "hp_avg": 22,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d6"
+                },
+                {
+                    "name": "breath",
+                    "damage": "5d6"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "5 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 300,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "2d4"
+            },
+            "treasure_type": "C",
+            "special": [
+                "Fire breath: 2-in-6 chance/round, save for half",
+                "Fire immunity",
+                "Detect invisible: 75% chance, 60' range"
+            ],
+            "tags": [
+                "beast",
+                "fire",
+                "breath_weapon"
+            ]
+        },
+        {
+            "id": "hobgoblin",
+            "name": "Hobgoblin",
+            "description": "Larger and nastier relatives of goblins.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "1+1",
+            "hp_avg": 5,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "1 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 15,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "4d6"
+            },
+            "treasure_type": "D",
+            "special": [
+                "King and bodyguards: 5HD king and 1d4 4HD bodyguards in lair"
+            ],
+            "tags": [
+                "humanoid",
+                "goblinoid"
+            ]
+        },
+        {
+            "id": "hydra",
+            "name": "Hydra",
+            "description": "Large, dragon-like creatures with multiple serpentine heads.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "8",
+            "hp_avg": 64,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d10",
+                    "count": 8
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "8 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 650,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1"
+            },
+            "treasure_type": "B",
+            "special": [
+                "Heads: 1d8+4 heads, 1HD per head, 8hp per head",
+                "Disabling heads: Every 8hp disables one head",
+                "Variants: May have venom or fiery breath"
+            ],
+            "tags": [
+                "beast",
+                "dragon-like",
+                "multiattack"
+            ]
+        }
+    ]
+}

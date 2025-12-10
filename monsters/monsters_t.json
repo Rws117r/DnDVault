@@ -1,0 +1,107 @@
+{
+    "monsters": [
+        {
+            "id": "troll",
+            "name": "Troll",
+            "description": "Intelligent, wicked, 8' tall humanoids with rubbery hide.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "6+3*",
+            "hp_avg": 30,
+            "attacks": [
+                {
+                    "name": "talons",
+                    "damage": "1d6",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d10"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "6 HD",
+            "morale": 10,
+            "alignment": "Chaotic",
+            "xp": 650,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "1d8"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Regeneration: 3 rounds after first hit, regain 3 hp/round",
+                "Cannot regenerate: Fire or acid damage",
+                "Sever limbs: Continue fighting independently if severed"
+            ],
+            "tags": [
+                "giant",
+                "regeneration"
+            ]
+        },
+        {
+            "id": "troglodyte",
+            "name": "Troglodyte",
+            "description": "Savage, reptilian humanoids that dwell in caves.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "2*",
+            "hp_avg": 9,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d4",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "1d4"
+                }
+            ],
+            "thac0": 18,
+            "attack_bonus": 1,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 25,
+            "number_appearing": {
+                "dungeon": "1d8",
+                "lair": "5d8"
+            },
+            "treasure_type": "A",
+            "special": [
+                "Stench: Nauseating odour causes -2 to hit (save vs poison) for those in melee",
+                "Chameleon skin: Hide in shadows on 1-4",
+                "Infravision: 90'"
+            ],
+            "tags": [
+                "humanoid",
+                "reptilian",
+                "underground"
+            ]
+        }
+    ]
+}

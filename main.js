@@ -12,6 +12,8 @@ import { renderDetailView } from './components/detail-view.js';
 import { renderSearchView } from './components/search.js';
 import { renderEncounterView } from './components/encounter.js';
 import { renderQuestGraph } from './components/quest-graph.js';
+import { renderScratchpad } from './components/scratchpad.js';
+import { renderCalendar } from './components/calendar.js';
 
 // Initialize app
 async function init() {
@@ -89,6 +91,12 @@ function setupRoutes() {
             renderListView('shops', 'Shops', '🏪');
         })
 
+        // Quest Graph (must come before /quests to match first)
+        .on('/quests/graph', () => {
+            renderSidebar();
+            renderQuestGraph();
+        })
+
         // Quests
         .on('/quests', () => {
             renderSidebar();
@@ -107,10 +115,16 @@ function setupRoutes() {
             renderEncounterView();
         })
 
-        // Quest Graph
-        .on('/quests/graph', () => {
+        // Scratchpad
+        .on('/scratchpad', () => {
             renderSidebar();
-            renderQuestGraph();
+            renderScratchpad();
+        })
+
+        // Calendar
+        .on('/calendar', () => {
+            renderSidebar();
+            renderCalendar();
         })
 
         // 404

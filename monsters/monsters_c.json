@@ -1,0 +1,346 @@
+{
+    "monsters": [
+        {
+            "id": "carcass_crawler",
+            "name": "Carcass Crawler",
+            "description": "9' long, 3' high, many-legged, segmented worms with tentacles.",
+            "ac": 7,
+            "aac": 12,
+            "hd": "3+1*",
+            "hp_avg": 14,
+            "attacks": [
+                {
+                    "name": "tentacle",
+                    "damage": "paralysis",
+                    "count": 8
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 120,
+                "encounter": 40
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "2 HD",
+            "morale": 9,
+            "alignment": "Neutral",
+            "xp": 75,
+            "number_appearing": {
+                "dungeon": "1d3",
+                "lair": "1d3"
+            },
+            "treasure_type": "B",
+            "special": [
+                "Paralysis: 2d4 turns (save vs paralysis)",
+                "Cling: Walk on walls and ceilings"
+            ],
+            "tags": [
+                "beast",
+                "paralysis"
+            ]
+        },
+        {
+            "id": "centaur",
+            "name": "Centaur",
+            "description": "Creatures with the legs and body of a horse, upper body of a human.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "4",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "hoof",
+                    "damage": "1d6",
+                    "count": 2
+                },
+                {
+                    "name": "weapon",
+                    "damage": "1d6"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 180,
+                "encounter": 60
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "4 HD",
+            "morale": 8,
+            "alignment": "Neutral",
+            "xp": 75,
+            "number_appearing": {
+                "dungeon": "0",
+                "lair": "2d10"
+            },
+            "treasure_type": "A",
+            "special": [
+                "Weapons: Bows, clubs, lances"
+            ],
+            "tags": [
+                "humanoid",
+                "beast"
+            ]
+        },
+        {
+            "id": "centipede_giant",
+            "name": "Centipede, Giant",
+            "description": "1' long centipedes that dwell in dark, damp locations.",
+            "ac": 9,
+            "aac": 10,
+            "hd": "1/2*",
+            "hp_avg": 2,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "poison"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 14,
+                "W": 15,
+                "P": 16,
+                "B": 17,
+                "S": 18
+            },
+            "save_as": "NH",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 6,
+            "number_appearing": {
+                "dungeon": "2d4",
+                "lair": "1d8"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Poison: Victim sick for 10 days (save vs poison), half speed movement only"
+            ],
+            "tags": [
+                "beast",
+                "insect",
+                "poison"
+            ]
+        },
+        {
+            "id": "chimera",
+            "name": "Chimera",
+            "description": "Hybrid monstrosity with lion forequarters, goat hindquarters, dragon wings, three heads.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "9**",
+            "hp_avg": 40,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d3",
+                    "count": 2
+                },
+                {
+                    "name": "goat gore",
+                    "damage": "2d4"
+                },
+                {
+                    "name": "lion bite",
+                    "damage": "2d4"
+                },
+                {
+                    "name": "dragon bite",
+                    "damage": "3d4"
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 120,
+                "encounter": 40,
+                "fly": 180
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "9 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 2300,
+            "number_appearing": {
+                "dungeon": "1d2",
+                "lair": "1d4"
+            },
+            "treasure_type": "F",
+            "special": [
+                "Breath weapon: 50% chance dragon head breathes fire cone (3d6, 50' long, 10' wide), 3/day"
+            ],
+            "tags": [
+                "magical",
+                "hybrid",
+                "breath_weapon"
+            ]
+        },
+        {
+            "id": "cockatrice",
+            "name": "Cockatrice",
+            "description": "Small magical bird/reptile hybrids with petrifying touch.",
+            "ac": 6,
+            "aac": 13,
+            "hd": "5**",
+            "hp_avg": 22,
+            "attacks": [
+                {
+                    "name": "beak",
+                    "damage": "1d6",
+                    "special": "petrification"
+                }
+            ],
+            "thac0": 15,
+            "attack_bonus": 4,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "fly": 180
+            },
+            "saves": {
+                "D": 10,
+                "W": 11,
+                "P": 12,
+                "B": 13,
+                "S": 14
+            },
+            "save_as": "5 HD",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 425,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d8"
+            },
+            "treasure_type": "D",
+            "special": [
+                "Petrification: Anyone touched is turned to stone (save vs petrify)"
+            ],
+            "tags": [
+                "magical",
+                "petrification",
+                "flying"
+            ]
+        },
+        {
+            "id": "crocodile_large",
+            "name": "Crocodile, Large",
+            "description": "20' or more long crocodiles. May attack small watercraft.",
+            "ac": 3,
+            "aac": 16,
+            "hd": "6",
+            "hp_avg": 27,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "2d8"
+                }
+            ],
+            "thac0": 14,
+            "attack_bonus": 5,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "swim": 90
+            },
+            "saves": {
+                "D": 12,
+                "W": 13,
+                "P": 14,
+                "B": 15,
+                "S": 16
+            },
+            "save_as": "3 HD",
+            "morale": 7,
+            "alignment": "Neutral",
+            "xp": 275,
+            "number_appearing": {
+                "dungeon": "0",
+                "lair": "1d4"
+            },
+            "treasure_type": "None",
+            "special": [
+                "Feeding frenzy: Attracted to blood/violent movement in water"
+            ],
+            "tags": [
+                "beast",
+                "aquatic"
+            ]
+        },
+        {
+            "id": "cyclops",
+            "name": "Cyclops",
+            "description": "20' tall humanoids with a single central eye.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "13*",
+            "hp_avg": 58,
+            "attacks": [
+                {
+                    "name": "club",
+                    "damage": "3d10"
+                },
+                {
+                    "name": "rock",
+                    "damage": "3d6",
+                    "range": 200
+                }
+            ],
+            "thac0": 10,
+            "attack_bonus": 9,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 4,
+                "W": 5,
+                "P": 6,
+                "B": 5,
+                "S": 8
+            },
+            "save_as": "13 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 2300,
+            "number_appearing": {
+                "dungeon": "1",
+                "lair": "1d4"
+            },
+            "treasure_type": "E + 5000gp",
+            "special": [
+                "Attack penalty: -2 to hit due to limited depth perception",
+                "Slow-witted: Can be tricked by clever PCs",
+                "Curse: 1-in-20 can curse once per week"
+            ],
+            "tags": [
+                "giant",
+                "humanoid"
+            ]
+        }
+    ]
+}

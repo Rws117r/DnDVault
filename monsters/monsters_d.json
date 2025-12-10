@@ -1,0 +1,257 @@
+{
+    "monsters": [
+        {
+            "id": "dragon_red",
+            "name": "Dragon, Red",
+            "description": "Ancient dragons that dwell in hills and mountains.",
+            "ac": -1,
+            "aac": 20,
+            "hd": "10**",
+            "hp_avg": 45,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d8",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "4d8"
+                }
+            ],
+            "thac0": 11,
+            "attack_bonus": 8,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "fly": 240
+            },
+            "saves": {
+                "D": 6,
+                "W": 7,
+                "P": 8,
+                "B": 8,
+                "S": 10
+            },
+            "save_as": "10 HD",
+            "morale": 10,
+            "alignment": "Chaotic",
+            "xp": 2300,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "H",
+            "special": [
+                "Breath weapon: 90' cone of fire (damage = current hp), 3/day",
+                "Fire immunity",
+                "Language & spells: 50%; 3x1st, 3x2nd, 3x3rd level",
+                "Sleeping: 10%"
+            ],
+            "tags": [
+                "dragon",
+                "breath_weapon",
+                "fire"
+            ]
+        },
+        {
+            "id": "dragon_black",
+            "name": "Dragon, Black",
+            "description": "Dragons that dwell in swamps and marshes.",
+            "ac": 2,
+            "aac": 17,
+            "hd": "7**",
+            "hp_avg": 31,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d4+1",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "2d10"
+                }
+            ],
+            "thac0": 13,
+            "attack_bonus": 6,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "fly": 240
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "7 HD",
+            "morale": 8,
+            "alignment": "Chaotic",
+            "xp": 1250,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "H",
+            "special": [
+                "Breath weapon: 60' line of acid (damage = current hp), 3/day",
+                "Acid immunity",
+                "Language & spells: 20%; 4x1st level",
+                "Sleeping: 40%"
+            ],
+            "tags": [
+                "dragon",
+                "breath_weapon",
+                "acid"
+            ]
+        },
+        {
+            "id": "dragon_green",
+            "name": "Dragon, Green",
+            "description": "Dragons that lair in jungles and forests.",
+            "ac": 1,
+            "aac": 18,
+            "hd": "8**",
+            "hp_avg": 36,
+            "attacks": [
+                {
+                    "name": "claw",
+                    "damage": "1d6",
+                    "count": 2
+                },
+                {
+                    "name": "bite",
+                    "damage": "3d8"
+                }
+            ],
+            "thac0": 12,
+            "attack_bonus": 7,
+            "mv": {
+                "base": 90,
+                "encounter": 30,
+                "fly": 240
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 10,
+                "S": 12
+            },
+            "save_as": "8 HD",
+            "morale": 9,
+            "alignment": "Chaotic",
+            "xp": 1750,
+            "number_appearing": {
+                "dungeon": "1d4",
+                "lair": "1d4"
+            },
+            "treasure_type": "H",
+            "special": [
+                "Breath weapon: Cloud of chlorine gas (damage = current hp), 3/day",
+                "Poison immunity",
+                "Language & spells: 30%; 3x1st, 3x2nd level",
+                "Sleeping: 30%"
+            ],
+            "tags": [
+                "dragon",
+                "breath_weapon",
+                "poison"
+            ]
+        },
+        {
+            "id": "doppelganger",
+            "name": "Doppelgänger",
+            "description": "Intelligent, human-sized shape-shifters of wicked character.",
+            "ac": 5,
+            "aac": 14,
+            "hd": "4*",
+            "hp_avg": 18,
+            "attacks": [
+                {
+                    "name": "bite",
+                    "damage": "1d12"
+                }
+            ],
+            "thac0": 16,
+            "attack_bonus": 3,
+            "mv": {
+                "base": 90,
+                "encounter": 30
+            },
+            "saves": {
+                "D": 6,
+                "W": 7,
+                "P": 8,
+                "B": 8,
+                "S": 10
+            },
+            "save_as": "10 HD",
+            "morale": 10,
+            "alignment": "Chaotic",
+            "xp": 125,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "1d6"
+            },
+            "treasure_type": "E",
+            "special": [
+                "Shape stealing: Adopt form of any human-like creature 7' or less",
+                "Trickery: Kill and replace PCs",
+                "Spell immunity: Unaffected by sleep and charm"
+            ],
+            "tags": [
+                "shapeshifter",
+                "infiltrator"
+            ]
+        },
+        {
+            "id": "dwarf",
+            "name": "Dwarf",
+            "description": "Short, stocky, bearded demihumans who dwell underground.",
+            "ac": 4,
+            "aac": 15,
+            "hd": "1",
+            "hp_avg": 4,
+            "attacks": [
+                {
+                    "name": "weapon",
+                    "damage": "1d8"
+                }
+            ],
+            "thac0": 19,
+            "attack_bonus": 0,
+            "mv": {
+                "base": 60,
+                "encounter": 20
+            },
+            "saves": {
+                "D": 8,
+                "W": 9,
+                "P": 10,
+                "B": 13,
+                "S": 12
+            },
+            "save_as": "Dwarf 1",
+            "morale": 8,
+            "alignment": "Lawful or Neutral",
+            "xp": 10,
+            "number_appearing": {
+                "dungeon": "1d6",
+                "lair": "5d8"
+            },
+            "treasure_type": "G",
+            "special": [
+                "Leader: Level 1d6+2 for every 20 dwarves",
+                "Hate goblins: Attack on sight"
+            ],
+            "tags": [
+                "humanoid",
+                "demihuman"
+            ]
+        }
+    ]
+}
