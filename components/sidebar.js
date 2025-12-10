@@ -59,6 +59,10 @@ export function renderSidebar() {
             
             <div class="nav-section">
                 <div class="nav-section-title">Tools</div>
+                <a class="nav-link ${currentRoute === '/encounter' ? 'active' : ''}" data-route="/encounter">
+                    <span class="nav-icon">⚔️</span>
+                    <span>Encounter</span>
+                </a>
                 <a class="nav-link ${currentRoute === '/search' ? 'active' : ''}" data-route="/search">
                     <span class="nav-icon">🔍</span>
                     <span>Search</span>

@@ -10,6 +10,7 @@ import { renderDashboard } from './components/dashboard.js';
 import { renderListView } from './components/list-view.js';
 import { renderDetailView } from './components/detail-view.js';
 import { renderSearchView } from './components/search.js';
+import { renderEncounterView } from './components/encounter.js';
 
 // Initialize app
 async function init() {
@@ -97,6 +98,12 @@ function setupRoutes() {
         .on('/search', () => {
             renderSidebar();
             renderSearchView();
+        })
+
+        // Encounter
+        .on('/encounter', () => {
+            renderSidebar();
+            renderEncounterView();
         })
 
         // 404
