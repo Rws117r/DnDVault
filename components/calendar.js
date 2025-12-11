@@ -17,6 +17,7 @@ let currentDate = {
         { month: 11, day: 28, name: "Azelach Contract Due!", type: "urgent" }
     ],
     yearWeather: {}, // { year: { month: { day: weatherObj } } }
+    yearMoonEffects: {}, // { year: { month: { day: effectObj } } }
     logs: {} // { "year-month-day": [ { type, text, timestamp } ] }
 };
 
@@ -111,7 +112,73 @@ const EFFECT_DESCRIPTIONS = {
     'W': { name: 'Wet Conditions', desc: 'Building campfire is difficult', icon: '💧' }
 };
 
+const MOON_SIGNS_DATA = {
+    'Grinning': {
+        waxing: '50% chance of guardian undead ignoring the character’s presence. (Though they act normally if provoked.)',
+        full: '+1 bonus to Saving Throws against the powers of undead monsters.',
+        waning: '+1 Attack bonus against undead monsters.'
+    },
+    'Dead': {
+        waxing: '+1 bonus to Attack and Damage Rolls the Round after killing a foe.',
+        full: 'If killed by non-magical means, the character returns to life after 1 Turn with 1 Hit Point. Their Constitution and Wisdom are permanently halved. Once ever.',
+        waning: 'Undead monsters attack all others in the party before attacking the character.'
+    },
+    'Beast': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with dogs and horses.',
+        full: 'Wild animals attack all others in the party before attacking the character.',
+        waning: '+1 Attack bonus against wolves and bears.'
+    },
+    'Squamous': {
+        waxing: 'Effects of poison are delayed by 1 Turn.',
+        full: '+2 bonus to Saving Throws against the breath attacks and magical powers of wyrms and dragons.',
+        waning: '+1 Attack bonus against serpents and wyrms.'
+    },
+    'Knight’s': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with nobles.',
+        full: '+1 AC bonus against attacks with metal weapons.',
+        waning: 'On a tied Initiative roll when in melee with knights or soldiers, the character acts first.'
+    },
+    'Rotting': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with sentient fungi.',
+        full: '+2 AC bonus against attacks by fungal monsters.',
+        waning: 'In the character’s presence, fungal monsters suffer a –1 penalty to Attack and Damage Rolls.'
+    },
+    'Maiden’s': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with demi-fey.',
+        full: '+2 bonus to Saving Throws against charms and glamours.',
+        waning: '+1 bonus to Attack and Damage Rolls against shape-changers and those cloaked with illusions.'
+    },
+    'Witch’s': {
+        waxing: 'When the character receives magical healing, they gain 1 additional Hit Point. (Max once per day/type).',
+        full: '+1 bonus to Saving Throws against holy magic.',
+        waning: '+1 bonus to Attack Rolls against witches and holy spell casters.'
+    },
+    'Robber’s': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with Chaotic mortals.',
+        full: '+1 AC bonus against attacks by Chaotic mortals, fairies, or demi-fey.',
+        waning: '+1 Attack bonus against Chaotic mortals, fairies, and demi-fey.'
+    },
+    'Goat': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with breggles (including crookhorns).',
+        full: 'Breggles (including crookhorns) attack all others in the party before attacking the character.',
+        waning: '+1 Attack bonus against breggles (including crookhorns).'
+    },
+    'Narrow': {
+        waxing: '+2 bonus to Charisma (maximum 18) when interacting with fairies, but suffer a –1 penalty to all Saving Throws against fairy magic.',
+        full: 'If the character is afflicted by a curse or a Geas spell, there is a 1-in-4 chance of the caster also being affected by their own magic.',
+        waning: '+1 Attack bonus against fairies and demi-fey.'
+    },
+    'Black': {
+        waxing: '+1 bonus to Search Checks to find secret doors.',
+        full: '+2 bonus to AC and Saving Throws when surprised.',
+        waning: '+2 bonus to Saving Throws versus illusions and glamours.'
+    }
+};
+
+const MOON_SIGN_NAMES = Object.keys(MOON_SIGNS_DATA);
+
 export async function renderCalendar() {
+    console.log("Starting renderCalendar...");
     const content = document.getElementById('content');
     const header = document.getElementById('header');
 
@@ -129,9 +196,35 @@ export async function renderCalendar() {
         generateYearWeather(currentDate.year);
     }
 
+    // Initialize moon effects for current year if not present or invalid schema
+    let moonDataInvalid = true;
+    if (currentDate.yearMoonEffects && currentDate.yearMoonEffects[currentDate.year]) {
+        // Check if data has new structure (e.g., month 1 has 'waxing' property)
+        // We check month 1 (Obthryme is 11, strictly speaking we can just check the current month or any valid month)
+        const checkMonth = currentDate.yearMoonEffects[currentDate.year][1] || currentDate.yearMoonEffects[currentDate.year][11];
+        if (checkMonth && checkMonth.waxing) {
+            moonDataInvalid = false;
+        }
+    }
+
+    if (moonDataInvalid) {
+        console.log("Regenerating moon effects (schema update)...");
+        generateYearMoonEffects(currentDate.year);
+    }
+
     // Ensure logs object exists
     if (!currentDate.logs) {
         currentDate.logs = {};
+    }
+
+    // Ensure customEvents exists (prevent crash on old data)
+    if (!currentDate.customEvents) {
+        currentDate.customEvents = [];
+    }
+
+    // Ensure activeSeasons exists (prevent crash on old data)
+    if (!currentDate.activeSeasons) {
+        currentDate.activeSeasons = [];
     }
 
     // Ensure current day has weather
@@ -140,8 +233,9 @@ export async function renderCalendar() {
         setWeatherForDate(currentDate.year, currentDate.month, currentDate.day, weather);
     }
 
-    // Set current weather for display
+    // Set current weather and moon effect for display
     currentDate.weather = getWeatherForDate(currentDate.year, currentDate.month, currentDate.day);
+    currentDate.moonEffect = getMoonEffectForDate(currentDate.year, currentDate.month, currentDate.day);
     saveDateState();
 
     const month = calendarData.months[currentDate.month - 1];
@@ -164,154 +258,159 @@ export async function renderCalendar() {
     `;
 
     // Render content
-    content.innerHTML = `
-        <div class="calendar-layout">
-            <!-- Month Grid -->
-            <div class="calendar-grid-container">
-                <div class="calendar-header-row">
-                    <span class="season-badge" style="background: ${getSeasonColor(month.season)}">${month.season}</span>
-                </div>
-                
-                <!-- Week day headers -->
-                <div class="calendar-weekdays">
-                    ${calendarData.weekDays.map(d => `<div class="weekday-header">${d}</div>`).join('')}
-                </div>
-                
-                <!-- Day grid -->
-                <div class="calendar-days" id="calendar-days">
-                    ${renderDaysGrid(month)}
-                </div>
-                
-                <div class="calendar-legend">
-                    <span>● New Moon</span>
-                    <span>○ Full Moon</span>
-                    <span class="legend-saint">★ Saint Feast</span>
-                    <span class="legend-festival">◆ Festival</span>
-                    <span class="legend-wysenday">■ Wysenday</span>
-                </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="calendar-sidebar">
-                <!-- Time Controls -->
-                <div class="card calendar-panel">
-                    <div class="card-header">
-                        <h3 class="card-title">🕐 Time Controls</h3>
+    try {
+        console.log("Rendering body content...");
+        content.innerHTML = `
+            <div class="calendar-layout">
+                <!-- Month Grid -->
+                <div class="calendar-grid-container">
+                    <div class="calendar-header-row">
+                        <span class="season-badge" style="background: ${getSeasonColor(month.season)}">${month.season}</span>
                     </div>
-                    <div class="card-body">
-                        <div class="time-display">
-                            <span class="current-time">${formatTime(currentDate.hour)}</span>
+                    
+                    <!-- Week day headers -->
+                    <div class="calendar-weekdays">
+                        ${calendarData.weekDays.map(d => `<div class="weekday-header">${d}</div>`).join('')}
+                    </div>
+                    
+                    <!-- Day grid -->
+                    <div class="calendar-days" id="calendar-days">
+                        ${renderDaysGrid(month)}
+                    </div>
+                    
+                    <div class="calendar-legend">
+                        <span>● New Moon</span>
+                        <span>○ Full Moon</span>
+                        <span class="legend-saint">★ Saint Feast</span>
+                        <span class="legend-festival">◆ Festival</span>
+                        <span class="legend-wysenday">■ Wysenday</span>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="calendar-sidebar">
+                    <!-- Time Controls -->
+                    <div class="card calendar-panel">
+                        <div class="card-header">
+                            <h3 class="card-title">🕐 Time Controls</h3>
                         </div>
-                        <div class="time-buttons">
-                            <button class="time-btn" data-action="hour">+1 Hour</button>
-                            <button class="time-btn" data-action="sunset">→ Sunset</button>
-                            <button class="time-btn" data-action="dawn">→ Dawn</button>
-                            <button class="time-btn" data-action="day">+1 Day</button>
-                            <button class="time-btn" data-action="week">+1 Week</button>
-                            <button class="time-btn" data-action="rest">Long Rest</button>
+                        <div class="card-body">
+                            <div class="time-display">
+                                <span class="current-time">${formatTime(currentDate.hour)}</span>
+                            </div>
+                            <div class="time-buttons">
+                                <button class="time-btn" data-action="hour">+1 Hour</button>
+                                <button class="time-btn" data-action="sunset">→ Sunset</button>
+                                <button class="time-btn" data-action="dawn">→ Dawn</button>
+                                <button class="time-btn" data-action="day">+1 Day</button>
+                                <button class="time-btn" data-action="week">+1 Week</button>
+                                <button class="time-btn" data-action="rest">Long Rest</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weather Panel -->
+                    <div class="card calendar-panel weather-panel">
+                        <div class="card-header">
+                            <h3 class="card-title">☁️ Today's Weather</h3>
+                            <button class="btn btn-xs btn-ghost" id="roll-weather-btn">🎲 Re-roll</button>
+                        </div>
+                        <div class="card-body">
+                            ${renderWeatherPanel()}
+                        </div>
+                    </div>
+
+                    <!-- This Month's Events -->
+                    <div class="card calendar-panel">
+                        <div class="card-header">
+                            <h3 class="card-title">🎉 Events This Month</h3>
+                            <button class="btn btn-xs btn-ghost" id="copy-month-btn">📋 Copy</button>
+                        </div>
+                        <div class="card-body">
+                            ${renderMonthEvents(month)}
+                        </div>
+                    </div>
+
+                    <!-- Active Seasons -->
+                    <div class="card calendar-panel">
+                        <div class="card-header">
+                            <h3 class="card-title">🌀 Special Seasons</h3>
+                        </div>
+                        <div class="card-body">
+                            ${renderActiveSeasons()}
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Deadlines -->
+                    <div class="card calendar-panel">
+                        <div class="card-header">
+                            <h3 class="card-title">⚠️ Deadlines</h3>
+                            <button class="btn btn-xs btn-ghost" id="add-event-btn">+ Add</button>
+                        </div>
+                        <div class="card-body">
+                            ${renderDeadlines()}
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Weather Panel -->
-                <div class="card calendar-panel weather-panel">
-                    <div class="card-header">
-                        <h3 class="card-title">☁️ Today's Weather</h3>
-                        <button class="btn btn-xs btn-ghost" id="roll-weather-btn">🎲 Re-roll</button>
+            <!-- Add Event Modal -->
+            <div id="event-modal" class="modal hidden">
+                <div class="modal-content" style="max-width: 350px;">
+                    <div class="modal-header">
+                        <h3>Add Event</h3>
+                        <button class="btn btn-ghost modal-close" data-modal="event-modal">✕</button>
                     </div>
-                    <div class="card-body">
-                        ${renderWeatherPanel()}
-                    </div>
-                </div>
-
-                <!-- This Month's Events -->
-                <div class="card calendar-panel">
-                    <div class="card-header">
-                        <h3 class="card-title">🎉 Events This Month</h3>
-                        <button class="btn btn-xs btn-ghost" id="copy-month-btn">📋 Copy</button>
-                    </div>
-                    <div class="card-body">
-                        ${renderMonthEvents(month)}
-                    </div>
-                </div>
-
-                <!-- Active Seasons -->
-                <div class="card calendar-panel">
-                    <div class="card-header">
-                        <h3 class="card-title">🌀 Special Seasons</h3>
-                    </div>
-                    <div class="card-body">
-                        ${renderActiveSeasons()}
-                    </div>
-                </div>
-
-                <!-- Upcoming Deadlines -->
-                <div class="card calendar-panel">
-                    <div class="card-header">
-                        <h3 class="card-title">⚠️ Deadlines</h3>
-                        <button class="btn btn-xs btn-ghost" id="add-event-btn">+ Add</button>
-                    </div>
-                    <div class="card-body">
-                        ${renderDeadlines()}
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Event Name</label>
+                            <input type="text" id="event-name" class="panel-input" placeholder="e.g., Azelach Deadline">
+                        </div>
+                        <div class="form-group">
+                            <label>Month</label>
+                            <select id="event-month" class="panel-select">
+                                ${calendarData.months.map(m => `<option value="${m.id}" ${m.id === currentDate.month ? 'selected' : ''}>${m.name}</option>`).join('')}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Day</label>
+                            <input type="number" id="event-day" class="panel-input" value="${currentDate.day}" min="1" max="31">
+                        </div>
+                        <div class="form-group">
+                            <label>Type</label>
+                            <select id="event-type" class="panel-select">
+                                <option value="custom">Custom</option>
+                                <option value="urgent">Urgent Deadline</option>
+                                <option value="quest">Quest Related</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="save-event-btn" style="width: 100%;">Add Event</button>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Add Event Modal -->
-        <div id="event-modal" class="modal hidden">
-            <div class="modal-content" style="max-width: 350px;">
-                <div class="modal-header">
-                    <h3>Add Event</h3>
-                    <button class="btn btn-ghost modal-close" data-modal="event-modal">✕</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label>Event Name</label>
-                        <input type="text" id="event-name" class="panel-input" placeholder="e.g., Azelach Deadline">
+            <!-- Day Detail Modal -->
+            <div id="day-modal" class="modal hidden">
+                <div class="modal-content" style="max-width: 600px;">
+                    <div class="modal-header">
+                        <h3 id="day-modal-title">DATE</h3>
+                        <button class="btn btn-ghost modal-close" data-modal="day-modal">✕</button>
                     </div>
-                    <div class="form-group">
-                        <label>Month</label>
-                        <select id="event-month" class="panel-select">
-                            ${calendarData.months.map(m => `<option value="${m.id}" ${m.id === currentDate.month ? 'selected' : ''}>${m.name}</option>`).join('')}
-                        </select>
+                    <div class="modal-body" id="day-modal-body">
+                        <!-- Dynamic Content -->
                     </div>
-                    <div class="form-group">
-                        <label>Day</label>
-                        <input type="number" id="event-day" class="panel-input" value="${currentDate.day}" min="1" max="31">
+                    <div class="modal-footer">
+                         <button class="btn btn-ghost" id="copy-day-btn">📋 Copy Day</button>
+                         <button class="btn btn-primary modal-close" data-modal="day-modal">Close</button>
                     </div>
-                    <div class="form-group">
-                        <label>Type</label>
-                        <select id="event-type" class="panel-select">
-                            <option value="custom">Custom</option>
-                            <option value="urgent">Urgent Deadline</option>
-                            <option value="quest">Quest Related</option>
-                        </select>
-                    </div>
-                    <button class="btn btn-primary" id="save-event-btn" style="width: 100%;">Add Event</button>
                 </div>
             </div>
-        </div>
-
-        <!-- Day Detail Modal -->
-        <div id="day-modal" class="modal hidden">
-            <div class="modal-content" style="max-width: 600px;">
-                <div class="modal-header">
-                    <h3 id="day-modal-title">DATE</h3>
-                    <button class="btn btn-ghost modal-close" data-modal="day-modal">✕</button>
-                </div>
-                <div class="modal-body" id="day-modal-body">
-                    <!-- Dynamic Content -->
-                </div>
-                <div class="modal-footer">
-                     <button class="btn btn-ghost" id="copy-day-btn">📋 Copy Day</button>
-                     <button class="btn btn-primary modal-close" data-modal="day-modal">Close</button>
-                </div>
-            </div>
-        </div>
-    `;
-
-    attachCalendarHandlers();
+        `;
+        attachCalendarHandlers();
+    } catch (err) {
+        console.error("CRITICAL RENDER ERROR:", err);
+        header.innerHTML += `<div style="background:red; color:white; padding:10px; margin-top:10px;">ERROR: ${err.message}</div>`;
+    }
 }
 
 // ============================================
@@ -327,22 +426,26 @@ function renderDaysGrid(month) {
     // Render 4 standard weeks (28 days)
     for (let day = 1; day <= standardDays; day++) {
         const isToday = day === currentDate.day;
-        const isNewMoon = day === month.newMoon;
-        const isFullMoon = day === month.fullMoon;
+        const moon = getMoonPhase(month, day);
         const events = getEventsForDay(month, day);
         const customEvents = currentDate.customEvents.filter(e => e.month === currentDate.month && e.day === day);
+        const significantEvents = events.filter(e => e.type !== 'wysenday');
+        const hasUrgent = customEvents.some(e => e.type === 'urgent');
 
         let classes = 'calendar-day';
         if (isToday) classes += ' today';
         if (events.some(e => e.type === 'festival')) classes += ' has-festival';
         if (events.some(e => e.type === 'saint')) classes += ' has-saint';
-        if (customEvents.some(e => e.type === 'urgent')) classes += ' has-urgent';
+        if (hasUrgent) classes += ' has-urgent';
+
+        // Limit shown events to avoid overflow
+        const displayEvents = [...significantEvents, ...customEvents].slice(0, 3);
+        const moreCount = (significantEvents.length + customEvents.length) - displayEvents.length;
 
         html += `
             <div class="${classes}" data-day="${day}">
                 <span class="day-number">${day}</span>
-                ${isNewMoon ? '<span class="moon-marker new">●</span>' : ''}
-                ${isFullMoon ? '<span class="moon-marker full">○</span>' : ''}
+                <span class="moon-marker-daily" title="${moon.name}">${moon.icon}</span>
                 ${events.length > 0 ? '<span class="event-marker">★</span>' : ''}
                 ${customEvents.length > 0 ? '<span class="event-marker urgent">⚠</span>' : ''}
             </div>
@@ -354,8 +457,7 @@ function renderDaysGrid(month) {
         const day = standardDays + 1 + i;
         const wysendayName = wysendays[i];
         const isToday = day === currentDate.day;
-        const isNewMoon = day === month.newMoon;
-        const isFullMoon = day === month.fullMoon;
+        const moon = getMoonPhase(month, day);
         const events = getEventsForDay(month, day);
         const customEvents = currentDate.customEvents.filter(e => e.month === currentDate.month && e.day === day);
 
@@ -368,8 +470,7 @@ function renderDaysGrid(month) {
             <div class="${classes}" data-day="${day}" title="${wysendayName}">
                 <span class="day-number">${day}</span>
                 <span class="wysenday-name">${wysendayName.length > 8 ? wysendayName.substring(0, 7) + '…' : wysendayName}</span>
-                ${isNewMoon ? '<span class="moon-marker new">●</span>' : ''}
-                ${isFullMoon ? '<span class="moon-marker full">○</span>' : ''}
+                <span class="moon-marker-daily" title="${moon.name}">${moon.icon}</span>
                 ${events.some(e => e.type !== 'wysenday') ? '<span class="event-marker">★</span>' : ''}
                 ${customEvents.length > 0 ? '<span class="event-marker urgent">⚠</span>' : ''}
             </div>
@@ -555,6 +656,48 @@ function getWeatherForDate(year, month, day) {
     return null;
 }
 
+function getMoonEffectForDate(year, monthId, day) {
+    if (!currentDate.yearMoonEffects ||
+        !currentDate.yearMoonEffects[year] ||
+        !currentDate.yearMoonEffects[year][monthId]) {
+        return null; // Should trigger generation if called from top level
+    }
+
+    const monthData = calendarData.months.find(m => m.id === parseInt(monthId));
+    if (!monthData) return null;
+
+    const fullMoon = monthData.fullMoon;
+    const newMoon = monthData.newMoon;
+    // Simple phase determination
+    // Full Phase = Full Moon Day +/- 1
+    // Waxing = After New Moon, Before Full Phase
+    // Waning = Everything else (Pre-New Moon, Post-Full Phase)
+
+    let phase = 'waning'; // Default
+
+    // Check Full Phase (3 days center on Full Moon)
+    if (day >= fullMoon - 1 && day <= fullMoon + 1) {
+        phase = 'full';
+    }
+    // Check Waxing Phase
+    // Starts at New Moon. Ends before Full Phase starts (fullMoon - 1)
+    else if (day >= newMoon && day < fullMoon - 1) {
+        phase = 'waxing';
+    }
+    // Waning is the rest (days < newMoon OR days > fullMoon + 1)
+
+    // Retrieve the rolled sign for this phase
+    const signName = currentDate.yearMoonEffects[year][monthId][phase];
+    const effectDesc = MOON_SIGNS_DATA[signName][phase];
+
+    return {
+        sign: signName,
+        phase: phase.charAt(0).toUpperCase() + phase.slice(1),
+        desc: effectDesc,
+        roll: 'N/A' // No specific daily roll anymore
+    };
+}
+
 function setWeatherForDate(year, month, day, weather) {
     if (!currentDate.yearWeather) currentDate.yearWeather = {};
     if (!currentDate.yearWeather[year]) currentDate.yearWeather[year] = {};
@@ -568,131 +711,6 @@ function formatTime(hour) {
     const period = hour >= 12 ? 'PM' : 'AM';
     const h = hour % 12 || 12;
     return `${h}:00 ${period}`;
-}
-
-// ============================================
-// TIME ADVANCEMENT
-// ============================================
-
-function advanceTime(action) {
-    switch (action) {
-        case 'hour':
-            currentDate.hour++;
-            if (currentDate.hour >= 24) {
-                currentDate.hour = 0;
-                advanceDay();
-            }
-            break;
-        case 'sunset':
-            if (currentDate.hour < 18) {
-                currentDate.hour = 18;
-            } else {
-                currentDate.hour = 18;
-                advanceDay();
-            }
-            break;
-        case 'dawn':
-            currentDate.hour = 6;
-            advanceDay();
-            break;
-        case 'day':
-            advanceDay();
-            break;
-        case 'week':
-            for (let i = 0; i < 7; i++) advanceDay();
-            break;
-        case 'rest':
-            currentDate.hour = 6;
-            advanceDay();
-            clipboard.showToast('Long rest completed! HP restored.');
-            break;
-    }
-
-    saveDateState();
-    renderCalendar();
-}
-
-function advanceDay() {
-    const month = calendarData.months[currentDate.month - 1];
-    currentDate.day++;
-
-    if (currentDate.day > month.days) {
-        currentDate.day = 1;
-        currentDate.month++;
-
-        if (currentDate.month > 12) {
-            currentDate.month = 1;
-            currentDate.year++;
-        }
-    }
-
-    // If entering a new year, generate weather for it
-    if (!currentDate.yearWeather || !currentDate.yearWeather[currentDate.year]) {
-        generateYearWeather(currentDate.year);
-    }
-
-    // Update current weather object from stored yearly data
-    currentDate.weather = getWeatherForDate(currentDate.year, currentDate.month, currentDate.day);
-
-    // If somehow missing (e.g. data corruption), roll it
-    if (!currentDate.weather) {
-        currentDate.weather = rollWeather(calendarData.months[currentDate.month - 1]);
-        setWeatherForDate(currentDate.year, currentDate.month, currentDate.day, currentDate.weather);
-    }
-}
-
-// ============================================
-// WEATHER SYSTEM
-// ============================================
-
-function getWeatherSeason(month = null) {
-    // If month provided, use it (for pre-rolling)
-    // If not, use current month
-    const m = month || calendarData.months[currentDate.month - 1];
-
-    // Start with base season
-    // If we have a specific month passed in, we check if it matches "current" for active seasons
-    // BUT for pre-rolling a whole year, we don't know future active seasons.
-    // So distinct logic: 
-    // 1. If generating for current day, respect activeSeasons.
-    // 2. If generating for generic day, use base season.
-
-    // If this is the current month/day, check active seasons
-    const isCurrent = (m.id === currentDate.month);
-
-    if (isCurrent) {
-        if (currentDate.activeSeasons.includes('hitching')) return 'hitching';
-        if (currentDate.activeSeasons.includes('vague')) return 'vague';
-        if (currentDate.activeSeasons.includes('colliggwyld')) return 'spring';
-        if (currentDate.activeSeasons.includes('chame')) return 'summer';
-    }
-
-    const sLower = m.season.toLowerCase();
-    if (sLower.includes('winter')) return 'winter';
-    if (sLower.includes('spring')) return 'spring';
-    if (sLower.includes('summer')) return 'summer';
-    if (sLower.includes('autumn')) return 'autumn';
-
-    return 'winter'; // fallback
-}
-
-function rollWeather(month = null) {
-    const season = getWeatherSeason(month);
-    const table = WEATHER_TABLES[season] || WEATHER_TABLES['winter'];
-
-    // Roll 2d6
-    const d1 = Math.floor(Math.random() * 6) + 1;
-    const d2 = Math.floor(Math.random() * 6) + 1;
-    const roll = d1 + d2;
-
-    const weather = table[roll] || table[7]; // Fallback to 7 (usually clear/average)
-
-    return {
-        season: season,
-        roll: roll,
-        desc: weather.desc,
-        effects: weather.effects
-    };
 }
 
 function renderWeatherPanel() {
@@ -911,6 +929,7 @@ function openDayModal(year, monthId, day) {
     const dayName = getDayName(day, month);
     const moon = getMoonPhase(month, day);
     const weather = getWeatherForDate(year, monthId, day) || { desc: "Unknown", effects: [] };
+    const moonEffect = getMoonEffectForDate(year, monthId, day) || { sign: 'Unknown', phase: '', desc: 'No effect', roll: 0 };
     const dateKey = `${year}-${monthId}-${day}`;
     const logs = currentDate.logs[dateKey] || [];
     const events = getEventsForDay(month, day);
@@ -929,6 +948,15 @@ function openDayModal(year, monthId, day) {
                 <h4>🌙 Moon Phase</h4>
                 <p class="modal-text">${moon.icon} ${month.moonName || moon.name}</p>
                 
+                <h4>✨ Moon Sign</h4>
+                <div class="modal-weather" style="margin-bottom: var(--space-4);">
+                    <p class="weather-desc-lg" style="font-size: 1.1rem; margin-bottom: 0.5rem;">${moonEffect.sign} (${moonEffect.phase})</p>
+                    <p class="modal-text" style="font-size: 0.9rem;">${moonEffect.desc}</p>
+                    <div class="weather-meta-sm" style="margin-top: 0.5rem;">
+                        <span>Rolled: ${moonEffect.roll}</span>
+                    </div>
+                </div>
+
                 <h4>☁️ Weather</h4>
                 <div class="modal-weather">
                     <p class="weather-desc-lg">${weather.desc}</p>
@@ -1122,4 +1150,145 @@ function loadDateState() {
             console.error('Failed to load calendar state');
         }
     }
+}
+
+// ============================================
+// TIME ADVANCEMENT
+// ============================================
+
+function advanceTime(action) {
+    switch (action) {
+        case 'hour':
+            currentDate.hour++;
+            if (currentDate.hour >= 24) {
+                currentDate.hour = 0;
+                advanceDay();
+            }
+            break;
+        case 'sunset':
+            if (currentDate.hour < 18) {
+                currentDate.hour = 18;
+            } else {
+                currentDate.hour = 18;
+                advanceDay();
+            }
+            break;
+        case 'dawn':
+            currentDate.hour = 6;
+            advanceDay();
+            break;
+        case 'day':
+            advanceDay();
+            break;
+        case 'week':
+            for (let i = 0; i < 7; i++) advanceDay();
+            break;
+        case 'rest':
+            currentDate.hour = 6;
+            advanceDay();
+            clipboard.showToast('Long rest completed! HP restored.');
+            break;
+    }
+
+    saveDateState();
+    renderCalendar();
+}
+
+function advanceDay() {
+    const month = calendarData.months[currentDate.month - 1];
+    currentDate.day++;
+
+    if (currentDate.day > month.days) {
+        currentDate.day = 1;
+        currentDate.month++;
+
+        if (currentDate.month > 12) {
+            currentDate.month = 1;
+            currentDate.year++;
+        }
+    }
+
+    // If entering a new year, generate weather for it
+    if (!currentDate.yearWeather || !currentDate.yearWeather[currentDate.year]) {
+        generateYearWeather(currentDate.year);
+    }
+
+    // Update current weather object from stored yearly data
+    currentDate.weather = getWeatherForDate(currentDate.year, currentDate.month, currentDate.day);
+
+    // If somehow missing (e.g. data corruption), roll it
+    if (!currentDate.weather) {
+        currentDate.weather = rollWeather(calendarData.months[currentDate.month - 1]);
+        setWeatherForDate(currentDate.year, currentDate.month, currentDate.day, currentDate.weather);
+    }
+}
+
+// ============================================
+// WEATHER SYSTEM
+// ============================================
+
+function getWeatherSeason(month = null) {
+    // If month provided, use it (for pre-rolling)
+    // If not, use current month
+    const m = month || calendarData.months[currentDate.month - 1];
+
+    // Start with base season
+    // If we have a specific month passed in, we check if it matches "current" for active seasons
+    // BUT for pre-rolling a whole year, we don't know future active seasons.
+    // So distinct logic: 
+    // 1. If generating for current day, respect activeSeasons.
+    // 2. If generating for generic day, use base season.
+
+    // If this is the current month/day, check active seasons
+    const isCurrent = (m.id === currentDate.month);
+
+    if (isCurrent) {
+        if (currentDate.activeSeasons.includes('hitching')) return 'hitching';
+        if (currentDate.activeSeasons.includes('vague')) return 'vague';
+        if (currentDate.activeSeasons.includes('colliggwyld')) return 'spring';
+        if (currentDate.activeSeasons.includes('chame')) return 'summer';
+    }
+
+    const sLower = m.season.toLowerCase();
+    if (sLower.includes('winter')) return 'winter';
+    if (sLower.includes('spring')) return 'spring';
+    if (sLower.includes('summer')) return 'summer';
+    if (sLower.includes('autumn')) return 'autumn';
+
+    return 'winter'; // fallback
+}
+
+function rollWeather(month = null) {
+    const season = getWeatherSeason(month);
+    const table = WEATHER_TABLES[season] || WEATHER_TABLES['winter'];
+
+    // Roll 2d6
+    const d1 = Math.floor(Math.random() * 6) + 1;
+    const d2 = Math.floor(Math.random() * 6) + 1;
+    const roll = d1 + d2;
+
+    const weather = table[roll] || table[7]; // Fallback to 7 (usually clear/average)
+
+    return {
+        season: season,
+        roll: roll,
+        desc: weather.desc,
+        effects: weather.effects
+    };
+}
+
+function generateYearMoonEffects(year) {
+    if (!currentDate.yearMoonEffects) currentDate.yearMoonEffects = {};
+    if (!currentDate.yearMoonEffects[year]) currentDate.yearMoonEffects[year] = {};
+
+    calendarData.months.forEach(month => {
+        // Roll one sign for each phase of this month
+        currentDate.yearMoonEffects[year][month.id] = {
+            waxing: MOON_SIGN_NAMES[Math.floor(Math.random() * MOON_SIGN_NAMES.length)],
+            full: MOON_SIGN_NAMES[Math.floor(Math.random() * MOON_SIGN_NAMES.length)],
+            waning: MOON_SIGN_NAMES[Math.floor(Math.random() * MOON_SIGN_NAMES.length)]
+        };
+    });
+
+    saveDateState();
 }

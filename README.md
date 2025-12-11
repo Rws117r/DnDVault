@@ -38,6 +38,22 @@ python dnd_vault.py
 
 ---
 
+## 📅 Interactive Calendar
+
+The web interface includes a fully-featured Dolmenwood calendar:
+
+### ✨ Features
+- **Moon Phase System**: Automatically generated moon signs and effects based on lunar phases (Waxing, Full, Waning).
+- **Weather Generator**: Season-aware 2d6 weather rolls with mechanical effects (Impeded, Poor Visibility, etc.).
+- **Event Tracking**: Track quest deadlines, festivals, and saint's feast days.
+- **Captain's Log**: Daily session logging for travel, combat, and events.
+- **Quick Copy**: One-click copy for Day and Month summaries, formatted for Discord/Notes.
+
+### 🌙 Moon Signs
+Dolmenwood's unique moon signs (Grinning, Dead, Beast, etc.) are fully implemented. Each sign provides unique bonuses or penalties depending on the moon's current phase.
+
+---
+
 ## 📁 Data Files
 
 | File | Purpose |

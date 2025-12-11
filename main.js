@@ -13,7 +13,7 @@ import { renderSearchView } from './components/search.js';
 import { renderEncounterView } from './components/encounter.js';
 import { renderQuestGraph } from './components/quest-graph.js';
 import { renderScratchpad } from './components/scratchpad.js';
-import { renderCalendar } from './components/calendar.js';
+import { renderCalendar } from './components/calendar.js?v=999';
 
 // Initialize app
 async function init() {

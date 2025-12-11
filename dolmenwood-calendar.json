@@ -274,9 +274,87 @@
             "days": 28,
             "wysendays": [],
             "moonName": "Narrow Moon",
-            "newMoon": 1,
-            "fullMoon": 15,
-            "events": []
+            "newMoon": 4,
+            "fullMoon": 19,
+            "events": [
+                {
+                    "day": 1,
+                    "name": "Session: The Debt Begins",
+                    "type": "summary",
+                    "description": "Party awoke in coffins, fought Lantern-Bearers, met Azelach. Debt incurred."
+                },
+                {
+                    "day": 1,
+                    "name": "Awakened in Coffins",
+                    "type": "event"
+                },
+                {
+                    "day": 1,
+                    "name": "Cleared Barrow of Bone Blaggards",
+                    "type": "event"
+                },
+                {
+                    "day": 1,
+                    "name": "Contract with Azelach",
+                    "type": "urgent",
+                    "description": "One moon to return a life."
+                },
+                {
+                    "day": 2,
+                    "name": "Session: The Roost and the Rain",
+                    "type": "summary",
+                    "description": "Thoul ambush. Met Dande. Reached Roost Inn."
+                },
+                {
+                    "day": 2,
+                    "name": "Thoul Ambush",
+                    "type": "combat"
+                },
+                {
+                    "day": 2,
+                    "name": "Met Dande Prisselwith",
+                    "type": "event"
+                },
+                {
+                    "day": 3,
+                    "name": "Session: Rescue & Riddle",
+                    "type": "summary",
+                    "description": "Rescued Thirlirgwe. Kicked out of Inn. Quest from Father Horsely."
+                },
+                {
+                    "day": 3,
+                    "name": "Rescued Thirlirgwe",
+                    "type": "event"
+                },
+                {
+                    "day": 3,
+                    "name": "Quest: Lantern-House Crypt",
+                    "type": "quest",
+                    "description": "Drive out (or deal with) the Hag for Father Horsely."
+                },
+                {
+                    "day": 3,
+                    "name": "Entered Louping Wood",
+                    "type": "event"
+                },
+                {
+                    "day": 4,
+                    "name": "Session: Chronicle of Three Feathers",
+                    "type": "summary",
+                    "description": "Tower of Frost. Enmog marked. Hag's Bargain."
+                },
+                {
+                    "day": 4,
+                    "name": "Enmog marked by Misthraine",
+                    "type": "event"
+                },
+                {
+                    "day": 4,
+                    "name": "Hag's Bargain (3 Feathers)",
+                    "type": "quest",
+                    "description": "Find 3 souls with raven feathers and pluck them for the Hag."
+                }
+            ]
         },
         {
             "id": 12,
